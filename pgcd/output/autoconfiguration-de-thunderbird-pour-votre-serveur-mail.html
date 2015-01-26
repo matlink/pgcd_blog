@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <title>Autoconfiguration de Thunderbird pour votre serveur mail</title>
+        <link rel="shortcut icon" href="./theme/images/icons/atom.jpg" />
+        <link rel="stylesheet" href="./theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="./">Le Parti des Geeks Cartésiens Démocrates</a></h1>
+ <strong>Blog d'un parti universitaire et passioné</strong>                <nav><ul>
+                    <li class="active"><a href="./category/pgcd.html">PGCD</a></li>
+<span id="pages">
+                    <li><a href="./pages/contact.html">Contact</a></li>
+                </span>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="./autoconfiguration-de-thunderbird-pour-votre-serveur-mail.html" rel="bookmark"
+           title="Permalink to Autoconfiguration de Thunderbird pour votre serveur mail">Autoconfiguration de Thunderbird pour votre serveur mail</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-11-27T19:58:00+01:00">
+                Published: jeu. 27 novembre 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="./author/matlink.html">Matlink</a>
+        </address>
+<p>In <a href="./category/pgcd.html">PGCD</a>. </p>
+
+</footer><!-- /.post-info -->      <p>Si vous gérez un serveur mail, qu'il soit chez vous ou bien hébergé chez
+un fournisseur, vous vous êtes sûrement rendus compte quand vous
+configuriez un logiciel de messagerie comme Thunderbird, que vous deviez
+rentrer toutes les infos à la main (serveur entrant, serveur sortant,
+ports, type de connexion chiffrée, ...). Quand on connaît ces infos, au
+final, c'est pas très grave. Le problème est que si nous ne sommes pas
+le seul à utiliser notre serveur mail (dans le cas où nous fournissons
+une ou plusieurs adresses à d'autres personnes), les autres utilisateurs
+ne sont pas forcément avertis concernant la configuration à entrer pour
+leur client mail.</p>
+<p>Sachez donc que Thunderbird (que j'utilise et adore) propose un système
+d'auto-configuration. En réalité, il procède en plusieurs étapes
+(supposons que l'adresse mail est <a class="reference external" href="mailto:foo&#64;example.com">foo&#64;example.com</a>):</p>
+<ol class="arabic simple">
+<li>recherche du fichier example.com.xml dans le dossier d'installation
+de Thunderbird (<em>dossierinstallation</em>/isp/example.com.xml exactement)</li>
+<li>recherche du nom de domaine autoconfig.example.com</li>
+<li>recherche &quot;example.com&quot; dans la base de données de Mozilla concernant
+les fournisseurs de mail</li>
+<li>recherche de &quot;MX example.com&quot; au niveau du DNS, et pour
+mx1.mail.hoster.com, recherche de &quot;hoster.com&quot; dans la base de
+données de Mozilla</li>
+<li>essaye de deviner des noms courants (imap.example.com,
+smtp.example.com, ...)</li>
+</ol>
+<p>Je vais pas détailler chaque point, mais il faut savoir que dès que
+Thunderbird trouve une configuration dans l'un des points, il s'arrête
+et la propose à l'utilisateur.</p>
+<p>Le premier point n'est pas envisageable car évidement cela requiert que
+chaque utilisateur récupère le fichier de configuration et le mette dans
+le bon dossier. Le deuxième demande de toucher aux configurations DNS,
+choses auxquelles nous n'avons pas toujours accès (et que parfois nous
+voulons laisser telles quelles). La troisième demande de faire une
+demande à Mozilla pour l'ajouter dans sa base de données, pas pratique
+et peut prendre du temps, sachant que Mozilla privilégie les plus gros.</p>
+<p>Il nous reste que la quatrième solution (la cinquième n'en est pas une
+car ceci est une recherche des noms courants). Il y a un moyen simple de
+proposer l'auto-configuration pour Thunderbird, c'est de placer le
+fichier de configuration du client mail à cette adresse :
+<a class="reference external" href="http://example.com/.well-known/autoconfig/mail/config-v1.1.xml">http://example.com/.well-known/autoconfig/mail/config-v1.1.xml</a>.</p>
+<p>Et le fichier doit être ainsi :</p>
+<pre class="literal-block">
+&lt;clientConfig version=&quot;1.0&quot;&gt;
+    &lt;emailProvider id=&quot;matlink.fr&quot;&gt;
+          &lt;domain&gt;matlink.fr&lt;/domain&gt;
+          &lt;displayName&gt;Messagerie Matlink&lt;/displayName&gt;
+          &lt;displayShortName&gt;MATLINK&lt;/displayShortName&gt;
+          &lt;incomingServer type=&quot;imap&quot;&gt;
+                &lt;hostname&gt;fr.matlink.fr&lt;/hostname&gt;
+                &lt;port&gt;993&lt;/port&gt;
+                &lt;socketType&gt;SSL&lt;/socketType&gt;
+                &lt;username&gt;%EMAILLOCALPART%&lt;/username&gt;
+                &lt;authentication&gt;plain&lt;/authentication&gt;
+          &lt;/incomingServer&gt;
+          &lt;outgoingServer type=&quot;smtp&quot;&gt;
+                &lt;hostname&gt;fr.matlink.fr&lt;/hostname&gt;
+                &lt;port&gt;465&lt;/port&gt;
+                &lt;socketType&gt;SSL&lt;/socketType&gt;
+                &lt;authentication&gt;plain&lt;/authentication&gt;
+                &lt;username&gt;%EMAILLOCALPART%&lt;/username&gt;
+          &lt;/outgoingServer&gt;
+    &lt;/emailProvider&gt;
+&lt;/clientConfig&gt;
+</pre>
+<p>en remplaçant bien sûr les données de mon serveur par celles du votre.
+Et voilà, les nouveaux comptes pour ce nom de domaine seront
+automatiquement configurés pour Thunderbird (et à priori c'est le seul
+bon client mail à pouvoir faire ça, avec Outlook de
+Microsoft).<a class="reference external" href="images/config-found.png"><img alt="config-found" src="images/config-found.png" /></a></p>
+<p><a class="reference external" href="https://developer.mozilla.org/en-US/docs/Mozilla/Thunderbird/Autoconfiguration">sources</a></p>
+
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                <center>Tous les articles sont publiés sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./theme/images/icons/cc-by-nc-sa.png" alt="CC-BY-NC-SA"></a></center>
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
