@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <title>Le Parti des Geeks Cartésiens Démocrates - Auto-hébergement</title>
+        <link rel="shortcut icon" href="../theme/images/icons/atom.jpg" />
+        <link rel="stylesheet" href="../theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="../">Le Parti des Geeks Cartésiens Démocrates</a></h1>
+ <strong>Blog d'un parti universitaire et passioné</strong>                <nav><ul>
+                    <li><a href="../category/annonces.html">Annonces</a></li>
+                    <li class="active"><a href="../category/auto-hebergement.html">Auto-hébergement</a></li>
+                    <li><a href="../category/hacking.html">Hacking</a></li>
+                    <li><a href="../category/logiciels-libres.html">Logiciels Libres</a></li>
+                    <li><a href="../category/philosophie.html">Philosophie</a></li>
+                    <li><a href="../category/physique.html">Physique</a></li>
+                    <li><a href="../category/reseaux.html">Réseaux</a></li>
+                    <li><a href="../category/securite.html">Sécurité</a></li>
+<span id="pages">
+                    <li><a href="../pages/contact.html">Contact</a></li>
+                </span>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="../faites-de-votre-serveur-un-proxy-pour-the-pirate-bay.html">Faites de votre serveur un proxy pour The Pirate Bay</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2014-12-06T13:22:00+01:00">
+                Published: sam. 06 décembre 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="../author/matlink.html">Matlink</a>
+        </address>
+<p>In <a href="../category/auto-hebergement.html">Auto-hébergement</a>. </p>
+
+</footer><!-- /.post-info --><p>Après la <a href="http://www.numerama.com/magazine/31495-the-pirate-bay-sera-bloque-en-france-avec-ses-miroirs.html">magnifique nouvelle que nous annonce la
+SCPP</a>,
+c'est <a href="https://fr.wikipedia.org/wiki/Effet_Streisand">l'effet
+Streisand</a>. On peut
+penser que ces génies vont nous filtrer tout ce beau petit monde en
+tapant dans les DNS (comme l'idée <a href="http://www.linformaticien.com/actualites/id/34237/le-blocage-dns-retenu-par-les-deputes-pour-lutter-contre-le-terrorisme.aspx">révolutionnaire de la loi Lutte
+contre le
+terrorisme</a>).
+Dans ce cas, il suffit de créer des centaines voire des milliers de
+proxies pour The Pirate Bay qui n'auront donc pas le même nom de
+domaine. Ainsi, l'adresse http://tpb.matlink.fr fera en sorte de
+communiquer avec le vrai serveur de TPB, directement via son IP.</p>
+<p>Et pour vous montrer à quel point c'est simple de faire ceci, je vous
+explique :</p>
+<ul>
+<li>
+<p>pour Nginx, ajouter ce code dans le fichier de déclaration des serveurs virtuels :</p>
+<div class="highlight"><pre><span class="nf">#The</span> <span class="nt">Pirate</span> <span class="nt">Bay</span> <span class="nt">Proxy</span> 
+<span class="nt">server</span><span class="p">{</span>
+  <span class="n">listen</span> <span class="m">80</span><span class="p">;</span>
+  <span class="n">listen</span> <span class="cp">[</span><span class="p">::</span><span class="cp">]</span><span class="o">:</span><span class="m">80</span><span class="p">;</span>
+  <span class="n">server_name</span> <span class="n">tpb</span><span class="o">.</span><span class="n">xxxx</span><span class="o">.</span><span class="n">xx</span><span class="p">;</span> <span class="m">#domain</span><span class="n">e</span> <span class="n">que</span> <span class="n">l</span><span class="err">&#39;</span><span class="n">on</span> <span class="n">souhaite</span> <span class="n">donner</span> <span class="n">au</span> <span class="n">proxy</span>
+  <span class="n">location</span> <span class="o">/</span> <span class="err">{</span>
+     <span class="n">proxy_pass</span> <span class="n">https</span><span class="o">://</span><span class="m">194</span><span class="o">.</span><span class="m">71</span><span class="o">.</span><span class="m">107</span><span class="o">.</span><span class="m">27</span><span class="o">/</span><span class="p">;</span>
+     <span class="n">proxy_set_header</span> <span class="n">Host</span> <span class="n">thepiratebay</span><span class="o">.</span><span class="n">se</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="err">}</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>pour Apache :</p>
+<div class="highlight"><pre><span class="nt">&lt;VirtualHost</span> <span class="err">*:80</span><span class="nt">&gt;</span>
+   ServerName      tpb.xxx.xx
+   ProxyPreserveHost   On
+   RequestHeader set Host  thepiratebay.se
+   ProxyPass    /  https://194.71.107.27/
+   ProxyPassReverse /  https://194.71.107.27/
+<span class="nt">&lt;/VirtualHost&gt;</span>
+</pre></div>
+
+
+</li>
+</ul>
+<p>ensuite, il vous suffit de redémarrer votre serveur Nginx/Apache :
+<code>/etc/init.d/nginx reload</code> ou <code>/etc/init.d/apache2 reload</code></p>
+<p>n'oubliez pas d'ajouter dans votre zone DNS le tpb.xxxx.xx CNAME xxxx.xx
+que vous avez mis dans votre fichier de config.</p>
+<p>À vos proxies !</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="../autoconfiguration-de-thunderbird-pour-votre-serveur-mail.html" rel="bookmark"
+                           title="Permalink to Autoconfiguration de Thunderbird pour votre serveur mail">Autoconfiguration de Thunderbird pour votre serveur mail</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-11-27T19:58:00+01:00">
+                Published: jeu. 27 novembre 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="../author/matlink.html">Matlink</a>
+        </address>
+<p>In <a href="../category/auto-hebergement.html">Auto-hébergement</a>. </p>
+
+</footer><!-- /.post-info -->                <p><span class="float-left">
+  <img alt="thunderbird" src="../images/thunderbird-head.png" />
+</span></p>
+<p>Si vous gérez un serveur mail, qu'il soit chez vous ou bien hébergé chez
+un fournisseur, vous vous êtes sûrement rendus compte quand vous
+configuriez un logiciel de messagerie comme Thunderbird, que vous deviez
+rentrer toutes les infos à la main (serveur entrant, serveur sortant,
+ports, type de connexion ...</p>
+                <a class="readmore" href="../autoconfiguration-de-thunderbird-pour-votre-serveur-mail.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="../auto-hebergement-le-retour-sur-mon-parcours-deuxieme-partie.html" rel="bookmark"
+                           title="Permalink to Auto-hébergement : le retour sur mon parcours (deuxième partie)">Auto-hébergement : le retour sur mon parcours (deuxième partie)</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-11-20T22:31:00+01:00">
+                Published: jeu. 20 novembre 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="../author/matlink.html">Matlink</a>
+        </address>
+<p>In <a href="../category/auto-hebergement.html">Auto-hébergement</a>. </p>
+<p>tags: <a href="../tag/auto-hebergement.html">auto hébergement</a> <a href="../tag/experience.html">expérience</a> </p>
+</footer><!-- /.post-info -->                <p>De retour pour une deuxième partie concernant mon expérience sur
+l'auto-hébergement. Pour ceux qui auraient loupé la <a href="https://matlink.fr/PGCD/auto-hebergement-le-retour-sur-mon-parcours-1/">première partie, la
+voici</a>.</p>
+<p>Je vous ai présenté le contexte de l'époque où ça a fait tilt dans ma
+tête, j'ai parlé de ma déconnexion du fournisseur de mail Gmail ...</p>
+                <a class="readmore" href="../auto-hebergement-le-retour-sur-mon-parcours-deuxieme-partie.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="../auto-hebergement-le-retour-sur-mon-parcours-1.html" rel="bookmark"
+                           title="Permalink to Auto-hébergement : le retour sur mon parcours ( première partie)">Auto-hébergement : le retour sur mon parcours ( première partie)</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-11-15T13:49:00+01:00">
+                Published: sam. 15 novembre 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="../author/matlink.html">Matlink</a>
+        </address>
+<p>In <a href="../category/auto-hebergement.html">Auto-hébergement</a>. </p>
+<p>tags: <a href="../tag/auto-hebergement.html">auto hébergement</a> <a href="../tag/experience.html">expérience</a> </p>
+</footer><!-- /.post-info -->                <p><span class="float-left">
+<img alt="Big_Google" src="../images/1984-Big-google.jpg" /></span></p>
+<p>Cela fait déjà quasiment un an que je m'auto-héberge et c'est à cette
+occasion que j'aimerai partager l'expérience que j'ai acquis au cours de
+cette progressive migration.</p>
+<p>Un bref rappel du contexte de l'époque : j'avais une adresse mail en
+@gmail.com, utilisais
+<a href="https://korben.info/7-millions-comptes-dropbox-nature-faut-il-flipper.html">Dropbox ...</a></p>
+                <a class="readmore" href="../auto-hebergement-le-retour-sur-mon-parcours-1.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+<p class="paginator">
+    Page 1 / 1
+</p>
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                <center>Tous les articles sont publiés sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="../theme/images/icons/cc-by-nc-sa.png" alt="CC-BY-NC-SA"></a></center>
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

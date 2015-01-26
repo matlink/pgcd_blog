@@ -2,8 +2,8 @@
 <html lang="fr">
 <head>
         <meta charset="utf-8" />
-        <title>Le Parti des Geeks Cartésiens Démocrates - experience</title>
-        <link rel="shortcut icon" href="./theme/images/icons/atom.jpg" />
+        <title>Le Parti des Geeks Cartésiens Démocrates - expérience</title>
+        <link rel="shortcut icon" href="../theme/images/icons/atom.jpg" />
         <link rel="stylesheet" href="../theme/css/main.css" />
 
         <!--[if IE]>
@@ -15,7 +15,14 @@
         <header id="banner" class="body">
                 <h1><a href="../">Le Parti des Geeks Cartésiens Démocrates</a></h1>
  <strong>Blog d'un parti universitaire et passioné</strong>                <nav><ul>
-                    <li><a href="../category/pgcd.html">PGCD</a></li>
+                    <li><a href="../category/annonces.html">Annonces</a></li>
+                    <li><a href="../category/auto-hebergement.html">Auto-hébergement</a></li>
+                    <li><a href="../category/hacking.html">Hacking</a></li>
+                    <li><a href="../category/logiciels-libres.html">Logiciels Libres</a></li>
+                    <li><a href="../category/philosophie.html">Philosophie</a></li>
+                    <li><a href="../category/physique.html">Physique</a></li>
+                    <li><a href="../category/reseaux.html">Réseaux</a></li>
+                    <li><a href="../category/securite.html">Sécurité</a></li>
 <span id="pages">
                     <li><a href="../pages/contact.html">Contact</a></li>
                 </span>
@@ -24,7 +31,93 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../auto-hebergement-le-retour-sur-mon-parcours-1.html">Auto-hébergement : le retour sur mon parcours ( première partie)</a></h1>
+                    <h1 class="entry-title"><a href="../auto-hebergement-le-retour-sur-mon-parcours-deuxieme-partie.html">Auto-hébergement : le retour sur mon parcours (deuxième partie)</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2014-11-20T22:31:00+01:00">
+                Published: jeu. 20 novembre 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="../author/matlink.html">Matlink</a>
+        </address>
+<p>In <a href="../category/auto-hebergement.html">Auto-hébergement</a>. </p>
+<p>tags: <a href="../tag/auto-hebergement.html">auto hébergement</a> <a href="../tag/experience.html">expérience</a> </p>
+</footer><!-- /.post-info --><p>De retour pour une deuxième partie concernant mon expérience sur
+l'auto-hébergement. Pour ceux qui auraient loupé la <a href="https://matlink.fr/PGCD/auto-hebergement-le-retour-sur-mon-parcours-1/">première partie, la
+voici</a>.</p>
+<p>Je vous ai présenté le contexte de l'époque où ça a fait tilt dans ma
+tête, j'ai parlé de ma déconnexion du fournisseur de mail Gmail que
+j'utilisais à l'époque, et du service de synchronisation Dropbox.</p>
+<p>Après avoir changé de fournisseur de mail, je me suis demandé si je ne
+pouvais pas faire ça moi-même chez moi. Car le problème est toujours le
+même : on quitte Gmail, c'est cool, nos mails ne sont plus dépouillés
+pour en tirer du profit, mais est-ce que le type à qui on fait confiance
+en hébergeant nos mails chez lui est vraiment de confiance ? C'est
+toujours mieux que Google me dira-t-on. Mais c'est moins bien que de le
+faire soit-même quand on en a les compétences, le temps et l'argent. Car
+oui, ce sont les trois principaux freins à l'auto-hébergement.</p>
+<p>N'ayant pas des masses de thunes et voulant monter mon propre
+hébergement, j'ai décidé d'acheter un <a href="http://www.raspberrypi.org/">Raspberry
+Pi</a>. J'avais entendu parlé de ce petit
+bijou quelques temps auparavant et je voyais ça plutôt comme un gadget.
+Mais les gens en parlaient de plus en plus, donnant aussi de plus en
+plus d'idées de choses à faire avec, allant du simple hébergement de
+mail à la vidéosurveillance avec une caméra. Ce qui est bien avec un
+Rpi, c'est qu'il est petit (de la taille d'une carte de crédit), est
+très simpliste ce qui donne un prix très raisonnable (compter 40/50€
+pour le rpi + alimentation + la carte SD pour y mettre le système).</p>
+<p><span class="float-left">
+<img alt="Postfix" src="../images/Postfix-logo.png" /></span></p>
+<p>J'ai patienté des jours et des jours impatiemment avant de le recevoir,
+et une fois arrivé à destination, je me suis empressé de le démarrer et
+d'y installer des serveurs mail. Je vous avoue que c'est pas simple en
+premiers lieux : les services (tels
+<a href="https://fr.wikipedia.org/wiki/Postfix">Postfix</a>,
+<a href="https://fr.wikipedia.org/wiki/Dovecot">dovecot</a> ...) sont tellement
+configurables et puissants qu'on s'y perd. Heureusement des tonnes de
+tutoriels et de documentations sont disponibles partout sur le net et
+c'est ce qui fait le charme de ces services (notamment Postfix).</p>
+<p>Cependant je n'étais pas assez confirmé pour m'en servir comme serveur
+mail principal. Cela demande de la sauvegarde régulière (car si le
+serveur plante ou se fait attaquer, il faut pouvoir récupérer les
+mails), et il faut bien configurer le serveur Postfix pour ne pas
+atterrir dans les spams des boites mail. Mais voilà j'utilisais de plus
+en plus souvent pour m'inscrire sur des nouveaux sites web par exemple.</p>
+<p>Ce qui m'a intéressé ensuite c'était de monter un petit blog pour
+raconter un peu tout ça et mon intéressement pour l'informatique ainsi
+que l'univers du logiciel libre. Le collègue Poulos m'a fait part de son
+envie de créer un blog pour le PGCD, le groupe qui à la base était sur
+Facebook (que j'ai quitté en même temps que Gmail). Le problème est que
+sur Facebook, les personnes lisent les notifications et nous ne savions
+pas qui était vraiment intéressé par ce que nous publiions. Alors que
+sur un blog, les commentaires peuvent nous faire avancer et
+paradoxalement, je trouve que c'est plus facile pour communiquer via un
+blog plutôt qu'avec un groupe Facebook. Au moins ici, nous avons notre
+petit espace à nous. C'est là qu'est né le blog du PGCD.</p>
+<p>Pour en revenir au Raspberry Pi, je pense que c'est le bon plan pour
+répondre à 1 des 3 problèmes de l'auto-hébergement : l'argent. Cette
+petite machine consomme environ 3 Watts, ce qui représente grosso modo
+3€ par an sur votre facture d'électricité. Plus de raison de dire que
+l'auto-hébergement nuit à la planète et à l'écologie dans ce cas !</p>
+<p><span class="float-right">
+<img alt="logoynh" src="../images/logo_ynh.png" /></span></p>
+<p>Je vous parlerai dans le prochain billet de comment
+s'auto-héberger dans le cas où si nous n'y connaissons pas grand chose
+en administration système avec un projet :
+<a href="https://yunohost.org">Yunohost</a>.</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="../auto-hebergement-le-retour-sur-mon-parcours-1.html" rel="bookmark"
+                           title="Permalink to Auto-hébergement : le retour sur mon parcours ( première partie)">Auto-hébergement : le retour sur mon parcours ( première partie)</a></h1>
+                </header>
+
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2014-11-15T13:49:00+01:00">
                 Published: sam. 15 novembre 2014
@@ -33,97 +126,30 @@
         <address class="vcard author">
                 By                         <a class="url fn" href="../author/matlink.html">Matlink</a>
         </address>
-<p>In <a href="../category/pgcd.html">PGCD</a>. </p>
-<p>tags: <a href="../tag/auto-hebergement.html">auto hébergement</a> <a href="../tag/experience.html">experience</a> </p>
-</footer><!-- /.post-info --><p>Cela fait déjà quasiment un an que je m'auto-héberge et c'est à cette
+<p>In <a href="../category/auto-hebergement.html">Auto-hébergement</a>. </p>
+<p>tags: <a href="../tag/auto-hebergement.html">auto hébergement</a> <a href="../tag/experience.html">expérience</a> </p>
+</footer><!-- /.post-info -->                <p><span class="float-left">
+<img alt="Big_Google" src="../images/1984-Big-google.jpg" /></span></p>
+<p>Cela fait déjà quasiment un an que je m'auto-héberge et c'est à cette
 occasion que j'aimerai partager l'expérience que j'ai acquis au cours de
 cette progressive migration.</p>
-<p>[caption id=&quot;attachment_121&quot; align=&quot;alignright&quot;
-width=&quot;180&quot;]<a class="reference external" href="https://matlink.fr/PGCD/wp-content/uploads/2014/11/1984-Big-google.jpg"><img alt="1984-Big-google" src="https://matlink.fr/PGCD/wp-content/uploads/2014/11/1984-Big-google.jpg" /></a> Big Google is watching you - Parodie de
-Big brother is watchingyou (1984, Georges Orwell)[/caption]</p>
 <p>Un bref rappel du contexte de l'époque : j'avais une adresse mail en
-&#64;gmail.com, utilisais
-<a class="reference external" href="https://korben.info/7-millions-comptes-dropbox-nature-faut-il-flipper.html">Dropbox</a>
-pour synchroniser mes fichiers, conservais tout mes contacts de mon
-téléphone Android sur mon compte Google, me servais de Google docs pour
-rédiger des documents collaboratifs, ... Bref, beaucoup de Google ou de
-privateur quoi ! Le problème avec ces services, vous le savez tous,
-c'est qu'ils se font de l'argent avec leurs clients ( vous me direz
-&quot;Mais on est des utilisateurs, pas des clients !&quot;. Que vous êtes naïfs
-!). Comment ? Google par exemple (quel bel exemple !), lit chaque e-mail
-que vous envoyez ou recevez, et en récupère les mots clés. Grâce à ces
-mots clés, il vous cible de publicités ayant un rapport avec ces mots.
-Si vous dites à votre patron par e-mail que vous aimez le fromage à
-raclette, Google vous proposera de la pub pour du fromage à raclette.
-Petite anecdote : je me rappelle d'une fois où un ami à moi cherchait de
-la<a class="reference external" href="https://fr.wikipedia.org/wiki/Sauce_sriracha">sauce piquante</a>
-sur le moteur de recherche Google (via son ordiphone) et il tombe sur la
-page d'un magasin qui en vendait. Le temps passe et dans l'après-midi,
-il consulte son compte Facebook (via un ordinateur en libre service) et
-aperçoit que sur la droite, à l'emplacement des publicités, la sauce
-pimentée qu'il avait cherchée la matin même était affichée avec le
-magasin même sur lequel il était tombé. Ici un bel exemple concret de ce
-que cela représente.</p>
-<p>Je sais par expérience qu'il n'est pas facile de se passer de ce genre
-de services, parce que &quot;ça marche&quot;. C'est vrai, on va pas se le cacher,
-Google est fonctionnel. Je vais sur Gmail, et pouf, ma boîte est là,
-j'ai pas besoin d'attendre. Tout est centralisé, et j'ai besoin d'un
-seul compte pour tous les services qu'offre Google. En contrepartie,
-j'offre ma vie privée à cette entreprise. A quoi bon,<a class="reference external" href="http://www.internetactu.net/2010/05/21/lettre-ouverte-a-ceux-qui-nont-rien-a-cacher/">je n'ai rien à
-cacher au
-final</a>
-!</p>
-<p>C'est en étant sensibilisé à tous ces problèmes de vie privée et de
-monétisation de ma vie sur Internet que j'ai décidé d'agir. J'ai donc en
-premier lieu changé d'adresse e-mail pour délaisser celle en &#64;gmail.com.
-J'ai trouvé un <a class="reference external" href="https://www.openmailbox.org/">super fournisseur de
-mail</a>. Le type qui gère ça est
-français, ne se fait pas d'argent du tout sur les services qu'il offre,
-et propose même un service de <a class="reference external" href="https://owncloud.org/">cloud</a>. Pour
-faire tourner tous ces services, il fait chaque année une campagne
-d'appel aux dons. J'ai par la suite envoyé un mail à tous mes contacts
-gmail pour les prévenir que je n'utiliserai plus celle-ci dorénavant et
-qu'ils pouvaient me joindre sur la nouvelle, tout en leur expliquant mon
-choix. Vu que ce fournisseur proposait aussi le cloud, je n'avais plus
-aucune raison d'utiliser Dropbox, alors j'ai arrêter de vraiment
-l'utiliser. Je l'ai d'ailleurs complètement supprimé quand j'ai appris
-que des comptes avaient fuité récemment.</p>
-<p>[caption id=&quot;&quot; align=&quot;alignleft&quot; width=&quot;228&quot;]<img alt="image1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/OwnCloud2-Logo.svg/595px-OwnCloud2-Logo.svg.png" /> Logo du logiciel
-de synchronisation Owncloud[/caption]</p>
-<p>Ce qui est bien avec ownCloud, c'est qu'il grandit tous les jours et
-corrige des failles de sécurité sans cesse. Ce logiciel est prometteur
-et est une alternative libre de taille au logiciel privateur Dropbox.
-Chacun peut l'installer chez soit ou utiliser un serveur sur Internet.
-Plus besoin de tout mettre au centre sur un seul serveur. C'est ainsi
-plus difficile pour des pirates par exemple, de récupérer l'ensemble des
-comptes des utilisateurs d'ownCloud, parce qu'il faudrait attaquer tout
-les serveurs ownCloud du monde. Alors que pour Dropbox, y'en a qu'un
-seul ! De plus, Owncloud propose un service de
-<a class="reference external" href="https://fr.wikipedia.org/wiki/WebDAV">WebDAV</a>, cela permet de
-synchroniser vos contacts, vos calendrier, vos photos, ... Comme ça,
-plus besoin d'utiliser la synchronisation de contact Android de Google,
-il suffit de <a class="reference external" href="http://doc.owncloud.org/server/6.0/user_manual/pim/contacts.html">configurer son téléphone pour utiliser celui du serveur
-ownCloud</a>
-!</p>
-<p>Ceci n'est qu'une première étape, et pour le moment vous voyez que n'ai
-rien auto-hébergé. Mais c'est l'étape la plus difficile : abandonner nos
-petites habitudes pour la bonne santé de notre vie privée sur Internet.
-Si vous arrivez à faire ça, vous avez fait un grand pas. Le reste n'est
-rien à côté.</p>
-<p>Si certains d'entre vous veulent partager leur expérience sur le même
-thème, contactez-moi si vous le voulez, je suis ouvert à toute
-discussion et ça m'intéresse.</p>
-                </article>
+@gmail.com, utilisais
+<a href="https://korben.info/7-millions-comptes-dropbox-nature-faut-il-flipper.html">Dropbox ...</a></p>
+                <a class="readmore" href="../auto-hebergement-le-retour-sur-mon-parcours-1.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
 <p class="paginator">
     Page 1 / 1
 </p>
-            </aside><!-- /#featured -->
+                </section><!-- /#content -->
         <section id="extras" class="body">
         </section><!-- /#extras -->
 
         <footer id="contentinfo" class="body">
                 <address id="about" class="vcard body">
-                <center>Tous les articles sont publiés sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./theme/images/icons/cc-by-nc-sa.png" alt="CC-BY-NC-SA"></a></center>
+                <center>Tous les articles sont publiés sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="../theme/images/icons/cc-by-nc-sa.png" alt="CC-BY-NC-SA"></a></center>
                 </address><!-- /#about -->
         </footer><!-- /#contentinfo -->
 

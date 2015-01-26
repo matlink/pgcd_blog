@@ -15,7 +15,14 @@
         <header id="banner" class="body">
                 <h1><a href="./">Le Parti des Geeks Cartésiens Démocrates</a></h1>
  <strong>Blog d'un parti universitaire et passioné</strong>                <nav><ul>
-                    <li class="active"><a href="./category/pgcd.html">PGCD</a></li>
+                    <li><a href="./category/annonces.html">Annonces</a></li>
+                    <li><a href="./category/auto-hebergement.html">Auto-hébergement</a></li>
+                    <li class="active"><a href="./category/hacking.html">Hacking</a></li>
+                    <li><a href="./category/logiciels-libres.html">Logiciels Libres</a></li>
+                    <li><a href="./category/philosophie.html">Philosophie</a></li>
+                    <li><a href="./category/physique.html">Physique</a></li>
+                    <li><a href="./category/reseaux.html">Réseaux</a></li>
+                    <li><a href="./category/securite.html">Sécurité</a></li>
 <span id="pages">
                     <li><a href="./pages/contact.html">Contact</a></li>
                 </span>
@@ -38,14 +45,14 @@
         <address class="vcard author">
                 By                         <a class="url fn" href="./author/matlink.html">Matlink</a>
         </address>
-<p>In <a href="./category/pgcd.html">PGCD</a>. </p>
+<p>In <a href="./category/hacking.html">Hacking</a>. </p>
 
-</footer><!-- /.post-info -->      <p>Depuis que j'ai ce joujou de <a class="reference external" href="https://en.wikipedia.org/wiki/Raspberry_Pi">raspberry
-pi</a>, je ne cesse de
+</footer><!-- /.post-info -->      <p>Depuis que j'ai ce joujou de <code>raspberry
+pi &lt;https://en.wikipedia.org/wiki/Raspberry_Pi&gt;</code>__, je ne cesse de
 chercher à le bidouiller pour donner des choses marrantes.</p>
-<p>Et je suis tombé sur un article décrivant comment bidouiller son RPI
-pour en faire une radio.
-&lt;<a class="reference external" href="http://makezine.com/projects/make-38-cameras-and-av/raspberry-pirate-radio/">http://makezine.com/projects/make-38-cameras-and-av/raspberry-pirate-radio/</a>&gt;`__</p>
+<p>Et je suis tombé sur <code>un article décrivant comment bidouiller son RPI
+pour en faire une radio. 
+&lt;http://makezine.com/projects/make-38-cameras-and-av/raspberry-pirate-radio/&gt;</code>__</p>
 <p>Il faut savoir que le RPI (modèle A et B) possède 26 pins GPIO
 permettant de contrôler un module externe ou de recevoir des
 informations. Avec un petit bout de code (en Python ou autre), il est
@@ -57,42 +64,44 @@ faire fonctionner mon RPI en mode radio, car j'ai certaines choses à
 rajouter concernant l'installation de base.</p>
 <p>Tout d'abord on se connecte en SSH sur la raspberry, et une fois dessus,
 on va récupérer le script Python qui permet de lancer la radio :</p>
-<ul class="simple">
-<li>on installe git si c'est pas déjà fait :
-<tt class="docutils literal">sudo <span class="pre">apt-get</span> install git</tt></li>
+<ul>
+<li>on installe git si c'est pas déjà fait : 
+   <code>sudo apt-get install git</code></li>
 <li>ensuite, ffmpeg pour lire les fichiers de musique :
-<tt class="docutils literal">sudo <span class="pre">apt-get</span> install ffmpeg</tt></li>
+   <code>sudo apt-get install ffmpeg</code></li>
 <li>config-parser pour lire les fichiers de configuration :
-<tt class="docutils literal">sudo <span class="pre">apt-get</span> install <span class="pre">python-pip</span> &amp;&amp; sudo pip install configparser</tt></li>
+   <code>sudo apt-get install python-pip &amp;&amp; sudo pip install configparser</code></li>
 <li>on créer un dossier pour la radio :
-<tt class="docutils literal">sudo mkdir ∕pirateradio/ &amp;&amp; cd /pirateradio/</tt></li>
+   <code>sudo mkdir ∕pirateradio/ &amp;&amp; cd /pirateradio/</code></li>
 <li>on récupère les scripts python de la radio :
-<tt class="docutils literal">git clone <span class="pre">https://github.com/Make-Magazine/PirateRadio</span> ./</tt></li>
+   <code>git clone https://github.com/Make-Magazine/PirateRadio ./</code></li>
 <li>on modifie le fichier Python pour renseigner notre dossier :
-<tt class="docutils literal">sudo sed <span class="pre">-i</span> <span class="pre">'s&#64;/root/pifm&#64;/pirateradio/pifm&#64;g'</span> /pirateradio/PirateRadio.py</tt></li>
-<li>on ouvre le fichier de configuration et on y met nos paramètres :
-<tt class="docutils literal">sudo nano pirateradio.conf</tt><ul>
-<li>frequency : la fréquence sur laquelle émettre la musique</li>
+   <code>sudo sed -i 's@/root/pifm@/pirateradio/pifm@g' /pirateradio/PirateRadio.py</code></li>
+<li>
+<p>on ouvre le fichier de configuration et on y met nos paramètres :
+   <code>sudo nano pirateradio.conf</code></p>
+</li>
+<li>
+<p>frequency : la fréquence sur laquelle émettre la musique</p>
+</li>
 <li>shuffle : True pour activer la lecture aléatoire, False sinon</li>
 <li>repeat_all : True si vous voulez jouer en boucle les musiques</li>
 <li>stereo_playback : pour activer ou non le stéréo</li>
 <li>music_dir : le répertoire où se trouvent vos musiques</li>
-</ul>
-</li>
 </ul>
 <p>Vous copiez ensuite vos musiques dans le répertoire que vous avez
 indiqué dans le fichier de configuration. Après ça, il vous faut trouver
 un fil métallique afin de faire antenne. Pour ma part, j'ai récupéré le
 câble d'un appareil qui ne fonctionnait plus. Vous devez le brancher sur
 votre RPI sur le GPIO 4 (le pin 7) comme sur la photo ci dessus :</p>
-<p>[caption id=&quot;attachment_147&quot; align=&quot;aligncenter&quot;
-width=&quot;300&quot;] Cliquez pour agrandir[/caption]</p>
-<p>Il vous reste ensuite plus qu'à lancer la radio avec la commande
-`` python /pirateradio/PirateRadio.py``</p>
+<p>|antenne_gpio_pin7_400|</p>
+<p>Il vous reste ensuite plus qu'à lancer la radio avec la commande 
+<code>python /pirateradio/PirateRadio.py</code></p>
 <p>J'ai créé un script shell pour installer tout ça automatiquement,
-disponible ici :<a class="reference external" href="https://github.com/matlink/rpi-radio">https://github.com/matlink/rpi-radio</a></p>
-<p><a class="reference external" href="http://makezine.com/projects/make-38-cameras-and-av/raspberry-pirate-radio/">source</a></p>
-
+disponible ici :https://github.com/matlink/rpi-radio</p>
+<p><code>source &lt;http://makezine.com/projects/make-38-cameras-and-av/raspberry-pirate-radio/&gt;</code>__</p>
+<p>.. |antenne_gpio_pin7_400| image:: images/antenne_gpio_pin7_400-300x224.jpg
+   :target: images/antenne_gpio_pin7_400-300x224.jpg</p>
     </div><!-- /.entry-content -->
 
   </article>

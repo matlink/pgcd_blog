@@ -3,7 +3,7 @@
 <head>
         <meta charset="utf-8" />
         <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
-        <link rel="shortcut icon" href="./theme/images/icons/atom.jpg" />
+        <link rel="shortcut icon" href="{{ SITEURL }}/theme/images/icons/atom.jpg" />
         <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
         {% if FEED_ALL_ATOM %}
         <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
@@ -74,7 +74,7 @@
 
         <footer id="contentinfo" class="body">
                 <address id="about" class="vcard body">
-                <center>Tous les articles sont publiés sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./theme/images/icons/cc-by-nc-sa.png" alt="CC-BY-NC-SA"></a></center>
+                <center>Tous les articles sont publiés sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="{{ SITEURL }}/theme/images/icons/cc-by-nc-sa.png" alt="CC-BY-NC-SA"></a></center>
                 </address><!-- /#about -->
         </footer><!-- /#contentinfo -->
 
