@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Le Parti des Geeks Cartésiens Démocrates</title><link href="https://matlink.fr/beta/" rel="alternate"></link><link href="https://matlink.fr/beta/feeds/hacking.atom.xml" rel="self"></link><id>https://matlink.fr/beta/</id><updated>2014-11-16T17:05:00+01:00</updated><entry><title>Pirate Radio : transformez votre Raspberry Pi en émetteur radio</title><link href="https://matlink.fr/beta/rpirate-radio.html" rel="alternate"></link><updated>2014-11-16T17:05:00+01:00</updated><author><name>Matlink</name></author><id>tag:matlink.fr,2014-11-16:beta/rpirate-radio.html</id><summary type="html">&lt;p&gt;Depuis que j'ai ce joujou de &lt;a href="https://en.wikipedia.org/wiki/Raspberry_Pi"&gt;raspberry
+pi&lt;/a&gt;, je ne cesse de
+chercher à le bidouiller pour donner des choses marrantes.&lt;/p&gt;
+&lt;p&gt;Et je suis tombé sur &lt;a href="http://makezine.com/projects/make-38-cameras-and-av/raspberry-pirate-radio/"&gt;un article décrivant comment bidouiller son RPI
+pour en faire une radio.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Il faut savoir que le RPI (modèle A et B) possède 26 pins GPIO
+permettant de contrôler un module externe ou de recevoir des
+informations. Avec un petit bout de code (en Python ou autre), il est
+alors possible par exemple d'allumer une LED, faire tourner un moteur,
+recevoir un signal quand on appuie sur un bouton, ... Les usages sont
+multiples et infinis.&lt;/p&gt;
+&lt;p&gt;Dans cet article, je vais vous montrer comment j'ai moi-même fait pour
+faire fonctionner mon RPI en mode radio, car j'ai certaines choses à
+rajouter concernant l'installation de base.&lt;/p&gt;
+&lt;p&gt;Tout d'abord on se connecte en SSH sur la raspberry, et une fois dessus,
+on va récupérer le script Python qui permet de lancer la radio :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;on installe git si c'est pas déjà fait : 
+   &lt;code&gt;sudo apt-get install git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;ensuite, ffmpeg pour lire les fichiers de musique :
+   &lt;code&gt;sudo apt-get install ffmpeg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;config-parser pour lire les fichiers de configuration :
+   &lt;code&gt;sudo apt-get install python-pip &amp;amp;&amp;amp; sudo pip install configparser&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;on créer un dossier pour la radio :
+   &lt;code&gt;sudo mkdir ∕pirateradio/ &amp;amp;&amp;amp; cd /pirateradio/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;on récupère les scripts python de la radio :
+   &lt;code&gt;git clone https://github.com/Make-Magazine/PirateRadio ./&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;on modifie le fichier Python pour renseigner notre dossier :
+   &lt;code&gt;sudo sed -i 's@/root/pifm@/pirateradio/pifm@g' /pirateradio/PirateRadio.py&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;on ouvre le fichier de configuration et on y met nos paramètres :
+   &lt;code&gt;sudo nano pirateradio.conf&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;frequency : la fréquence sur laquelle émettre la musique&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;shuffle : True pour activer la lecture aléatoire, False sinon&lt;/li&gt;
+&lt;li&gt;repeat_all : True si vous voulez jouer en boucle les musiques&lt;/li&gt;
+&lt;li&gt;stereo_playback : pour activer ou non le stéréo&lt;/li&gt;
+&lt;li&gt;music_dir : le répertoire où se trouvent vos musiques&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Vous copiez ensuite vos musiques dans le répertoire que vous avez
+indiqué dans le fichier de configuration. Après ça, il vous faut trouver
+un fil métallique afin de faire antenne. Pour ma part, j'ai récupéré le
+câble d'un appareil qui ne fonctionnait plus. Vous devez le brancher sur
+votre RPI sur le GPIO 4 (le pin 7) comme sur la photo ci dessus :&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;img alt="antenne_gpio" src="https://matlink.fr/beta/images/antenne_gpio_pin7_400-300x224.jpg" /&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;Il vous reste ensuite plus qu'à lancer la radio avec la commande 
+&lt;code&gt;python /pirateradio/PirateRadio.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;J'ai créé un script shell pour installer tout ça automatiquement,
+disponible ici : &lt;a href="https://github.com/matlink/rpi-radio"&gt;https://github.com/matlink/rpi-radio&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://makezine.com/projects/make-38-cameras-and-av/raspberry-pirate-radio/"&gt;source&lt;/a&gt;&lt;/p&gt;</summary></entry></feed>

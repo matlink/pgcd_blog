@@ -473,3 +473,8 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	float: right;
 	margin: 10px;
 }
+
+span.reverse {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}

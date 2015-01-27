@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Le Parti des Geeks Cartésiens Démocrates</title><link href="https://matlink.fr/beta/" rel="alternate"></link><link href="https://matlink.fr/beta/feeds/reseaux.atom.xml" rel="self"></link><id>https://matlink.fr/beta/</id><updated>2014-07-03T13:09:00+02:00</updated><entry><title>Passage à IPv6</title><link href="https://matlink.fr/beta/passage-a-ipv6.html" rel="alternate"></link><updated>2014-07-03T13:09:00+02:00</updated><author><name>Matlink</name></author><id>tag:matlink.fr,2014-07-03:beta/passage-a-ipv6.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
+&lt;img alt="IPv6" src="https://matlink.fr/beta/images/512px-World_IPv6_launch_logo.svg_-300x300.png" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Vous n'êtes probablement pas sans savoir que le nombre d'IPv4
+est en pénurie depuis 2011. Mais bon, c'est pas comme si &lt;a href="https://fr.wikipedia.org/wiki/%C3%89puisement_des_adresses_IPv4"&gt;on l'avait
+prévu depuis
+1990&lt;/a&gt;.
+En effet, une IPv4 étant codée sur 32 bits, cela nous fait donc 2^32
+adresses possibles, soit un peu moins de 5 milliard. C'est aujourd'hui
+peu pour le nombre de machines connectées à l'Internet et ayant besoin
+d'une IP publique (une IP accessible depuis n'importe où sur
+l'Internet). C'est d'ailleurs pour cela que les
+&lt;a href="https://fr.wikipedia.org/wiki/Fournisseur_d%27acc%C3%A8s_%C3%A0_internet"&gt;FAI&lt;/a&gt;
+ont introduit ce qu'on appelle le
+&lt;a href="https://fr.wikipedia.org/wiki/Network_address_translation"&gt;NAT&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Mais aujourd'hui cela ne suffit plus, il a fallu trouver une ou
+plusieurs solutions. Les deux plus communes sont les suivantes :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;on utilise le NAT à grande échelle, au niveau des FAI (&lt;a href="https://fr.wikipedia.org/wiki/Carrier_Grade_NAT"&gt;ce qu'on
+   appelle le CGN&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;on change le mode d'adressage des machines sur les réseaux&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;La première solution n'a pur moi que des désavantages. Si on regarde le
+NAT au niveau de nos routeurs maisons, quand on a un serveur chez soi,
+c'est une merde complète : pour chaque service il nous faut ouvrir un
+port et donc créer une règle. C'est super chiant, et pour peu qu'il
+faille redémarrer le routeur pour valider les changements ça devient un
+enfer (pour la freebox par exemple, alors que d'autres routeurs de FAI
+de demandent pas de reboot, on m'explique ? ). Alors imaginons ceci
+étendu aux FAI. Un bordel monstre qui implique une plus grande
+difficulté à s'auto-héberger.&lt;/p&gt;
+&lt;p&gt;La deuxième reste pour moi l'unique envisageable : &lt;a href="https://fr.wikipedia.org/wiki/IPv6"&gt;celle
+d'IPv6&lt;/a&gt;. Une IPv6 est codée sur
+128 bits, ce qui fait 2^128 adresses utilisables. Pour donner un ordre
+de grandeur, on aime bien dire que chaque humain sur Terre pourrait
+donner une adresse différentes à toutes les étoiles de l'univers, et ça
+fait beaucoup. En plus de résoudre le problème d'adressage, le protocole
+en lui-même à été amélioré de diverses manières.&lt;/p&gt;
+&lt;p&gt;Pour plus d'infos sur IPv6, je vous conseille cette conférence :&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://numaparis.ubicast.tv/videos/ipv6-ipv4-22/"&gt;Ipv6/IPv4 - Pas Sage En
+Seine &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Il faut pouvoir utiliser de plus en plus IPv6, et pour cela je vous
+invite à &lt;a href="http://test-ipv6.com/"&gt;vérifier que votre navigateur et votre connexion sont
+compatibles via ce lien&lt;/a&gt;, et &lt;a href="http://ipv6-test.com/validate.php"&gt;que les pages
+web que vous visitez sont compatibles
+également&lt;/a&gt;. Il existe par ailleurs
+un plugin Firefox permettant d'afficher l'IP du serveur hébergeant les
+pages que vous visitez, &lt;a href="https://addons.mozilla.org/en-US/firefox/addon/showip/"&gt;du nom de
+ShowIP&lt;/a&gt;. Si
+l'IP est verte c'est de l'IPv6, sinon elle est rouge et c'est de l'IPv4.
+Une bonne pratique serait de signaler aux admins que leur serveur
+n'accepte pas l'IPv6.&lt;/p&gt;
+&lt;p&gt;Passons à IPv6, car c'est l'Internet de demain qui est en jeu.&lt;/p&gt;
+&lt;p&gt;Matlink&lt;/p&gt;</summary><category term="ipv6"></category><category term="neutralité du net"></category></entry></feed>
