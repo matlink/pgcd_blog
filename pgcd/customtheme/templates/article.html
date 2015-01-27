@@ -12,8 +12,10 @@
 
     <div class="entry-content">
       {% include 'article_infos.html' %}
+      <hr/>
       {{ article.content }}
-    </div><!-- /.entry-content -->
+    </div>
+      <hr/><!-- /.entry-content -->
     {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
     <div class="comments">
       <h2>Comments !</h2>

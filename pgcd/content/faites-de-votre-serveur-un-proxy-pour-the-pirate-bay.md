@@ -2,8 +2,10 @@ Title: Faites de votre serveur un proxy pour The Pirate Bay
 Date: 2014-12-06 13:22
 Category: Auto-hébergement
 Author: Matlink
-Slug: faites-de-votre-serveur-un-proxy-pour-the-pirate-bay
 
+<span class="float-left">
+  ![the_pirate_bay]({filename}/images/543px-The_Pirate_Bay_logo.svg.png) 
+</span>
 Après la [magnifique nouvelle que nous annonce la
 SCPP](http://www.numerama.com/magazine/31495-the-pirate-bay-sera-bloque-en-france-avec-ses-miroirs.html),
 c'est [l'effet
@@ -22,7 +24,7 @@ explique :
 
 - pour Nginx, ajouter ce code dans le fichier de déclaration des serveurs virtuels :
 
-        ::
+
         #The Pirate Bay Proxy 
         server{
           listen 80;
@@ -35,6 +37,7 @@ explique :
         }
 
 - pour Apache :
+
 
         <VirtualHost *:80>
            ServerName      tpb.xxx.xx
