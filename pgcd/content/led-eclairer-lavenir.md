@@ -55,19 +55,19 @@ diminuant ainsi le risque de *blackout.*
 <span class="float-left">![appareil_led]({filename}/images/appareil_led-300x300.jpg)</span>
 
 Cependant, aujourd'hui un quart de la population
-  mondiale n'a pas accès à un réseau public d'électricité. De fait,
-  l’association GOGLA tend à promouvoir le « off-grid », l'éclairage
-  hors réseau, autonome, qui permet à ces populations de s'éclairer
-  économiquement de façon nomade. L'idée repose sur des lampes à LED qui
-  peuvent s'assembler et s'installer facilement possédant une batterie
-  type lithium-ion avec comme source d'électricité un panneau solaire.
-  Le top en la matière peuvent aller jusqu'à recharger (port USB) un
-  téléphone, ce qui peut intéresser les populations isolées d'Afrique
-  qui se sont très vite équipées en téléphones portables, à opter pour
-  « la lampe SSL ». Même si l'industrie voit en grand avec des systèmes
-  qui permettraient d'alimenter Radio/TV, ventilateurs, etc seuls
-  quelques PME commencent vraiment à s'intéresser à ce marché propre à
-  la LED afin d'atteindre ces utilisateurs isolés.
+mondiale n'a pas accès à un réseau public d'électricité. De fait,
+l’association GOGLA tend à promouvoir le « off-grid », l'éclairage
+hors réseau, autonome, qui permet à ces populations de s'éclairer
+économiquement de façon nomade. L'idée repose sur des lampes à LED qui
+peuvent s'assembler et s'installer facilement possédant une batterie
+type lithium-ion avec comme source d'électricité un panneau solaire.
+Le top en la matière peuvent aller jusqu'à recharger (port USB) un
+téléphone, ce qui peut intéresser les populations isolées d'Afrique
+qui se sont très vite équipées en téléphones portables, à opter pour
+« la lampe SSL ». Même si l'industrie voit en grand avec des systèmes
+qui permettraient d'alimenter Radio/TV, ventilateurs, etc seuls
+quelques PME commencent vraiment à s'intéresser à ce marché propre à
+la LED afin d'atteindre ces utilisateurs isolés.
 
 Par ailleurs même les musées pour qui l'éclairage est le point le plus
 délicat et important, ne voient qu du bon dans l'éclairage LED. Avec un

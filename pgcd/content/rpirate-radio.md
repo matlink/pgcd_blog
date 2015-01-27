@@ -4,13 +4,12 @@ Category: Hacking
 Author: Matlink
 Slug: rpirate-radio
 
-Depuis que j'ai ce joujou de `raspberry
-pi <https://en.wikipedia.org/wiki/Raspberry_Pi>`__, je ne cesse de
+Depuis que j'ai ce joujou de [raspberry
+pi](https://en.wikipedia.org/wiki/Raspberry_Pi), je ne cesse de
 chercher à le bidouiller pour donner des choses marrantes.
 
-Et je suis tombé sur `un article décrivant comment bidouiller son RPI
-pour en faire une radio. 
-<http://makezine.com/projects/make-38-cameras-and-av/raspberry-pirate-radio/>`__
+Et je suis tombé sur [un article décrivant comment bidouiller son RPI
+pour en faire une radio.](http://makezine.com/projects/make-38-cameras-and-av/raspberry-pirate-radio/)
 
 Il faut savoir que le RPI (modèle A et B) possède 26 pins GPIO
 permettant de contrôler un module externe ou de recevoir des
@@ -53,15 +52,12 @@ un fil métallique afin de faire antenne. Pour ma part, j'ai récupéré le
 câble d'un appareil qui ne fonctionnait plus. Vous devez le brancher sur
 votre RPI sur le GPIO 4 (le pin 7) comme sur la photo ci dessus :
 
-|antenne_gpio_pin7_400|
+<center>![antenne_gpio]({filename}/images/antenne_gpio_pin7_400-300x224.jpg)</center>
 
 Il vous reste ensuite plus qu'à lancer la radio avec la commande 
 ``python /pirateradio/PirateRadio.py``
 
 J'ai créé un script shell pour installer tout ça automatiquement,
-disponible ici :https://github.com/matlink/rpi-radio
+disponible ici : [https://github.com/matlink/rpi-radio](https://github.com/matlink/rpi-radio)
 
-`source <http://makezine.com/projects/make-38-cameras-and-av/raspberry-pirate-radio/>`__
-
-.. |antenne_gpio_pin7_400| image:: images/antenne_gpio_pin7_400-300x224.jpg
-   :target: images/antenne_gpio_pin7_400-300x224.jpg
+[source](http://makezine.com/projects/make-38-cameras-and-av/raspberry-pirate-radio/)

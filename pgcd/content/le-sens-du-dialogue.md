@@ -28,8 +28,13 @@ décisif pour amorcer un virage  *dans * notre temps, une vraie
 révolution.
 <center>
  <table>
-<tr><td>![Paul_Celan]({filename}/images/Celan_sens_dialogue.jpg)</td><td> ![Heidegger]({filename}/images/heidegger_sens_dialogue.jpg)</td></tr>
-<tr><td>Paul Celan</td><td>  Heidegger</td></tr>
+	<tr>
+		<td><center>![Paul_Celan]({filename}/images/Celan_sens_dialogue.jpg)</center></td>
+		<td><center> ![Heidegger]({filename}/images/heidegger_sens_dialogue.jpg)</center></td></tr>
+	<tr>
+		<td><center>Paul Celan</center></td>
+		<td><center> Heidegger</center></td>
+	</tr>
  </table>
  </center>
 
