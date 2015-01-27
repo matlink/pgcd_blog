@@ -478,3 +478,7 @@ span.reverse {
   unicode-bidi: bidi-override;
   direction: rtl;
 }
+
+.commentaire_input{
+	width:100%;
+}

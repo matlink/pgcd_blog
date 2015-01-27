@@ -22,6 +22,16 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+
+PLUGIN_PATHS = ['./plugins/']
+PLUGINS = ['pelican_comment_system']
+
+#Comments plugin
+PELICAN_COMMENT_SYSTEM = True
+PELICAN_COMMENT_SYSTEM_DIR = "./content/comments/"
+PELICAN_COMMENT_SYSTEM_IDENTICON_OUTPUT_PATH = "./content/comments/images/"
+
+
 # Blogroll
 
 LINKS = (('Pelican', 'http://getpelican.com/', '/theme/images/icons/pelican_logo.png'),)
