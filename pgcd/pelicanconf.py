@@ -26,7 +26,7 @@ AUTHOR_FEED_RSS = None
 PLUGIN_PATHS = ['./plugins/']
 
 #Comments plugin
-ISSO_SERVER="https://matlink.fr/beta/comments/"
+ISSO_SERVER="https://fr.matlink.fr/comments"
 
 
 # Blogroll

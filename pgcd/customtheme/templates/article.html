@@ -16,28 +16,6 @@
       {{ article.content }}
     </div>
       <hr/><!-- /.entry-content -->
-    {% if article.comments %}
-    {% for comment in article.comments recursive %}
-        {% if loop.depth0 == 0 %}
-            {% set marginLeft = 0 %}
-        {% else %}
-            {% set marginLeft = 50 %}
-        {% endif %}
-            <article id="comment-{{comment.slug}}" style="border: 1px solid #DDDDDD; padding: 5px 0px 0px 5px; margin: 0px -1px 5px {{marginLeft}}px;">
-                <a href="{{ SITEURL }}/{{ article.url }}#comment-{{comment.slug}}" rel="bookmark" title="Permalink to this comment">Lien permanent</a>
-                <h4>{{ comment.author }}</h4>
-                <p>Posted on <abbr class="published" title="{{ comment.date.isoformat() }}">{{ comment.locale_date }}</abbr></p>
-                {{ comment.metadata['my_custom_metadata'] }}
-                {{ comment.content }}
-                <button onclick="reply('{{comment.slug | urlencode}}');">Répondre</button>
-                {% if comment.replies %}
-                    {{ loop(comment.replies) }}
-                {% endif %}
-            </article>
-    {% endfor %}
-{% else %}
-    <p>Aucun commentaire pour le moment.<p>
-{% endif %}
     {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
     <div class="comments">
       <h2>Comments !</h2>
