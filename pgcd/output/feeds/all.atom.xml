@@ -198,16 +198,16 @@ explique :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;pour Nginx, ajouter ce code dans le fichier de déclaration des serveurs virtuels :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;#The Pirate Bay Proxy &lt;/span&gt;
-&lt;span class="n"&gt;server&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="n"&gt;listen&lt;/span&gt; &lt;span class="mi"&gt;80&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="n"&gt;listen&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;80&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="n"&gt;server_name&lt;/span&gt; &lt;span class="n"&gt;tpb&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xxxx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xx&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="n"&gt;domaine&lt;/span&gt; &lt;span class="n"&gt;que&lt;/span&gt; &lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;on&lt;/span&gt; &lt;span class="n"&gt;souhaite&lt;/span&gt; &lt;span class="n"&gt;donner&lt;/span&gt; &lt;span class="n"&gt;au&lt;/span&gt; &lt;span class="n"&gt;proxy&lt;/span&gt;
-  &lt;span class="n"&gt;location&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-     &lt;span class="n"&gt;proxy_pass&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//194.71.107.27/;&lt;/span&gt;
-     &lt;span class="n"&gt;proxy_set_header&lt;/span&gt; &lt;span class="n"&gt;Host&lt;/span&gt; &lt;span class="n"&gt;thepiratebay&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;se&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#The&lt;/span&gt; &lt;span class="nt"&gt;Pirate&lt;/span&gt; &lt;span class="nt"&gt;Bay&lt;/span&gt; &lt;span class="nt"&gt;Proxy&lt;/span&gt; 
+&lt;span class="nt"&gt;server&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;listen&lt;/span&gt; &lt;span class="m"&gt;80&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="n"&gt;listen&lt;/span&gt; &lt;span class="cp"&gt;[&lt;/span&gt;&lt;span class="p"&gt;::&lt;/span&gt;&lt;span class="cp"&gt;]&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;80&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="n"&gt;server_name&lt;/span&gt; &lt;span class="n"&gt;tpb&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xxxx&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xx&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="m"&gt;#domain&lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt; &lt;span class="n"&gt;que&lt;/span&gt; &lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;on&lt;/span&gt; &lt;span class="n"&gt;souhaite&lt;/span&gt; &lt;span class="n"&gt;donner&lt;/span&gt; &lt;span class="n"&gt;au&lt;/span&gt; &lt;span class="n"&gt;proxy&lt;/span&gt;
+  &lt;span class="n"&gt;location&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+     &lt;span class="n"&gt;proxy_pass&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="o"&gt;://&lt;/span&gt;&lt;span class="m"&gt;194&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;71&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;107&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;27&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+     &lt;span class="n"&gt;proxy_set_header&lt;/span&gt; &lt;span class="n"&gt;Host&lt;/span&gt; &lt;span class="n"&gt;thepiratebay&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;se&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
   &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="err"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -728,17 +728,17 @@ partage d'une ouverture commune. L'amour cependant se déploie depuis une
 interprétation différente de l'optatif du  &lt;strong&gt;&lt;em&gt;volo&lt;/em&gt;&lt;/strong&gt; ouvrant vers une
 nouvelle dimension du souhait.&lt;/p&gt;
 &lt;p&gt;L'amitié selon Heidegger, c'est là où je me sens proprement à demeure,
-chez moi. C'est dans le  &lt;strong&gt;&lt;em&gt;Geheimnis&lt;em&gt;&lt;em&gt;,&lt;/em&gt; c'est à dire le secret que
+chez moi. C'est dans le  &lt;strong&gt;&lt;em&gt;Geheimnis&lt;/em&gt;&lt;em&gt;,&lt;/em&gt; c'est à dire le secret que
 l'amitié prend son essor. Geheimnis dérive de Heimat
-signifiant &lt;/em&gt; &lt;em&gt; non nécessairement le pays ou la patrie mais le lieu où
-je me sens pleinement chez moi. &lt;/em&gt; * Là ou se rassemble ce en quoi vous
+signifiant &lt;em&gt; &lt;/em&gt; non nécessairement le pays ou la patrie mais le lieu où
+je me sens pleinement chez moi. &lt;em&gt; &lt;/em&gt; Là ou se rassemble ce en quoi vous
 vous sentez pleinement vous même. Et cela est le secret de chaque être
 humain, ce qui lui a de plus propre,le secret de Mallarmé dans sa lettre
 à Aubanel. Ce secret, c'est l’ouverture même de ce qui fonde l'amitié.
-Heidegger écrit : «  &lt;/em&gt;&lt;/strong&gt;L’amitié ne prend son essor qu’à partir de la
+Heidegger écrit : «  &lt;/strong&gt;&lt;em&gt;L’amitié ne prend son essor qu’à partir de la
 plus haute possibilité pour chacun qu’est cette constance à être
 intimement soi… &lt;strong&gt;&lt;em&gt; ». En ce sens, l'amitié est sans cesses la quête
-d'un  &lt;em&gt;je&lt;/em&gt; mais toujours exposé au  &lt;/em&gt;&lt;/strong&gt;péril du dévalement &lt;strong&gt; (Etre
+d'un  &lt;/em&gt;je* mais toujours exposé au  &lt;/strong&gt;&lt;/em&gt;péril du dévalement &lt;strong&gt; (Etre
 et Temps) &lt;em&gt; de ne pas être à la hauteur. &lt;/em&gt; &lt;em&gt; Nous avons le libre
 choix de prendre la décision d'être soi bien qu'indépendant de la
 volonté au sens ou « j'ai été pris par la décision » et non d'un « j'ai
