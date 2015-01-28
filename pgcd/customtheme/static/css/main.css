@@ -161,6 +161,8 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 #banner {
 	margin: 0 auto;
 	padding: 2.5em 0 0 0;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 	/* Banner */
@@ -480,4 +482,19 @@ span.reverse {
 
 .commentaire_input{
 	width:100%;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+#isso-thread-div{
+	display: block;
+}
+
+.hr-entre-articles{
+	background-color: black;
 }

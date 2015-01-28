@@ -48,7 +48,8 @@ Je suis encore en phase d'apprivoisement avec ce nouvel outil et j'ai encore pas
 
 EDIT
 ----
-J'ai installé un système de commentaires en JavaScript, nommé [ISSO](http://posativ.org/isso). A priori cela à l'air de fonctionner, même si quelques fois pour une raison encore indeterminée (probablement la longueur de l'URL de la page) le bouton envoyer de fonctionne pas (rien ne se passe). Si c'est le cas, envoyez moi un mail que j'y prête attention (en mentionnant s'il vous plaît la page concernée).
+J'ai installé un système de commentaires en JavaScript, nommé [ISSO](http://posativ.org/isso). A priori cela à l'air de fonctionner, même si quelques fois pour une raison encore indéterminée (probablement la longueur de l'URL de la page) le bouton envoyer de fonctionne pas (rien ne se passe). Si c'est le cas, envoyez moi un mail que j'y prête attention (en mentionnant s'il vous plaît la page concernée).
+Les nouveaux commentaires seront mis en liste d'attente jusqu'à ce que je les valide. Je ne censurerai rien dans ces messages, il est juste question d'éviter les spammeurs. Si je vois que très peu de spammeurs envoient des demandes de commentaires, je lèverai cette restriction.
 
 
 Si vous avez des remarques, des questions, ou si vous voulez plus de précisions concernant ce dont je viens de parler, postez un commentaire (désormais disponibles), ou envoyez un mail à pgcd[at]matlink[point]fr .

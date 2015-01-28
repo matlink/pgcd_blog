@@ -5,15 +5,15 @@
         <title>Refonte du blog du PGCD avec Pelican</title>
         <link rel="shortcut icon" href="./theme/images/icons/atom.jpg" />
         <link rel="stylesheet" href="./theme/css/main.css" />
-        <script src="./theme/js/jquery-2.1.1.min.js" ></script>
-        <script src="./theme/js/bootstrap.js" ></script>
+        <link href="https://fr.matlink.fr/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Le Parti des Geeks Cartésiens Démocrates Atom Feed" />
         <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 </head>
 
 <body id="index" class="home">
-        <header id="banner" class="body">
+        <header id="banner" class="body"  >
+                <center><img src="./theme/images/icons/atom_big.png" /></center>
                 <h1><a href="./">Le Parti des Geeks Cartésiens Démocrates</a></h1>
  <strong>Blog d'un parti universitaire et passioné</strong>                <nav><ul>
                     <li class="active"><a href="./category/annonces.html">Annonces</a></li>
@@ -77,13 +77,14 @@ Il n'y avait pas que Pelican qui se proposait à moi pour être utilisé, d'autr
 <h2>Où sont passés les commentaires ?</h2>
 <p>Je suis encore en phase d'apprivoisement avec ce nouvel outil et j'ai encore pas mal de choses à améliorer. Maintenant que j'ai réécris tous les articles un-à-un, je vais pouvoir me consacrer disons aux méta-fonctions du blog : commentaires, statistiques (qu'il pourrait être intéressant de rendre publics), publication automatique sur Facebook/Twitter, ...</p>
 <h2>EDIT</h2>
-<p>J'ai installé un système de commentaires en JavaScript, nommé <a href="http://posativ.org/isso">ISSO</a>. A priori cela à l'air de fonctionner, même si quelques fois pour une raison encore indeterminée (probablement la longueur de l'URL de la page) le bouton envoyer de fonctionne pas (rien ne se passe). Si c'est le cas, envoyez moi un mail que j'y prête attention (en mentionnant s'il vous plaît la page concernée).</p>
+<p>J'ai installé un système de commentaires en JavaScript, nommé <a href="http://posativ.org/isso">ISSO</a>. A priori cela à l'air de fonctionner, même si quelques fois pour une raison encore indéterminée (probablement la longueur de l'URL de la page) le bouton envoyer de fonctionne pas (rien ne se passe). Si c'est le cas, envoyez moi un mail que j'y prête attention (en mentionnant s'il vous plaît la page concernée).
+Les nouveaux commentaires seront mis en liste d'attente jusqu'à ce que je les valide. Je ne censurerai rien dans ces messages, il est juste question d'éviter les spammeurs. Si je vois que très peu de spammeurs envoient des demandes de commentaires, je lèverai cette restriction.</p>
 <p>Si vous avez des remarques, des questions, ou si vous voulez plus de précisions concernant ce dont je viens de parler, postez un commentaire (désormais disponibles), ou envoyez un mail à pgcd[at]matlink[point]fr .</p>
     </div>
+      <div style="clear:both;"></div>
       <hr/><!-- /.entry-content -->
-    <script data-isso="//fr.matlink.fr/comments/" src="//fr.matlink.fr/comments/js/embed.dev.js"></script>
-    <hr /><section id="isso-thread"></section>
-    <noscript>les commentaires de ce site utilisent javascript</noscript>
+<script data-isso="//fr.matlink.fr/comments/" src="//fr.matlink.fr/comments/js/embed.min.js"></script><hr /><section id="isso-thread"></section>
+<noscript>les commentaires de ce site utilisent javascript</noscript>
   </article>
 </section>
         <section id="extras" class="body">
@@ -96,6 +97,7 @@ Il n'y avait pas que Pelican qui se proposait à moi pour être utilisé, d'autr
                 <div class="social">
                         <h2>social</h2>
                         <ul>
+                            <li><a href="https://fr.matlink.fr/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
 
                             <li><a href="https://twitter.com/M4tlink">Twitter</a></li>
                             <li><a href="https://www.facebook.com/partigeekscartesiensdemocrates">Facebook</a></li>
