@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Le Parti des Geeks Cartésiens Démocrates</title><link href="https://matlink.fr/beta/" rel="alternate"></link><link href="https://matlink.fr/beta/feeds/auto-hebergement.atom.xml" rel="self"></link><id>https://matlink.fr/beta/</id><updated>2014-12-06T13:22:00+01:00</updated><entry><title>Faites de votre serveur un proxy pour The Pirate Bay</title><link href="https://matlink.fr/beta/faites-de-votre-serveur-un-proxy-pour-the-pirate-bay.html" rel="alternate"></link><updated>2014-12-06T13:22:00+01:00</updated><author><name>Matlink</name></author><id>tag:matlink.fr,2014-12-06:beta/faites-de-votre-serveur-un-proxy-pour-the-pirate-bay.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
-  &lt;img alt="the_pirate_bay" src="https://matlink.fr/beta/images/543px-The_Pirate_Bay_logo.svg.png" /&gt; 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Le Parti des Geeks Cartésiens Démocrates</title><link href="https://fr.matlink.fr/" rel="alternate"></link><link href="https://fr.matlink.fr/feeds/auto-hebergement.atom.xml" rel="self"></link><id>https://fr.matlink.fr/</id><updated>2014-12-06T13:22:00+01:00</updated><entry><title>Faites de votre serveur un proxy pour The Pirate Bay</title><link href="https://fr.matlink.fr/faites-de-votre-serveur-un-proxy-pour-the-pirate-bay.html" rel="alternate"></link><updated>2014-12-06T13:22:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-12-06:faites-de-votre-serveur-un-proxy-pour-the-pirate-bay.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
+  &lt;img alt="the_pirate_bay" src="https://fr.matlink.fr/images/543px-The_Pirate_Bay_logo.svg.png" /&gt; 
 &lt;/span&gt;
 Après la &lt;a href="http://www.numerama.com/magazine/31495-the-pirate-bay-sera-bloque-en-france-avec-ses-miroirs.html"&gt;magnifique nouvelle que nous annonce la
 SCPP&lt;/a&gt;,
@@ -19,16 +19,16 @@ explique :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;pour Nginx, ajouter ce code dans le fichier de déclaration des serveurs virtuels :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#The&lt;/span&gt; &lt;span class="nt"&gt;Pirate&lt;/span&gt; &lt;span class="nt"&gt;Bay&lt;/span&gt; &lt;span class="nt"&gt;Proxy&lt;/span&gt; 
-&lt;span class="nt"&gt;server&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="n"&gt;listen&lt;/span&gt; &lt;span class="m"&gt;80&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="n"&gt;listen&lt;/span&gt; &lt;span class="cp"&gt;[&lt;/span&gt;&lt;span class="p"&gt;::&lt;/span&gt;&lt;span class="cp"&gt;]&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;80&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="n"&gt;server_name&lt;/span&gt; &lt;span class="n"&gt;tpb&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xxxx&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xx&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="m"&gt;#domain&lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt; &lt;span class="n"&gt;que&lt;/span&gt; &lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;on&lt;/span&gt; &lt;span class="n"&gt;souhaite&lt;/span&gt; &lt;span class="n"&gt;donner&lt;/span&gt; &lt;span class="n"&gt;au&lt;/span&gt; &lt;span class="n"&gt;proxy&lt;/span&gt;
-  &lt;span class="n"&gt;location&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
-     &lt;span class="n"&gt;proxy_pass&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="o"&gt;://&lt;/span&gt;&lt;span class="m"&gt;194&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;71&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;107&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;27&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-     &lt;span class="n"&gt;proxy_set_header&lt;/span&gt; &lt;span class="n"&gt;Host&lt;/span&gt; &lt;span class="n"&gt;thepiratebay&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;se&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;#The Pirate Bay Proxy &lt;/span&gt;
+&lt;span class="n"&gt;server&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;listen&lt;/span&gt; &lt;span class="mi"&gt;80&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="n"&gt;listen&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;80&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="n"&gt;server_name&lt;/span&gt; &lt;span class="n"&gt;tpb&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xxxx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xx&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="n"&gt;domaine&lt;/span&gt; &lt;span class="n"&gt;que&lt;/span&gt; &lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;on&lt;/span&gt; &lt;span class="n"&gt;souhaite&lt;/span&gt; &lt;span class="n"&gt;donner&lt;/span&gt; &lt;span class="n"&gt;au&lt;/span&gt; &lt;span class="n"&gt;proxy&lt;/span&gt;
+  &lt;span class="n"&gt;location&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+     &lt;span class="n"&gt;proxy_pass&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//194.71.107.27/;&lt;/span&gt;
+     &lt;span class="n"&gt;proxy_set_header&lt;/span&gt; &lt;span class="n"&gt;Host&lt;/span&gt; &lt;span class="n"&gt;thepiratebay&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;se&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
   &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="err"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -51,8 +51,8 @@ explique :&lt;/p&gt;
 &lt;code&gt;/etc/init.d/nginx reload&lt;/code&gt; ou &lt;code&gt;/etc/init.d/apache2 reload&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;n'oubliez pas d'ajouter dans votre zone DNS le tpb.xxxx.xx CNAME xxxx.xx
 que vous avez mis dans votre fichier de config.&lt;/p&gt;
-&lt;p&gt;À vos proxies !&lt;/p&gt;</summary></entry><entry><title>Autoconfiguration de Thunderbird pour votre serveur mail</title><link href="https://matlink.fr/beta/autoconfiguration-de-thunderbird-pour-votre-serveur-mail.html" rel="alternate"></link><updated>2014-11-27T19:58:00+01:00</updated><author><name>Matlink</name></author><id>tag:matlink.fr,2014-11-27:beta/autoconfiguration-de-thunderbird-pour-votre-serveur-mail.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
-  &lt;img alt="thunderbird" src="https://matlink.fr/beta/images/thunderbird-head.png" /&gt;
+&lt;p&gt;À vos proxies !&lt;/p&gt;</summary></entry><entry><title>Autoconfiguration de Thunderbird pour votre serveur mail</title><link href="https://fr.matlink.fr/autoconfiguration-de-thunderbird-pour-votre-serveur-mail.html" rel="alternate"></link><updated>2014-11-27T19:58:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-27:autoconfiguration-de-thunderbird-pour-votre-serveur-mail.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
+  &lt;img alt="thunderbird" src="https://fr.matlink.fr/images/thunderbird-head.png" /&gt;
 &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Si vous gérez un serveur mail, qu'il soit chez vous ou bien hébergé chez
 un fournisseur, vous vous êtes sûrement rendus compte quand vous
@@ -124,8 +124,8 @@ Et voilà, les nouveaux comptes pour ce nom de domaine seront
 automatiquement configurés pour Thunderbird (et à priori c'est le seul
 bon client mail à pouvoir faire ça, avec Outlook de
 Microsoft).&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;img alt="config-found" src="https://matlink.fr/beta/images/config-found.png" /&gt;&lt;/center&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://developer.mozilla.org/en-US/docs/Mozilla/Thunderbird/Autoconfiguration"&gt;sources&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>Auto-hébergement : le retour sur mon parcours (deuxième partie)</title><link href="https://matlink.fr/beta/auto-hebergement-le-retour-sur-mon-parcours-deuxieme-partie.html" rel="alternate"></link><updated>2014-11-20T22:31:00+01:00</updated><author><name>Matlink</name></author><id>tag:matlink.fr,2014-11-20:beta/auto-hebergement-le-retour-sur-mon-parcours-deuxieme-partie.html</id><summary type="html">&lt;p&gt;De retour pour une deuxième partie concernant mon expérience sur
+&lt;p&gt;&lt;center&gt;&lt;img alt="config-found" src="https://fr.matlink.fr/images/config-found.png" /&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://developer.mozilla.org/en-US/docs/Mozilla/Thunderbird/Autoconfiguration"&gt;sources&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>Auto-hébergement : le retour sur mon parcours (deuxième partie)</title><link href="https://fr.matlink.fr/auto-hebergement-le-retour-sur-mon-parcours-deuxieme-partie.html" rel="alternate"></link><updated>2014-11-20T22:31:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-20:auto-hebergement-le-retour-sur-mon-parcours-deuxieme-partie.html</id><summary type="html">&lt;p&gt;De retour pour une deuxième partie concernant mon expérience sur
 l'auto-hébergement. Pour ceux qui auraient loupé la &lt;a href="https://matlink.fr/PGCD/auto-hebergement-le-retour-sur-mon-parcours-1/"&gt;première partie, la
 voici&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Je vous ai présenté le contexte de l'époque où ça a fait tilt dans ma
@@ -150,7 +150,7 @@ Rpi, c'est qu'il est petit (de la taille d'une carte de crédit), est
 très simpliste ce qui donne un prix très raisonnable (compter 40/50€
 pour le rpi + alimentation + la carte SD pour y mettre le système).&lt;/p&gt;
 &lt;p&gt;&lt;span class="float-left"&gt;
-&lt;img alt="Postfix" src="https://matlink.fr/beta/images/Postfix-logo.png" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;img alt="Postfix" src="https://fr.matlink.fr/images/Postfix-logo.png" /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;J'ai patienté des jours et des jours impatiemment avant de le recevoir,
 et une fois arrivé à destination, je me suis empressé de le démarrer et
 d'y installer des serveurs mail. Je vous avoue que c'est pas simple en
@@ -183,12 +183,12 @@ petite machine consomme environ 3 Watts, ce qui représente grosso modo
 3€ par an sur votre facture d'électricité. Plus de raison de dire que
 l'auto-hébergement nuit à la planète et à l'écologie dans ce cas !&lt;/p&gt;
 &lt;p&gt;&lt;span class="float-right"&gt;
-&lt;img alt="logoynh" src="https://matlink.fr/beta/images/logo_ynh.png" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;img alt="logoynh" src="https://fr.matlink.fr/images/logo_ynh.png" /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Je vous parlerai dans le prochain billet de comment
 s'auto-héberger dans le cas où si nous n'y connaissons pas grand chose
 en administration système avec un projet :
-&lt;a href="https://yunohost.org"&gt;Yunohost&lt;/a&gt;.&lt;/p&gt;</summary><category term="auto hébergement"></category><category term="expérience"></category></entry><entry><title>Auto-hébergement : le retour sur mon parcours ( première partie)</title><link href="https://matlink.fr/beta/auto-hebergement-le-retour-sur-mon-parcours-1.html" rel="alternate"></link><updated>2014-11-15T13:49:00+01:00</updated><author><name>Matlink</name></author><id>tag:matlink.fr,2014-11-15:beta/auto-hebergement-le-retour-sur-mon-parcours-1.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
-&lt;img alt="Big_Google" src="https://matlink.fr/beta/images/1984-Big-google.jpg" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;a href="https://yunohost.org"&gt;Yunohost&lt;/a&gt;.&lt;/p&gt;</summary><category term="auto hébergement"></category><category term="expérience"></category></entry><entry><title>Auto-hébergement : le retour sur mon parcours ( première partie)</title><link href="https://fr.matlink.fr/auto-hebergement-le-retour-sur-mon-parcours-1.html" rel="alternate"></link><updated>2014-11-15T13:49:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-15:auto-hebergement-le-retour-sur-mon-parcours-1.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
+&lt;img alt="Big_Google" src="https://fr.matlink.fr/images/1984-Big-google.jpg" /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Cela fait déjà quasiment un an que je m'auto-héberge et c'est à cette
 occasion que j'aimerai partager l'expérience que j'ai acquis au cours de
 cette progressive migration.&lt;/p&gt;

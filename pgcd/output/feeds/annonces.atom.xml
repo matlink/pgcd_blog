@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Le Parti des Geeks Cartésiens Démocrates</title><link href="https://matlink.fr/beta/" rel="alternate"></link><link href="https://matlink.fr/beta/feeds/annonces.atom.xml" rel="self"></link><id>https://matlink.fr/beta/</id><updated>2015-01-27T00:00:00+01:00</updated><entry><title>Refonte du blog du PGCD avec Pelican</title><link href="https://matlink.fr/beta/refonte-du-blog-du-pgcd-avec-pelican.html" rel="alternate"></link><updated>2015-01-27T00:00:00+01:00</updated><author><name>Matlink</name></author><id>tag:matlink.fr,2015-01-27:beta/refonte-du-blog-du-pgcd-avec-pelican.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
-    &lt;img alt="pelican_logo" src="https://matlink.fr/beta/images/pelican_logo.png" /&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Le Parti des Geeks Cartésiens Démocrates</title><link href="https://fr.matlink.fr/" rel="alternate"></link><link href="https://fr.matlink.fr/feeds/annonces.atom.xml" rel="self"></link><id>https://fr.matlink.fr/</id><updated>2015-01-27T00:00:00+01:00</updated><entry><title>Refonte du blog du PGCD avec Pelican</title><link href="https://fr.matlink.fr/refonte-pgcd.html" rel="alternate"></link><updated>2015-01-27T00:00:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2015-01-27:refonte-pgcd.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
+    &lt;img alt="pelican_logo" src="https://fr.matlink.fr/images/pelican_logo.png" /&gt;
 &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Si vous lisez cet article, vous avez probablement remarqué un gros changement au niveau du rendu du blog. En effet, je viens tout juste de terminer la migration du blog vers un nouveau &lt;a href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_gestion_de_contenu"&gt;CMS&lt;/a&gt; au joli nom de &lt;a href="http://blog.getpelican.com"&gt;Pelican&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;Pourquoi quitter Wordpress ?&lt;/h2&gt;
@@ -26,7 +26,9 @@ Il n'y avait pas que Pelican qui se proposait à moi pour être utilisé, d'autr
 &lt;p&gt;Oui. Voire encore plus customisable que Wordpress. Il faut juste mettre les mains dans le code des &lt;a href="http://docs.getpelican.com/en/3.5.0/themes.html"&gt;thèmes&lt;/a&gt; et donc d'avoir fait un peu de HTML/CSS (mais ceci est accessible à tout le monde :)). Beaucoup de thèmes sont &lt;a href="https://github.com/getpelican/pelican-themes"&gt;disponibles&lt;/a&gt; pour ceux qui ne souhaitent pas mettre la main dans le cambouis. &lt;/p&gt;
 &lt;h2&gt;Où sont passés les commentaires ?&lt;/h2&gt;
 &lt;p&gt;Je suis encore en phase d'apprivoisement avec ce nouvel outil et j'ai encore pas mal de choses à améliorer. Maintenant que j'ai réécris tous les articles un-à-un, je vais pouvoir me consacrer disons aux méta-fonctions du blog : commentaires, statistiques (qu'il pourrait être intéressant de rendre publics), publication automatique sur Facebook/Twitter, ...&lt;/p&gt;
-&lt;p&gt;Si vous avez des remarques, des questions, ou si vous voulez plus de précisions concernant ce dont je viens de parler, ne postez pas un commentaire (car il ne sont pas encore disponibles), mais envoyez un mail à pgcd[at]matlink[point]fr .&lt;/p&gt;</summary><category term="annonces"></category><category term="auto-hébergement"></category><category term="CMS"></category><category term="pelican"></category></entry><entry><title>Bonne année 2015 !</title><link href="https://matlink.fr/beta/bonne-annee-2015.html" rel="alternate"></link><updated>2015-01-03T16:00:00+01:00</updated><author><name>poulos</name></author><id>tag:matlink.fr,2015-01-03:beta/bonne-annee-2015.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;   Le PGCD présente ses meilleurs vœux à tous les lecteurs et curieux
+&lt;h2&gt;EDIT&lt;/h2&gt;
+&lt;p&gt;J'ai installé un système de commentaires en JavaScript, nommé &lt;a href="http://posativ.org/isso"&gt;ISSO&lt;/a&gt;. A priori cela à l'air de fonctionner, même si quelques fois pour une raison encore indeterminée (probablement la longueur de l'URL de la page) le bouton envoyer de fonctionne pas (rien ne se passe). Si c'est le cas, envoyez moi un mail que j'y prête attention (en mentionnant s'il vous plaît la page concernée).&lt;/p&gt;
+&lt;p&gt;Si vous avez des remarques, des questions, ou si vous voulez plus de précisions concernant ce dont je viens de parler, postez un commentaire (désormais disponibles), ou envoyez un mail à pgcd[at]matlink[point]fr .&lt;/p&gt;</summary><category term="annonces"></category><category term="auto-hébergement"></category><category term="CMS"></category><category term="pelican"></category></entry><entry><title>Bonne année 2015 !</title><link href="https://fr.matlink.fr/bonne-annee-2015.html" rel="alternate"></link><updated>2015-01-03T16:00:00+01:00</updated><author><name>poulos</name></author><id>tag:fr.matlink.fr,2015-01-03:bonne-annee-2015.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;   Le PGCD présente ses meilleurs vœux à tous les lecteurs et curieux
 qui ont osé s'aventurer par ici ;) Comme d'habitude, on souhaite à tout
 le monde une bonne santé et aussi que cette année 2015 vous révèle
 encore et toujours plein de surprises et de découvertes ! &lt;/strong&gt;&lt;/p&gt;
@@ -55,7 +57,7 @@ son chemin en campagne Souabe dans son village natal de Meßkirch
 en Bade-Wurtemberg : "*Quand les énigmes se pressaient et qu'aucune
 issue ne s'offrait, le chemin de campagne était d'un bon secours.".&lt;/strong&gt;*&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Bonne lecture !&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;img alt="feldweg" src="https://matlink.fr/beta/images/feldweg.jpg" /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;center&gt;&lt;img alt="feldweg" src="https://fr.matlink.fr/images/feldweg.jpg" /&gt;&lt;/center&gt;
 &lt;center&gt;Le chemin de campagne, Messkirch&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Der Feldweg (Le chemin de Campagne), par Martin Heidegger&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;"Il quitte à sa porte le Jardin du Château et court vers les terres
@@ -177,8 +179,8 @@ Dieu?&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Tout dit le renoncement qui conduit vers le Même. Le renoncement ne
 prend pas, mais il donne. Il donne la force inépuisable du Simple. Par
 l'appel, en une lointaine Origine, une terre natale nous est rendue."&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://matlink.fr/beta/images/chemin_heidegger.jpg"&gt;&lt;center&gt;&lt;img alt="chemin" src="https://matlink.fr/beta/images/chemin_heidegger_small.jpg" /&gt;&lt;/center&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Poulos&lt;/p&gt;</summary></entry><entry><title>Migration du serveur</title><link href="https://matlink.fr/beta/migration-du-serveur.html" rel="alternate"></link><updated>2014-11-08T18:56:00+01:00</updated><author><name>Matlink</name></author><id>tag:matlink.fr,2014-11-08:beta/migration-du-serveur.html</id><summary type="html">&lt;p&gt;Cela faisait un moment qu'on avait rien posté ici, c'est vrai ! Mais
+&lt;p&gt;&lt;a href="https://fr.matlink.fr/images/chemin_heidegger.jpg"&gt;&lt;center&gt;&lt;img alt="chemin" src="https://fr.matlink.fr/images/chemin_heidegger_small.jpg" /&gt;&lt;/center&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Poulos&lt;/p&gt;</summary></entry><entry><title>Migration du serveur</title><link href="https://fr.matlink.fr/migration-du-serveur.html" rel="alternate"></link><updated>2014-11-08T18:56:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-08:migration-du-serveur.html</id><summary type="html">&lt;p&gt;Cela faisait un moment qu'on avait rien posté ici, c'est vrai ! Mais
 bon, on va dire que c'est la faute des vacances !&lt;/p&gt;
 &lt;p&gt;Juste un court article pour vous dire que j'ai migré l'ensemble des
 services sur un nouveau serveur, avec plus de RAM, plus de disque et
@@ -208,8 +210,8 @@ Internet.&lt;/a&gt;Le but est de, pour
 chaque service que Google propose, d'en avoir un qui fait la même chose,
 avec des logiciels libres. Je vous invite à faire un don, c'est
 important d'avoir des alternatives à Google.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://degooglisons-internet.org/img/carte-full.jpg"&gt;&lt;center&gt;&lt;img alt="chemin" src="https://matlink.fr/beta/images/carte-full_small.jpg" /&gt;&lt;/center&gt;&lt;/a&gt;
-&lt;center&gt;Degooglisons Internet !&lt;/center&gt;&lt;/p&gt;</summary></entry><entry><title>Matlink.fr &amp; le blog du PGCD passent au HTTPS !</title><link href="https://matlink.fr/beta/matlink-fr-le-blog-du-pgcd-passent-au-https.html" rel="alternate"></link><updated>2014-03-22T18:11:00+01:00</updated><author><name>Matlink</name></author><id>tag:matlink.fr,2014-03-22:beta/matlink-fr-le-blog-du-pgcd-passent-au-https.html</id><summary type="html">&lt;p&gt;Eh oui ! En ces temps de surveillance numérique massive, nous nous
+&lt;p&gt;&lt;a href="http://degooglisons-internet.org/img/carte-full.jpg"&gt;&lt;center&gt;&lt;img alt="chemin" src="https://fr.matlink.fr/images/carte-full_small.jpg" /&gt;&lt;/center&gt;&lt;/a&gt;
+&lt;center&gt;Degooglisons Internet !&lt;/center&gt;&lt;/p&gt;</summary></entry><entry><title>Matlink.fr &amp; le blog du PGCD passent au HTTPS !</title><link href="https://fr.matlink.fr/matlink-fr-le-blog-du-pgcd-passent-au-https.html" rel="alternate"></link><updated>2014-03-22T18:11:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-03-22:matlink-fr-le-blog-du-pgcd-passent-au-https.html</id><summary type="html">&lt;p&gt;Eh oui ! En ces temps de surveillance numérique massive, nous nous
 devons tous de protéger nos données qui trafiquent sur les réseaux.&lt;/p&gt;
 &lt;p&gt;C'est pourquoi je viens tout juste de passer le serveur
 &lt;a href="https://fr.wikipedia.org/wiki/Nginx"&gt;NGINX&lt;/a&gt; sur lequel est hébergé
@@ -234,7 +236,7 @@ pour faire signer ce dernier, moyennant de l'argent.&lt;/p&gt;
 &lt;p&gt;Si jamais vous avez des soucis liés à ce changement ou des questions,
 n'hésitez pas à en parler dans les commentaires.&lt;/p&gt;
 &lt;p&gt;Pour vous servir,&lt;/p&gt;
-&lt;p&gt;Matlink&lt;/p&gt;</summary></entry><entry><title>Bienvenue à vous, chers membres du PGCD !</title><link href="https://matlink.fr/beta/bienvenue-a-vous-chers-membres-du-pgcd.html" rel="alternate"></link><updated>2014-03-15T00:44:00+01:00</updated><author><name>poulos</name></author><id>tag:matlink.fr,2014-03-15:beta/bienvenue-a-vous-chers-membres-du-pgcd.html</id><summary type="html">&lt;p&gt;Depuis le temps qu'on en parle, depuis le temps qu'on en rêve... il aura
+&lt;p&gt;Matlink&lt;/p&gt;</summary></entry><entry><title>Bienvenue à vous, chers membres du PGCD !</title><link href="https://fr.matlink.fr/bienvenue-a-vous-chers-membres-du-pgcd.html" rel="alternate"></link><updated>2014-03-15T00:44:00+01:00</updated><author><name>poulos</name></author><id>tag:fr.matlink.fr,2014-03-15:bienvenue-a-vous-chers-membres-du-pgcd.html</id><summary type="html">&lt;p&gt;Depuis le temps qu'on en parle, depuis le temps qu'on en rêve... il aura
 fallu pas moins de 3 ans depuis la création du PGCD pour qu'un site
 internet propre au parti puisse enfin voir le jour. Nous pouvons
 remercier notre cher Matlink, membre assidu et co-président du PGCD,
@@ -277,7 +279,7 @@ prendre la tangente face à l’absurdité des uns et ainsi majorer par
 l’honnête esprit car nous savons que la découverte est congrue à
 l’intuition. C’est bien cela que l’on nomme l’univers des possibles. &lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Ensemble, formons la somme de nos différences.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Poulos&lt;/p&gt;</summary></entry><entry><title>Bienvenue sur PGCD !</title><link href="https://matlink.fr/beta/bienvenue-sur-pgcd.html" rel="alternate"></link><updated>2014-02-25T20:59:00+01:00</updated><author><name>Matlink</name></author><id>tag:matlink.fr,2014-02-25:beta/bienvenue-sur-pgcd.html</id><summary type="html">&lt;p&gt;Bonjour à toi, humble visiteur !
+&lt;p&gt;Poulos&lt;/p&gt;</summary></entry><entry><title>Bienvenue sur PGCD !</title><link href="https://fr.matlink.fr/bienvenue-sur-pgcd.html" rel="alternate"></link><updated>2014-02-25T20:59:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-02-25:bienvenue-sur-pgcd.html</id><summary type="html">&lt;p&gt;Bonjour à toi, humble visiteur !
 Je te souhaite la bienvenue sur le site du PGCD : le Parti des Geeks Cartésiens Démocrates.
 Tu es libre de t'inscrire, de visiter le site, de le partager !&lt;/p&gt;
 &lt;p&gt;Ce blog est hébergé sur un Raspberry Pi ! Alors soit indulgent par

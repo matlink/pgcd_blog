@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Le Parti des Geeks Cartésiens Démocrates</title><link href="https://matlink.fr/beta/" rel="alternate"></link><link href="https://matlink.fr/beta/feeds/logiciels-libres.atom.xml" rel="self"></link><id>https://matlink.fr/beta/</id><updated>2014-11-25T22:17:00+01:00</updated><entry><title>La fondation Bill et Melinda Gates exige la licence CC-BY</title><link href="https://matlink.fr/beta/fondation-bill-gates-cc-by.html" rel="alternate"></link><updated>2014-11-25T22:17:00+01:00</updated><author><name>Matlink</name></author><id>tag:matlink.fr,2014-11-25:beta/fondation-bill-gates-cc-by.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
-    &lt;img alt="ccbysa" src="https://matlink.fr/beta/images/Cc-by_new_white.svg.png" /&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Le Parti des Geeks Cartésiens Démocrates</title><link href="https://fr.matlink.fr/" rel="alternate"></link><link href="https://fr.matlink.fr/feeds/logiciels-libres.atom.xml" rel="self"></link><id>https://fr.matlink.fr/</id><updated>2014-11-25T22:17:00+01:00</updated><entry><title>La fondation Bill et Melinda Gates exige la licence CC-BY</title><link href="https://fr.matlink.fr/fondation-bill-gates-cc-by.html" rel="alternate"></link><updated>2014-11-25T22:17:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-25:fondation-bill-gates-cc-by.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
+    &lt;img alt="ccbysa" src="https://fr.matlink.fr/images/Cc-by_new_white.svg.png" /&gt;
 &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;EDIT : étonnamment, &lt;a href="https://www.nsa.gov/public_info/press_room/2014/nifi_announcement.shtml"&gt;la NSA s'y
 met&lt;/a&gt;
@@ -26,7 +26,7 @@ con l'en empêche.&lt;/p&gt;
 leur vient l'idée de faire cet exploit (si quelqu'un a des infos), mais
 j'en suis fier. Reste à convaincre d'autres
 fondations/organismes/entreprises à le faire maintenant !&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;img alt="rms" src="https://matlink.fr/beta/images/rms.jpg" /&gt; &lt;img alt="bill" src="https://matlink.fr/beta/images/bill_gates.jpeg" /&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;img alt="rms" src="https://fr.matlink.fr/images/rms.jpg" /&gt; &lt;img alt="bill" src="https://fr.matlink.fr/images/bill_gates.jpeg" /&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;Et peut-être qu'un jour nous verrons
 Richard Stallman et Bill Gates faire des séminaires ensemble sur le
 logiciel libre !&lt;/p&gt;

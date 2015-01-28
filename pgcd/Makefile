@@ -15,7 +15,7 @@ FTP_TARGET_DIR=/
 SSH_HOST=matlink.fr
 SSH_PORT=22
 SSH_USER=matlink
-SSH_TARGET_DIR=/var/www/webapp_matlink/beta
+SSH_TARGET_DIR=/var/www/blog_pgcd/
 
 S3_BUCKET=my_s3_bucket
 

@@ -2,6 +2,7 @@ Title: Refonte du blog du PGCD avec Pelican
 Date: 2015-01-27
 Category: Annonces
 Tags: annonces, auto-hébergement, CMS, pelican
+Slug: refonte-pgcd
 
 <span class="float-left">
 	![pelican_logo]({filename}/images/pelican_logo.png)
@@ -45,5 +46,9 @@ Où sont passés les commentaires ?
 ---------------------------------
 Je suis encore en phase d'apprivoisement avec ce nouvel outil et j'ai encore pas mal de choses à améliorer. Maintenant que j'ai réécris tous les articles un-à-un, je vais pouvoir me consacrer disons aux méta-fonctions du blog : commentaires, statistiques (qu'il pourrait être intéressant de rendre publics), publication automatique sur Facebook/Twitter, ...
 
+EDIT
+----
+J'ai installé un système de commentaires en JavaScript, nommé [ISSO](http://posativ.org/isso). A priori cela à l'air de fonctionner, même si quelques fois pour une raison encore indeterminée (probablement la longueur de l'URL de la page) le bouton envoyer de fonctionne pas (rien ne se passe). Si c'est le cas, envoyez moi un mail que j'y prête attention (en mentionnant s'il vous plaît la page concernée).
 
-Si vous avez des remarques, des questions, ou si vous voulez plus de précisions concernant ce dont je viens de parler, ne postez pas un commentaire (car il ne sont pas encore disponibles), mais envoyez un mail à pgcd[at]matlink[point]fr .
+
+Si vous avez des remarques, des questions, ou si vous voulez plus de précisions concernant ce dont je viens de parler, postez un commentaire (désormais disponibles), ou envoyez un mail à pgcd[at]matlink[point]fr .

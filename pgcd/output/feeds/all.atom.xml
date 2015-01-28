@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Le Parti des Geeks Cartésiens Démocrates</title><link href="https://matlink.fr/beta/" rel="alternate"></link><link href="https://matlink.fr/beta/feeds/all.atom.xml" rel="self"></link><id>https://matlink.fr/beta/</id><updated>2015-01-27T00:00:00+01:00</updated><entry><title>Refonte du blog du PGCD avec Pelican</title><link href="https://matlink.fr/beta/refonte-du-blog-du-pgcd-avec-pelican.html" rel="alternate"></link><updated>2015-01-27T00:00:00+01:00</updated><author><name>Matlink</name></author><id>tag:matlink.fr,2015-01-27:beta/refonte-du-blog-du-pgcd-avec-pelican.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
-    &lt;img alt="pelican_logo" src="https://matlink.fr/beta/images/pelican_logo.png" /&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Le Parti des Geeks Cartésiens Démocrates</title><link href="https://fr.matlink.fr/" rel="alternate"></link><link href="https://fr.matlink.fr/feeds/all.atom.xml" rel="self"></link><id>https://fr.matlink.fr/</id><updated>2015-01-27T00:00:00+01:00</updated><entry><title>Refonte du blog du PGCD avec Pelican</title><link href="https://fr.matlink.fr/refonte-pgcd.html" rel="alternate"></link><updated>2015-01-27T00:00:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2015-01-27:refonte-pgcd.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
+    &lt;img alt="pelican_logo" src="https://fr.matlink.fr/images/pelican_logo.png" /&gt;
 &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Si vous lisez cet article, vous avez probablement remarqué un gros changement au niveau du rendu du blog. En effet, je viens tout juste de terminer la migration du blog vers un nouveau &lt;a href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_gestion_de_contenu"&gt;CMS&lt;/a&gt; au joli nom de &lt;a href="http://blog.getpelican.com"&gt;Pelican&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;Pourquoi quitter Wordpress ?&lt;/h2&gt;
@@ -26,7 +26,9 @@ Il n'y avait pas que Pelican qui se proposait à moi pour être utilisé, d'autr
 &lt;p&gt;Oui. Voire encore plus customisable que Wordpress. Il faut juste mettre les mains dans le code des &lt;a href="http://docs.getpelican.com/en/3.5.0/themes.html"&gt;thèmes&lt;/a&gt; et donc d'avoir fait un peu de HTML/CSS (mais ceci est accessible à tout le monde :)). Beaucoup de thèmes sont &lt;a href="https://github.com/getpelican/pelican-themes"&gt;disponibles&lt;/a&gt; pour ceux qui ne souhaitent pas mettre la main dans le cambouis. &lt;/p&gt;
 &lt;h2&gt;Où sont passés les commentaires ?&lt;/h2&gt;
 &lt;p&gt;Je suis encore en phase d'apprivoisement avec ce nouvel outil et j'ai encore pas mal de choses à améliorer. Maintenant que j'ai réécris tous les articles un-à-un, je vais pouvoir me consacrer disons aux méta-fonctions du blog : commentaires, statistiques (qu'il pourrait être intéressant de rendre publics), publication automatique sur Facebook/Twitter, ...&lt;/p&gt;
-&lt;p&gt;Si vous avez des remarques, des questions, ou si vous voulez plus de précisions concernant ce dont je viens de parler, ne postez pas un commentaire (car il ne sont pas encore disponibles), mais envoyez un mail à pgcd[at]matlink[point]fr .&lt;/p&gt;</summary><category term="annonces"></category><category term="auto-hébergement"></category><category term="CMS"></category><category term="pelican"></category></entry><entry><title>Bonne année 2015 !</title><link href="https://matlink.fr/beta/bonne-annee-2015.html" rel="alternate"></link><updated>2015-01-03T16:00:00+01:00</updated><author><name>poulos</name></author><id>tag:matlink.fr,2015-01-03:beta/bonne-annee-2015.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;   Le PGCD présente ses meilleurs vœux à tous les lecteurs et curieux
+&lt;h2&gt;EDIT&lt;/h2&gt;
+&lt;p&gt;J'ai installé un système de commentaires en JavaScript, nommé &lt;a href="http://posativ.org/isso"&gt;ISSO&lt;/a&gt;. A priori cela à l'air de fonctionner, même si quelques fois pour une raison encore indeterminée (probablement la longueur de l'URL de la page) le bouton envoyer de fonctionne pas (rien ne se passe). Si c'est le cas, envoyez moi un mail que j'y prête attention (en mentionnant s'il vous plaît la page concernée).&lt;/p&gt;
+&lt;p&gt;Si vous avez des remarques, des questions, ou si vous voulez plus de précisions concernant ce dont je viens de parler, postez un commentaire (désormais disponibles), ou envoyez un mail à pgcd[at]matlink[point]fr .&lt;/p&gt;</summary><category term="annonces"></category><category term="auto-hébergement"></category><category term="CMS"></category><category term="pelican"></category></entry><entry><title>Bonne année 2015 !</title><link href="https://fr.matlink.fr/bonne-annee-2015.html" rel="alternate"></link><updated>2015-01-03T16:00:00+01:00</updated><author><name>poulos</name></author><id>tag:fr.matlink.fr,2015-01-03:bonne-annee-2015.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;   Le PGCD présente ses meilleurs vœux à tous les lecteurs et curieux
 qui ont osé s'aventurer par ici ;) Comme d'habitude, on souhaite à tout
 le monde une bonne santé et aussi que cette année 2015 vous révèle
 encore et toujours plein de surprises et de découvertes ! &lt;/strong&gt;&lt;/p&gt;
@@ -55,7 +57,7 @@ son chemin en campagne Souabe dans son village natal de Meßkirch
 en Bade-Wurtemberg : "*Quand les énigmes se pressaient et qu'aucune
 issue ne s'offrait, le chemin de campagne était d'un bon secours.".&lt;/strong&gt;*&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Bonne lecture !&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;img alt="feldweg" src="https://matlink.fr/beta/images/feldweg.jpg" /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;center&gt;&lt;img alt="feldweg" src="https://fr.matlink.fr/images/feldweg.jpg" /&gt;&lt;/center&gt;
 &lt;center&gt;Le chemin de campagne, Messkirch&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Der Feldweg (Le chemin de Campagne), par Martin Heidegger&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;"Il quitte à sa porte le Jardin du Château et court vers les terres
@@ -177,9 +179,9 @@ Dieu?&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Tout dit le renoncement qui conduit vers le Même. Le renoncement ne
 prend pas, mais il donne. Il donne la force inépuisable du Simple. Par
 l'appel, en une lointaine Origine, une terre natale nous est rendue."&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://matlink.fr/beta/images/chemin_heidegger.jpg"&gt;&lt;center&gt;&lt;img alt="chemin" src="https://matlink.fr/beta/images/chemin_heidegger_small.jpg" /&gt;&lt;/center&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Poulos&lt;/p&gt;</summary></entry><entry><title>Faites de votre serveur un proxy pour The Pirate Bay</title><link href="https://matlink.fr/beta/faites-de-votre-serveur-un-proxy-pour-the-pirate-bay.html" rel="alternate"></link><updated>2014-12-06T13:22:00+01:00</updated><author><name>Matlink</name></author><id>tag:matlink.fr,2014-12-06:beta/faites-de-votre-serveur-un-proxy-pour-the-pirate-bay.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
-  &lt;img alt="the_pirate_bay" src="https://matlink.fr/beta/images/543px-The_Pirate_Bay_logo.svg.png" /&gt; 
+&lt;p&gt;&lt;a href="https://fr.matlink.fr/images/chemin_heidegger.jpg"&gt;&lt;center&gt;&lt;img alt="chemin" src="https://fr.matlink.fr/images/chemin_heidegger_small.jpg" /&gt;&lt;/center&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Poulos&lt;/p&gt;</summary></entry><entry><title>Faites de votre serveur un proxy pour The Pirate Bay</title><link href="https://fr.matlink.fr/faites-de-votre-serveur-un-proxy-pour-the-pirate-bay.html" rel="alternate"></link><updated>2014-12-06T13:22:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-12-06:faites-de-votre-serveur-un-proxy-pour-the-pirate-bay.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
+  &lt;img alt="the_pirate_bay" src="https://fr.matlink.fr/images/543px-The_Pirate_Bay_logo.svg.png" /&gt; 
 &lt;/span&gt;
 Après la &lt;a href="http://www.numerama.com/magazine/31495-the-pirate-bay-sera-bloque-en-france-avec-ses-miroirs.html"&gt;magnifique nouvelle que nous annonce la
 SCPP&lt;/a&gt;,
@@ -198,16 +200,16 @@ explique :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;pour Nginx, ajouter ce code dans le fichier de déclaration des serveurs virtuels :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#The&lt;/span&gt; &lt;span class="nt"&gt;Pirate&lt;/span&gt; &lt;span class="nt"&gt;Bay&lt;/span&gt; &lt;span class="nt"&gt;Proxy&lt;/span&gt; 
-&lt;span class="nt"&gt;server&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="n"&gt;listen&lt;/span&gt; &lt;span class="m"&gt;80&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="n"&gt;listen&lt;/span&gt; &lt;span class="cp"&gt;[&lt;/span&gt;&lt;span class="p"&gt;::&lt;/span&gt;&lt;span class="cp"&gt;]&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;80&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="n"&gt;server_name&lt;/span&gt; &lt;span class="n"&gt;tpb&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xxxx&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xx&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="m"&gt;#domain&lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt; &lt;span class="n"&gt;que&lt;/span&gt; &lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;on&lt;/span&gt; &lt;span class="n"&gt;souhaite&lt;/span&gt; &lt;span class="n"&gt;donner&lt;/span&gt; &lt;span class="n"&gt;au&lt;/span&gt; &lt;span class="n"&gt;proxy&lt;/span&gt;
-  &lt;span class="n"&gt;location&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
-     &lt;span class="n"&gt;proxy_pass&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="o"&gt;://&lt;/span&gt;&lt;span class="m"&gt;194&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;71&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;107&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;27&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-     &lt;span class="n"&gt;proxy_set_header&lt;/span&gt; &lt;span class="n"&gt;Host&lt;/span&gt; &lt;span class="n"&gt;thepiratebay&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;se&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;#The Pirate Bay Proxy &lt;/span&gt;
+&lt;span class="n"&gt;server&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;listen&lt;/span&gt; &lt;span class="mi"&gt;80&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="n"&gt;listen&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;80&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="n"&gt;server_name&lt;/span&gt; &lt;span class="n"&gt;tpb&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xxxx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xx&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="n"&gt;domaine&lt;/span&gt; &lt;span class="n"&gt;que&lt;/span&gt; &lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;on&lt;/span&gt; &lt;span class="n"&gt;souhaite&lt;/span&gt; &lt;span class="n"&gt;donner&lt;/span&gt; &lt;span class="n"&gt;au&lt;/span&gt; &lt;span class="n"&gt;proxy&lt;/span&gt;
+  &lt;span class="n"&gt;location&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+     &lt;span class="n"&gt;proxy_pass&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//194.71.107.27/;&lt;/span&gt;
+     &lt;span class="n"&gt;proxy_set_header&lt;/span&gt; &lt;span class="n"&gt;Host&lt;/span&gt; &lt;span class="n"&gt;thepiratebay&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;se&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
   &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="err"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -230,8 +232,8 @@ explique :&lt;/p&gt;
 &lt;code&gt;/etc/init.d/nginx reload&lt;/code&gt; ou &lt;code&gt;/etc/init.d/apache2 reload&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;n'oubliez pas d'ajouter dans votre zone DNS le tpb.xxxx.xx CNAME xxxx.xx
 que vous avez mis dans votre fichier de config.&lt;/p&gt;
-&lt;p&gt;À vos proxies !&lt;/p&gt;</summary></entry><entry><title>Autoconfiguration de Thunderbird pour votre serveur mail</title><link href="https://matlink.fr/beta/autoconfiguration-de-thunderbird-pour-votre-serveur-mail.html" rel="alternate"></link><updated>2014-11-27T19:58:00+01:00</updated><author><name>Matlink</name></author><id>tag:matlink.fr,2014-11-27:beta/autoconfiguration-de-thunderbird-pour-votre-serveur-mail.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
-  &lt;img alt="thunderbird" src="https://matlink.fr/beta/images/thunderbird-head.png" /&gt;
+&lt;p&gt;À vos proxies !&lt;/p&gt;</summary></entry><entry><title>Autoconfiguration de Thunderbird pour votre serveur mail</title><link href="https://fr.matlink.fr/autoconfiguration-de-thunderbird-pour-votre-serveur-mail.html" rel="alternate"></link><updated>2014-11-27T19:58:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-27:autoconfiguration-de-thunderbird-pour-votre-serveur-mail.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
+  &lt;img alt="thunderbird" src="https://fr.matlink.fr/images/thunderbird-head.png" /&gt;
 &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Si vous gérez un serveur mail, qu'il soit chez vous ou bien hébergé chez
 un fournisseur, vous vous êtes sûrement rendus compte quand vous
@@ -303,9 +305,9 @@ Et voilà, les nouveaux comptes pour ce nom de domaine seront
 automatiquement configurés pour Thunderbird (et à priori c'est le seul
 bon client mail à pouvoir faire ça, avec Outlook de
 Microsoft).&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;img alt="config-found" src="https://matlink.fr/beta/images/config-found.png" /&gt;&lt;/center&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://developer.mozilla.org/en-US/docs/Mozilla/Thunderbird/Autoconfiguration"&gt;sources&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>La fondation Bill et Melinda Gates exige la licence CC-BY</title><link href="https://matlink.fr/beta/fondation-bill-gates-cc-by.html" rel="alternate"></link><updated>2014-11-25T22:17:00+01:00</updated><author><name>Matlink</name></author><id>tag:matlink.fr,2014-11-25:beta/fondation-bill-gates-cc-by.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
-    &lt;img alt="ccbysa" src="https://matlink.fr/beta/images/Cc-by_new_white.svg.png" /&gt;
+&lt;p&gt;&lt;center&gt;&lt;img alt="config-found" src="https://fr.matlink.fr/images/config-found.png" /&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://developer.mozilla.org/en-US/docs/Mozilla/Thunderbird/Autoconfiguration"&gt;sources&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>La fondation Bill et Melinda Gates exige la licence CC-BY</title><link href="https://fr.matlink.fr/fondation-bill-gates-cc-by.html" rel="alternate"></link><updated>2014-11-25T22:17:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-25:fondation-bill-gates-cc-by.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
+    &lt;img alt="ccbysa" src="https://fr.matlink.fr/images/Cc-by_new_white.svg.png" /&gt;
 &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;EDIT : étonnamment, &lt;a href="https://www.nsa.gov/public_info/press_room/2014/nifi_announcement.shtml"&gt;la NSA s'y
 met&lt;/a&gt;
@@ -331,13 +333,13 @@ con l'en empêche.&lt;/p&gt;
 leur vient l'idée de faire cet exploit (si quelqu'un a des infos), mais
 j'en suis fier. Reste à convaincre d'autres
 fondations/organismes/entreprises à le faire maintenant !&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;img alt="rms" src="https://matlink.fr/beta/images/rms.jpg" /&gt; &lt;img alt="bill" src="https://matlink.fr/beta/images/bill_gates.jpeg" /&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;img alt="rms" src="https://fr.matlink.fr/images/rms.jpg" /&gt; &lt;img alt="bill" src="https://fr.matlink.fr/images/bill_gates.jpeg" /&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;Et peut-être qu'un jour nous verrons
 Richard Stallman et Bill Gates faire des séminaires ensemble sur le
 logiciel libre !&lt;/p&gt;
 &lt;p&gt;sources : &lt;a href="http://www.gatesfoundation.org/how-we-work/general-information/open-access-policy"&gt;Fondation Bill &amp;amp; Melinda
 Gates&lt;/a&gt;,
-&lt;a href="https://fr.wikipedia.org/wiki/Licence_Creative_Commons"&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>Auto-hébergement : le retour sur mon parcours (deuxième partie)</title><link href="https://matlink.fr/beta/auto-hebergement-le-retour-sur-mon-parcours-deuxieme-partie.html" rel="alternate"></link><updated>2014-11-20T22:31:00+01:00</updated><author><name>Matlink</name></author><id>tag:matlink.fr,2014-11-20:beta/auto-hebergement-le-retour-sur-mon-parcours-deuxieme-partie.html</id><summary type="html">&lt;p&gt;De retour pour une deuxième partie concernant mon expérience sur
+&lt;a href="https://fr.wikipedia.org/wiki/Licence_Creative_Commons"&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>Auto-hébergement : le retour sur mon parcours (deuxième partie)</title><link href="https://fr.matlink.fr/auto-hebergement-le-retour-sur-mon-parcours-deuxieme-partie.html" rel="alternate"></link><updated>2014-11-20T22:31:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-20:auto-hebergement-le-retour-sur-mon-parcours-deuxieme-partie.html</id><summary type="html">&lt;p&gt;De retour pour une deuxième partie concernant mon expérience sur
 l'auto-hébergement. Pour ceux qui auraient loupé la &lt;a href="https://matlink.fr/PGCD/auto-hebergement-le-retour-sur-mon-parcours-1/"&gt;première partie, la
 voici&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Je vous ai présenté le contexte de l'époque où ça a fait tilt dans ma
@@ -362,7 +364,7 @@ Rpi, c'est qu'il est petit (de la taille d'une carte de crédit), est
 très simpliste ce qui donne un prix très raisonnable (compter 40/50€
 pour le rpi + alimentation + la carte SD pour y mettre le système).&lt;/p&gt;
 &lt;p&gt;&lt;span class="float-left"&gt;
-&lt;img alt="Postfix" src="https://matlink.fr/beta/images/Postfix-logo.png" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;img alt="Postfix" src="https://fr.matlink.fr/images/Postfix-logo.png" /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;J'ai patienté des jours et des jours impatiemment avant de le recevoir,
 et une fois arrivé à destination, je me suis empressé de le démarrer et
 d'y installer des serveurs mail. Je vous avoue que c'est pas simple en
@@ -395,11 +397,11 @@ petite machine consomme environ 3 Watts, ce qui représente grosso modo
 3€ par an sur votre facture d'électricité. Plus de raison de dire que
 l'auto-hébergement nuit à la planète et à l'écologie dans ce cas !&lt;/p&gt;
 &lt;p&gt;&lt;span class="float-right"&gt;
-&lt;img alt="logoynh" src="https://matlink.fr/beta/images/logo_ynh.png" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;img alt="logoynh" src="https://fr.matlink.fr/images/logo_ynh.png" /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Je vous parlerai dans le prochain billet de comment
 s'auto-héberger dans le cas où si nous n'y connaissons pas grand chose
 en administration système avec un projet :
-&lt;a href="https://yunohost.org"&gt;Yunohost&lt;/a&gt;.&lt;/p&gt;</summary><category term="auto hébergement"></category><category term="expérience"></category></entry><entry><title>Pirate Radio : transformez votre Raspberry Pi en émetteur radio</title><link href="https://matlink.fr/beta/rpirate-radio.html" rel="alternate"></link><updated>2014-11-16T17:05:00+01:00</updated><author><name>Matlink</name></author><id>tag:matlink.fr,2014-11-16:beta/rpirate-radio.html</id><summary type="html">&lt;p&gt;Depuis que j'ai ce joujou de &lt;a href="https://en.wikipedia.org/wiki/Raspberry_Pi"&gt;raspberry
+&lt;a href="https://yunohost.org"&gt;Yunohost&lt;/a&gt;.&lt;/p&gt;</summary><category term="auto hébergement"></category><category term="expérience"></category></entry><entry><title>Pirate Radio : transformez votre Raspberry Pi en émetteur radio</title><link href="https://fr.matlink.fr/rpirate-radio.html" rel="alternate"></link><updated>2014-11-16T17:05:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-16:rpirate-radio.html</id><summary type="html">&lt;p&gt;Depuis que j'ai ce joujou de &lt;a href="https://en.wikipedia.org/wiki/Raspberry_Pi"&gt;raspberry
 pi&lt;/a&gt;, je ne cesse de
 chercher à le bidouiller pour donner des choses marrantes.&lt;/p&gt;
 &lt;p&gt;Et je suis tombé sur &lt;a href="http://makezine.com/projects/make-38-cameras-and-av/raspberry-pirate-radio/"&gt;un article décrivant comment bidouiller son RPI
@@ -445,13 +447,13 @@ indiqué dans le fichier de configuration. Après ça, il vous faut trouver
 un fil métallique afin de faire antenne. Pour ma part, j'ai récupéré le
 câble d'un appareil qui ne fonctionnait plus. Vous devez le brancher sur
 votre RPI sur le GPIO 4 (le pin 7) comme sur la photo ci dessus :&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;img alt="antenne_gpio" src="https://matlink.fr/beta/images/antenne_gpio_pin7_400-300x224.jpg" /&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;img alt="antenne_gpio" src="https://fr.matlink.fr/images/antenne_gpio_pin7_400-300x224.jpg" /&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;Il vous reste ensuite plus qu'à lancer la radio avec la commande 
 &lt;code&gt;python /pirateradio/PirateRadio.py&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;J'ai créé un script shell pour installer tout ça automatiquement,
 disponible ici : &lt;a href="https://github.com/matlink/rpi-radio"&gt;https://github.com/matlink/rpi-radio&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://makezine.com/projects/make-38-cameras-and-av/raspberry-pirate-radio/"&gt;source&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>Auto-hébergement : le retour sur mon parcours ( première partie)</title><link href="https://matlink.fr/beta/auto-hebergement-le-retour-sur-mon-parcours-1.html" rel="alternate"></link><updated>2014-11-15T13:49:00+01:00</updated><author><name>Matlink</name></author><id>tag:matlink.fr,2014-11-15:beta/auto-hebergement-le-retour-sur-mon-parcours-1.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
-&lt;img alt="Big_Google" src="https://matlink.fr/beta/images/1984-Big-google.jpg" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://makezine.com/projects/make-38-cameras-and-av/raspberry-pirate-radio/"&gt;source&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>Auto-hébergement : le retour sur mon parcours ( première partie)</title><link href="https://fr.matlink.fr/auto-hebergement-le-retour-sur-mon-parcours-1.html" rel="alternate"></link><updated>2014-11-15T13:49:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-15:auto-hebergement-le-retour-sur-mon-parcours-1.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
+&lt;img alt="Big_Google" src="https://fr.matlink.fr/images/1984-Big-google.jpg" /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Cela fait déjà quasiment un an que je m'auto-héberge et c'est à cette
 occasion que j'aimerai partager l'expérience que j'ai acquis au cours de
 cette progressive migration.&lt;/p&gt;
@@ -526,7 +528,7 @@ Si vous arrivez à faire ça, vous avez fait un grand pas. Le reste n'est
 rien à côté.&lt;/p&gt;
 &lt;p&gt;Si certains d'entre vous veulent partager leur expérience sur le même
 thème, contactez-moi si vous le voulez, je suis ouvert à toute
-discussion et ça m'intéresse.&lt;/p&gt;</summary><category term="auto hébergement"></category><category term="expérience"></category></entry><entry><title>LED : Éclairer l'avenir</title><link href="https://matlink.fr/beta/led-eclairer-lavenir.html" rel="alternate"></link><updated>2014-11-12T22:02:00+01:00</updated><author><name>Poulos</name></author><id>tag:matlink.fr,2014-11-12:beta/led-eclairer-lavenir.html</id><summary type="html">&lt;p&gt;Bonjour à tous ! Pour cet article j'ai choisi de vous parler d'une
+discussion et ça m'intéresse.&lt;/p&gt;</summary><category term="auto hébergement"></category><category term="expérience"></category></entry><entry><title>LED : Éclairer l'avenir</title><link href="https://fr.matlink.fr/led-eclairer-lavenir.html" rel="alternate"></link><updated>2014-11-12T22:02:00+01:00</updated><author><name>Poulos</name></author><id>tag:fr.matlink.fr,2014-11-12:led-eclairer-lavenir.html</id><summary type="html">&lt;p&gt;Bonjour à tous ! Pour cet article j'ai choisi de vous parler d'une
 solution pour l'éclairage de demain, sujet qui pourrait bien vous
 intéresser ! C'est vrai après tout ça. Comment pourrait-on vivre sans
 lumière à portée de main, sans une source qui, bien orientée et avec des
@@ -536,7 +538,7 @@ historique de nuit, une œuvre d'art dans un musée. Oui l'éclairage c'est
 ce qui manifeste à nous le monde qui nous entoure et c'est bien pour
 cela que nous devons en prendre soin et l'adapter au mieux avec les
 besoins de nos sociétés en évolution. &lt;/p&gt;
-&lt;p&gt;&lt;span class="float-left"&gt;&lt;img alt="lampe_led" src="https://matlink.fr/beta/images/lampe_led-300x160.jpg" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="float-left"&gt;&lt;img alt="lampe_led" src="https://fr.matlink.fr/images/lampe_led-300x160.jpg" /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Je décide donc de vous parler des LED (Light Emitting
 Diode) ou DEL, en français les fameuses diodes électroluminescentes que
 vous avez sûrement vues en cours de physique au collège. Ce petit
@@ -558,7 +560,7 @@ variateurs commandés par la lumière du jour, des meilleurs optiques etc)
 c'est-à-dire adapter l'éclairage à l'utilisateur pourrait bien être d'un
 grand secours pour l'économie mondiale et le problème de l'effet de
 serre.&lt;/p&gt;
-&lt;p&gt;&lt;span class="float-right"&gt;&lt;img alt="graphe_led" src="https://matlink.fr/beta/images/graph_led-300x130.jpg" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="float-right"&gt;&lt;img alt="graphe_led" src="https://fr.matlink.fr/images/graph_led-300x130.jpg" /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Le programme des Nations-Unis &lt;em&gt;en.lighten&lt;/em&gt; a pour objectif
 de remplacer les lampes à incandescence par des LED partout dans le
 monde pour 2015 avec en priorité les pays en voie de développement pour
@@ -567,7 +569,7 @@ et une gestion de la transition respectueuse pour l'environnement
 pourrait mener à de véritables économies d'énergie. Cela impliquerait
 par exemple des limitations de construction de centrales électriques
 diminuant ainsi le risque de &lt;em&gt;blackout.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="float-left"&gt;&lt;img alt="appareil_led" src="https://matlink.fr/beta/images/appareil_led-300x300.jpg" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="float-left"&gt;&lt;img alt="appareil_led" src="https://fr.matlink.fr/images/appareil_led-300x300.jpg" /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Cependant, aujourd'hui un quart de la population
 mondiale n'a pas accès à un réseau public d'électricité. De fait,
 l’association GOGLA tend à promouvoir le « off-grid », l'éclairage
@@ -596,7 +598,7 @@ est relativement peu évident de procéder à des remplacement ou des
 nettoyages. Le seul bémol sera de modifier la climatisation afin de
 dissiper la chaleur produite par les LED. Mais la flexibilité et la
 discrétion d'un éclairage LED fait l'unanimité.&lt;/p&gt;
-&lt;p&gt;&lt;span class="float-right"&gt;&lt;img alt="chappelle_led" src="https://matlink.fr/beta/images/chappelle_led-300x196.jpg" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="float-right"&gt;&lt;img alt="chappelle_led" src="https://fr.matlink.fr/images/chappelle_led-300x196.jpg" /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Au final, l'éclairage LED même s'il est peu coûteux et
 possède de nombreux atouts pour améliorer le quotidien des personnes
 n'en est encore qu'à ses débuts et a du chemin à parcourir en terme de
@@ -606,8 +608,8 @@ Mais pour sur, le développement de l'éclairage LED s'inscrit
 parfaitement dans le débat de la transition énergétique et il en va du
 bon sens de le prendre en considération afin d'amorcer un virage
 économique et écologique.&lt;/p&gt;
-&lt;p&gt;&lt;span class="float-left"&gt;&lt;img alt="led_verte" src="https://matlink.fr/beta/images/led_verte-150x148.png" /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Poulos&lt;/p&gt;</summary></entry><entry><title>Migration du serveur</title><link href="https://matlink.fr/beta/migration-du-serveur.html" rel="alternate"></link><updated>2014-11-08T18:56:00+01:00</updated><author><name>Matlink</name></author><id>tag:matlink.fr,2014-11-08:beta/migration-du-serveur.html</id><summary type="html">&lt;p&gt;Cela faisait un moment qu'on avait rien posté ici, c'est vrai ! Mais
+&lt;p&gt;&lt;span class="float-left"&gt;&lt;img alt="led_verte" src="https://fr.matlink.fr/images/led_verte-150x148.png" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Poulos&lt;/p&gt;</summary></entry><entry><title>Migration du serveur</title><link href="https://fr.matlink.fr/migration-du-serveur.html" rel="alternate"></link><updated>2014-11-08T18:56:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-08:migration-du-serveur.html</id><summary type="html">&lt;p&gt;Cela faisait un moment qu'on avait rien posté ici, c'est vrai ! Mais
 bon, on va dire que c'est la faute des vacances !&lt;/p&gt;
 &lt;p&gt;Juste un court article pour vous dire que j'ai migré l'ensemble des
 services sur un nouveau serveur, avec plus de RAM, plus de disque et
@@ -637,9 +639,9 @@ Internet.&lt;/a&gt;Le but est de, pour
 chaque service que Google propose, d'en avoir un qui fait la même chose,
 avec des logiciels libres. Je vous invite à faire un don, c'est
 important d'avoir des alternatives à Google.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://degooglisons-internet.org/img/carte-full.jpg"&gt;&lt;center&gt;&lt;img alt="chemin" src="https://matlink.fr/beta/images/carte-full_small.jpg" /&gt;&lt;/center&gt;&lt;/a&gt;
-&lt;center&gt;Degooglisons Internet !&lt;/center&gt;&lt;/p&gt;</summary></entry><entry><title>Passage à IPv6</title><link href="https://matlink.fr/beta/passage-a-ipv6.html" rel="alternate"></link><updated>2014-07-03T13:09:00+02:00</updated><author><name>Matlink</name></author><id>tag:matlink.fr,2014-07-03:beta/passage-a-ipv6.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
-&lt;img alt="IPv6" src="https://matlink.fr/beta/images/512px-World_IPv6_launch_logo.svg_-300x300.png" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://degooglisons-internet.org/img/carte-full.jpg"&gt;&lt;center&gt;&lt;img alt="chemin" src="https://fr.matlink.fr/images/carte-full_small.jpg" /&gt;&lt;/center&gt;&lt;/a&gt;
+&lt;center&gt;Degooglisons Internet !&lt;/center&gt;&lt;/p&gt;</summary></entry><entry><title>Passage à IPv6</title><link href="https://fr.matlink.fr/passage-a-ipv6.html" rel="alternate"></link><updated>2014-07-03T13:09:00+02:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-07-03:passage-a-ipv6.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
+&lt;img alt="IPv6" src="https://fr.matlink.fr/images/512px-World_IPv6_launch_logo.svg_-300x300.png" /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Vous n'êtes probablement pas sans savoir que le nombre d'IPv4
 est en pénurie depuis 2011. Mais bon, c'est pas comme si &lt;a href="https://fr.wikipedia.org/wiki/%C3%89puisement_des_adresses_IPv4"&gt;on l'avait
 prévu depuis
@@ -690,8 +692,8 @@ l'IP est verte c'est de l'IPv6, sinon elle est rouge et c'est de l'IPv4.
 Une bonne pratique serait de signaler aux admins que leur serveur
 n'accepte pas l'IPv6.&lt;/p&gt;
 &lt;p&gt;Passons à IPv6, car c'est l'Internet de demain qui est en jeu.&lt;/p&gt;
-&lt;p&gt;Matlink&lt;/p&gt;</summary><category term="ipv6"></category><category term="neutralité du net"></category></entry><entry><title>Comprendre la faille OpenSSL HeartBleed</title><link href="https://matlink.fr/beta/comprendre-la-faille-openssl-heartbleed.html" rel="alternate"></link><updated>2014-04-09T19:28:00+02:00</updated><author><name>Matlink</name></author><id>tag:matlink.fr,2014-04-09:beta/comprendre-la-faille-openssl-heartbleed.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
-&lt;img alt="Heartbleed" src="https://matlink.fr/beta/images/Heartbleed.svg_-250x300.png" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Matlink&lt;/p&gt;</summary><category term="ipv6"></category><category term="neutralité du net"></category></entry><entry><title>Comprendre la faille OpenSSL HeartBleed</title><link href="https://fr.matlink.fr/comprendre-la-faille-openssl-heartbleed.html" rel="alternate"></link><updated>2014-04-09T19:28:00+02:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-04-09:comprendre-la-faille-openssl-heartbleed.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
+&lt;img alt="Heartbleed" src="https://fr.matlink.fr/images/Heartbleed.svg_-250x300.png" /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Pour ceux qui ne le savent pas encore, une faille de sécurité
 viens d'être dévoilée au grand public, remettant en cause beaucoup de
 serveurs web utilisant le paquet OpenSSL.&lt;/p&gt;
@@ -723,22 +725,22 @@ certificats pour ainsi l'utiliser sur votre serveur.&lt;/p&gt;
 &lt;p&gt;Si vous voulez des détails, des tonnes d'articles sont disponibles sur
 le web. Aussi, il existe des outils en ligne pour tester votre serveur
 web, &lt;a href="https://submeet.net/tools/heartbleed.php"&gt;tels que celui-ci&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Rassurez vous, le blog du PGCD s'est mis à jour et a changé ses clés.&lt;/p&gt;</summary><category term="openssl"></category><category term="heartbleed"></category><category term="faille"></category></entry><entry><title>L'amitié à plus haut sens</title><link href="https://matlink.fr/beta/lamitie-a-plus-haut-sens.html" rel="alternate"></link><updated>2014-03-23T12:03:00+01:00</updated><author><name>poulos</name></author><id>tag:matlink.fr,2014-03-23:beta/lamitie-a-plus-haut-sens.html</id><summary type="html">&lt;p&gt;Il y a à première vue, peu de différences entre amour et amitié, il y a
+&lt;p&gt;Rassurez vous, le blog du PGCD s'est mis à jour et a changé ses clés.&lt;/p&gt;</summary><category term="openssl"></category><category term="heartbleed"></category><category term="faille"></category></entry><entry><title>L'amitié à plus haut sens</title><link href="https://fr.matlink.fr/lamitie-a-plus-haut-sens.html" rel="alternate"></link><updated>2014-03-23T12:03:00+01:00</updated><author><name>poulos</name></author><id>tag:fr.matlink.fr,2014-03-23:lamitie-a-plus-haut-sens.html</id><summary type="html">&lt;p&gt;Il y a à première vue, peu de différences entre amour et amitié, il y a
 partage d'une ouverture commune. L'amour cependant se déploie depuis une
 interprétation différente de l'optatif du  &lt;strong&gt;&lt;em&gt;volo&lt;/em&gt;&lt;/strong&gt; ouvrant vers une
 nouvelle dimension du souhait.&lt;/p&gt;
 &lt;p&gt;L'amitié selon Heidegger, c'est là où je me sens proprement à demeure,
-chez moi. C'est dans le  &lt;strong&gt;&lt;em&gt;Geheimnis&lt;/em&gt;&lt;em&gt;,&lt;/em&gt; c'est à dire le secret que
+chez moi. C'est dans le  &lt;strong&gt;&lt;em&gt;Geheimnis&lt;em&gt;&lt;em&gt;,&lt;/em&gt; c'est à dire le secret que
 l'amitié prend son essor. Geheimnis dérive de Heimat
-signifiant &lt;em&gt; &lt;/em&gt; non nécessairement le pays ou la patrie mais le lieu où
-je me sens pleinement chez moi. &lt;em&gt; &lt;/em&gt; Là ou se rassemble ce en quoi vous
+signifiant &lt;/em&gt; &lt;em&gt; non nécessairement le pays ou la patrie mais le lieu où
+je me sens pleinement chez moi. &lt;/em&gt; * Là ou se rassemble ce en quoi vous
 vous sentez pleinement vous même. Et cela est le secret de chaque être
 humain, ce qui lui a de plus propre,le secret de Mallarmé dans sa lettre
 à Aubanel. Ce secret, c'est l’ouverture même de ce qui fonde l'amitié.
-Heidegger écrit : «  &lt;/strong&gt;&lt;em&gt;L’amitié ne prend son essor qu’à partir de la
+Heidegger écrit : «  &lt;/em&gt;&lt;/strong&gt;L’amitié ne prend son essor qu’à partir de la
 plus haute possibilité pour chacun qu’est cette constance à être
 intimement soi… &lt;strong&gt;&lt;em&gt; ». En ce sens, l'amitié est sans cesses la quête
-d'un  &lt;/em&gt;je* mais toujours exposé au  &lt;/strong&gt;&lt;/em&gt;péril du dévalement &lt;strong&gt; (Etre
+d'un  &lt;em&gt;je&lt;/em&gt; mais toujours exposé au  &lt;/em&gt;&lt;/strong&gt;péril du dévalement &lt;strong&gt; (Etre
 et Temps) &lt;em&gt; de ne pas être à la hauteur. &lt;/em&gt; &lt;em&gt; Nous avons le libre
 choix de prendre la décision d'être soi bien qu'indépendant de la
 volonté au sens ou « j'ai été pris par la décision » et non d'un « j'ai
@@ -767,7 +769,7 @@ soi, être à demeure en ce qu'il lui est propre, son secret,
 son  &lt;strong&gt;&lt;em&gt;Dasein&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Source : Hadrien France-Lanord, &lt;em&gt;s'ouvrir en l'amitié, &lt;/em&gt; Paris,
 Editions du Grand-Est.&lt;/p&gt;
-&lt;p&gt;Poulos&lt;/p&gt;</summary><category term="Amitié"></category><category term="Etre"></category><category term="Harmonie"></category><category term="Heidegger"></category><category term="Heimat"></category><category term="Poésie"></category><category term="Secret"></category></entry><entry><title>Le sens du dialogue</title><link href="https://matlink.fr/beta/le-sens-du-dialogue.html" rel="alternate"></link><updated>2014-03-23T11:49:00+01:00</updated><author><name>poulos</name></author><id>tag:matlink.fr,2014-03-23:beta/le-sens-du-dialogue.html</id><summary type="html">&lt;p&gt;Dans une vraie amitié, la seule Parole devient libre. Martin Heidegger
+&lt;p&gt;Poulos&lt;/p&gt;</summary><category term="Amitié"></category><category term="Etre"></category><category term="Harmonie"></category><category term="Heidegger"></category><category term="Heimat"></category><category term="Poésie"></category><category term="Secret"></category></entry><entry><title>Le sens du dialogue</title><link href="https://fr.matlink.fr/le-sens-du-dialogue.html" rel="alternate"></link><updated>2014-03-23T11:49:00+01:00</updated><author><name>poulos</name></author><id>tag:fr.matlink.fr,2014-03-23:le-sens-du-dialogue.html</id><summary type="html">&lt;p&gt;Dans une vraie amitié, la seule Parole devient libre. Martin Heidegger
 et Paul Celan n'ont pas eu le temps de connaître cela. Heidegger avait
 prévu de l'inviter dans les contrées Hölderliniennes de la haute vallée
 du Danube, la mort de Celan en a décidé autrement. Dès 1950, le dialogue
@@ -788,8 +790,8 @@ révolution.
 &lt;center&gt;
  &lt;table&gt;
     &lt;tr&gt;
-        &lt;td&gt;&lt;center&gt;&lt;img alt="Paul_Celan" src="https://matlink.fr/beta/images/Celan_sens_dialogue.jpg" /&gt;&lt;/center&gt;&lt;/td&gt;
-        &lt;td&gt;&lt;center&gt; &lt;img alt="Heidegger" src="https://matlink.fr/beta/images/heidegger_sens_dialogue.jpg" /&gt;&lt;/center&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;td&gt;&lt;center&gt;&lt;img alt="Paul_Celan" src="https://fr.matlink.fr/images/Celan_sens_dialogue.jpg" /&gt;&lt;/center&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;center&gt; &lt;img alt="Heidegger" src="https://fr.matlink.fr/images/heidegger_sens_dialogue.jpg" /&gt;&lt;/center&gt;&lt;/td&gt;&lt;/tr&gt;
     &lt;tr&gt;
         &lt;td&gt;&lt;center&gt;Paul Celan&lt;/center&gt;&lt;/td&gt;
         &lt;td&gt;&lt;center&gt; Heidegger&lt;/center&gt;&lt;/td&gt;
@@ -798,7 +800,7 @@ révolution.
  &lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;Source : Hadrien France-Lanord, &lt;em&gt;Paul Celan et Martin Heidegger. Le
 sens d’un dialogue&lt;/em&gt;, Paris, Fayard, 2004.&lt;/p&gt;
-&lt;p&gt;Poulos&lt;/p&gt;</summary><category term="Allemagne"></category><category term="Amitié"></category><category term="Celan"></category><category term="dialogue"></category><category term="Etre"></category><category term="Heidegger"></category></entry><entry><title>Matlink.fr &amp; le blog du PGCD passent au HTTPS !</title><link href="https://matlink.fr/beta/matlink-fr-le-blog-du-pgcd-passent-au-https.html" rel="alternate"></link><updated>2014-03-22T18:11:00+01:00</updated><author><name>Matlink</name></author><id>tag:matlink.fr,2014-03-22:beta/matlink-fr-le-blog-du-pgcd-passent-au-https.html</id><summary type="html">&lt;p&gt;Eh oui ! En ces temps de surveillance numérique massive, nous nous
+&lt;p&gt;Poulos&lt;/p&gt;</summary><category term="Allemagne"></category><category term="Amitié"></category><category term="Celan"></category><category term="dialogue"></category><category term="Etre"></category><category term="Heidegger"></category></entry><entry><title>Matlink.fr &amp; le blog du PGCD passent au HTTPS !</title><link href="https://fr.matlink.fr/matlink-fr-le-blog-du-pgcd-passent-au-https.html" rel="alternate"></link><updated>2014-03-22T18:11:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-03-22:matlink-fr-le-blog-du-pgcd-passent-au-https.html</id><summary type="html">&lt;p&gt;Eh oui ! En ces temps de surveillance numérique massive, nous nous
 devons tous de protéger nos données qui trafiquent sur les réseaux.&lt;/p&gt;
 &lt;p&gt;C'est pourquoi je viens tout juste de passer le serveur
 &lt;a href="https://fr.wikipedia.org/wiki/Nginx"&gt;NGINX&lt;/a&gt; sur lequel est hébergé
@@ -823,7 +825,7 @@ pour faire signer ce dernier, moyennant de l'argent.&lt;/p&gt;
 &lt;p&gt;Si jamais vous avez des soucis liés à ce changement ou des questions,
 n'hésitez pas à en parler dans les commentaires.&lt;/p&gt;
 &lt;p&gt;Pour vous servir,&lt;/p&gt;
-&lt;p&gt;Matlink&lt;/p&gt;</summary></entry><entry><title>Bienvenue à vous, chers membres du PGCD !</title><link href="https://matlink.fr/beta/bienvenue-a-vous-chers-membres-du-pgcd.html" rel="alternate"></link><updated>2014-03-15T00:44:00+01:00</updated><author><name>poulos</name></author><id>tag:matlink.fr,2014-03-15:beta/bienvenue-a-vous-chers-membres-du-pgcd.html</id><summary type="html">&lt;p&gt;Depuis le temps qu'on en parle, depuis le temps qu'on en rêve... il aura
+&lt;p&gt;Matlink&lt;/p&gt;</summary></entry><entry><title>Bienvenue à vous, chers membres du PGCD !</title><link href="https://fr.matlink.fr/bienvenue-a-vous-chers-membres-du-pgcd.html" rel="alternate"></link><updated>2014-03-15T00:44:00+01:00</updated><author><name>poulos</name></author><id>tag:fr.matlink.fr,2014-03-15:bienvenue-a-vous-chers-membres-du-pgcd.html</id><summary type="html">&lt;p&gt;Depuis le temps qu'on en parle, depuis le temps qu'on en rêve... il aura
 fallu pas moins de 3 ans depuis la création du PGCD pour qu'un site
 internet propre au parti puisse enfin voir le jour. Nous pouvons
 remercier notre cher Matlink, membre assidu et co-président du PGCD,
@@ -866,7 +868,7 @@ prendre la tangente face à l’absurdité des uns et ainsi majorer par
 l’honnête esprit car nous savons que la découverte est congrue à
 l’intuition. C’est bien cela que l’on nomme l’univers des possibles. &lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Ensemble, formons la somme de nos différences.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Poulos&lt;/p&gt;</summary></entry><entry><title>Bienvenue sur PGCD !</title><link href="https://matlink.fr/beta/bienvenue-sur-pgcd.html" rel="alternate"></link><updated>2014-02-25T20:59:00+01:00</updated><author><name>Matlink</name></author><id>tag:matlink.fr,2014-02-25:beta/bienvenue-sur-pgcd.html</id><summary type="html">&lt;p&gt;Bonjour à toi, humble visiteur !
+&lt;p&gt;Poulos&lt;/p&gt;</summary></entry><entry><title>Bienvenue sur PGCD !</title><link href="https://fr.matlink.fr/bienvenue-sur-pgcd.html" rel="alternate"></link><updated>2014-02-25T20:59:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-02-25:bienvenue-sur-pgcd.html</id><summary type="html">&lt;p&gt;Bonjour à toi, humble visiteur !
 Je te souhaite la bienvenue sur le site du PGCD : le Parti des Geeks Cartésiens Démocrates.
 Tu es libre de t'inscrire, de visiter le site, de le partager !&lt;/p&gt;
 &lt;p&gt;Ce blog est hébergé sur un Raspberry Pi ! Alors soit indulgent par

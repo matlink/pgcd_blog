@@ -188,7 +188,6 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 		line-height: 30px;
 		margin: 0 auto 2em auto;
 		padding: 0;
-		text-align: center;
 		width: 100%;
 		
 		border-radius: 5px;
@@ -197,7 +196,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 	}
 	
 	#banner nav ul {list-style: none; margin: 0 auto; width: 100%;}
-	#banner nav li {float: left; display: inline; margin: 0; width:20%;}
+	#banner nav li {float: left; display: inline; margin: 0;}
 	
 	#banner nav a:link, #banner nav a:visited {
 		color: #fff;
@@ -251,7 +250,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 }
 #featured figure img {display: block; float: right;}
 
-#featured h2 {color: #C74451; font-size: 1.714em; margin-bottom: 0.333em;}
+h2 {color: #C74451; font-size: 1.714em; margin-bottom: 0.333em;}
 #featured h3 {font-size: 1.429em; margin-bottom: .5em;}
 
 #featured h3 a:link, #featured h3 a:visited {color: #000305; text-decoration: none;}
