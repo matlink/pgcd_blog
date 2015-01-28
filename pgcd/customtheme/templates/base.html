@@ -19,8 +19,8 @@
 <body id="index" class="home">
 {% include 'github.html' %}
         <header id="banner" class="body"  >
-                <center><img src="{{ SITEURL }}/theme/images/icons/atom_big.png" /></center>
                 <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+                <center><img src="{{ SITEURL }}/theme/images/icons/atom_big.png" /></center>
                 {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}
                 <nav><ul>
                 {% for title, link in MENUITEMS %}
