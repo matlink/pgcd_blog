@@ -2,6 +2,7 @@ Title: Faites de votre serveur un proxy pour The Pirate Bay
 Date: 2014-12-06 13:22
 Category: Auto-hébergement
 Author: Matlink
+Tags: tutoriel
 
 <span class="float-left">
   ![the_pirate_bay]({filename}/images/543px-The_Pirate_Bay_logo.svg.png) 

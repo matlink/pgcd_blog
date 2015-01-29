@@ -15,7 +15,7 @@
 <body id="index" class="home">
         <header id="banner" class="body"  >
                 <h1><a href="./">Le Parti des Geeks Cartésiens Démocrates</a></h1>
-                <center><img src="./theme/images/icons/atom_big.png" /></center>
+                <center><a id="title_logo" href="./"><img src="./theme/images/icons/atom_big.png" /></a></center>
  <strong>Blog d'un parti universitaire et passioné</strong>                <nav><ul>
                     <li><a href="./category/annonces.html">Annonces</a></li>
                     <li><a href="./category/auto-hebergement.html">Auto-hébergement</a></li>
@@ -25,6 +25,7 @@
                     <li><a href="./category/physique.html">Physique</a></li>
                     <li><a href="./category/reseaux.html">Réseaux</a></li>
                     <li><a href="./category/securite.html">Sécurité</a></li>
+                <li><a href="./tag/tutoriel.html">Tutoriels</a></li>
 <span id="pages">
                     <li><a href="./pages/contact.html">Contact</a></li>
                 </span>
@@ -33,6 +34,39 @@
 
                 <section id="content" class="body">
                     <ol id="posts-list" class="hfeed" start="4">
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="./fondation-bill-gates-cc-by.html" rel="bookmark"
+                           title="Permalink to La fondation Bill et Melinda Gates exige la licence CC-BY">La fondation Bill et Melinda Gates exige la licence CC-BY</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-11-25T22:17:00+01:00">
+                Published: mar. 25 novembre 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="./author/matlink.html">Matlink</a>
+        </address>
+<p>In <a href="./category/logiciels-libres.html">Logiciels Libres</a>. </p>
+
+</footer><!-- /.post-info -->                <p><span class="float-left">
+    <img alt="ccbysa" src="./images/Cc-by_new_white.svg.png" />
+</span></p>
+<p>EDIT : étonnamment, <a href="https://www.nsa.gov/public_info/press_room/2014/nifi_announcement.shtml">la NSA s'y
+met</a>
+! Quelle surprise !</p>
+<p>En voilà un très bonne nouvelle ! D'après le <a href="http://www.gatesfoundation.org/how-we-work/general-information/open-access-policy">site officiel de la
+Fondation Bill &amp; Melinda
+Gate</a>,
+dorénavant les recherches financées par la fondation devront être sous
+licence Open Access CC-BY.</p>
+<p>Un petit rappel de ce qu'est CC-BY : Creative Commons ...</p>
+                <a class="readmore" href="./fondation-bill-gates-cc-by.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li><hr class="hr-entre-articles" />
+
             <li><article class="hentry">
                 <header>
                     <h1><a href="./auto-hebergement-le-retour-sur-mon-parcours-deuxieme-partie.html" rel="bookmark"
@@ -75,7 +109,7 @@ tête, j'ai parlé de ma déconnexion du fournisseur de mail Gmail ...</p>
                 By                         <a class="url fn" href="./author/matlink.html">Matlink</a>
         </address>
 <p>In <a href="./category/hacking.html">Hacking</a>. </p>
-
+<p>tags: <a href="./tag/tutoriel.html">tutoriel</a> </p>
 </footer><!-- /.post-info -->                <p>Depuis que j'ai ce joujou de <a href="https://en.wikipedia.org/wiki/Raspberry_Pi">raspberry
 pi</a>, je ne cesse de
 chercher à le bidouiller pour donner des choses marrantes.</p>
@@ -139,31 +173,6 @@ lumière à portée de main, sans une source qui, bien orientée et avec des ...
                 <a class="readmore" href="./led-eclairer-lavenir.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li><hr class="hr-entre-articles" />
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="./migration-du-serveur.html" rel="bookmark"
-                           title="Permalink to Migration du serveur">Migration du serveur</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2014-11-08T18:56:00+01:00">
-                Published: sam. 08 novembre 2014
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="./author/matlink.html">Matlink</a>
-        </address>
-<p>In <a href="./category/annonces.html">Annonces</a>. </p>
-
-</footer><!-- /.post-info -->                <p>Cela faisait un moment qu'on avait rien posté ici, c'est vrai ! Mais
-bon, on va dire que c'est la faute des vacances !</p>
-<p>Juste un court article pour vous dire que j'ai migré l'ensemble des
-services sur un nouveau serveur, avec plus de RAM, plus de ...</p>
-                <a class="readmore" href="./migration-du-serveur.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li><hr class="hr-entre-articles" />
                 </ol><!-- /#posts-list -->
 <p class="paginator">
         <a href="./index.html">&laquo;</a>
@@ -195,5 +204,18 @@ services sur un nouveau serveur, avec plus de RAM, plus de ...</p>
                 </address><!-- /#about -->
         </footer><!-- /#contentinfo -->
 
+    <script type="text/javascript">
+        var pkBaseURL = "fr.matlink.fr/piwik";
+    var _paq = _paq || [];
+    _paq.push(["trackPageView"]);
+    _paq.push(["enableLinkTracking"]);
+    (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http")+"://"+pkBaseURL+"/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "1"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+    })();
+    </script>
 </body>
 </html>

@@ -3,6 +3,7 @@ Date: 2014-11-16 17:05
 Category: Hacking
 Author: Matlink
 Slug: rpirate-radio
+Tags: tutoriel
 
 Depuis que j'ai ce joujou de [raspberry
 pi](https://en.wikipedia.org/wiki/Raspberry_Pi), je ne cesse de

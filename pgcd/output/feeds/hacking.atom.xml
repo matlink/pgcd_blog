@@ -50,4 +50,4 @@ votre RPI sur le GPIO 4 (le pin 7) comme sur la photo ci dessus :&lt;/p&gt;
 &lt;code&gt;python /pirateradio/PirateRadio.py&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;J'ai créé un script shell pour installer tout ça automatiquement,
 disponible ici : &lt;a href="https://github.com/matlink/rpi-radio"&gt;https://github.com/matlink/rpi-radio&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://makezine.com/projects/make-38-cameras-and-av/raspberry-pirate-radio/"&gt;source&lt;/a&gt;&lt;/p&gt;</summary></entry></feed>
+&lt;p&gt;&lt;a href="http://makezine.com/projects/make-38-cameras-and-av/raspberry-pirate-radio/"&gt;source&lt;/a&gt;&lt;/p&gt;</summary><category term="tutoriel"></category></entry></feed>

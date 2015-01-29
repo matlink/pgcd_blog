@@ -15,7 +15,7 @@
 <body id="index" class="home">
         <header id="banner" class="body"  >
                 <h1><a href="./">Le Parti des Geeks Cartésiens Démocrates</a></h1>
-                <center><img src="./theme/images/icons/atom_big.png" /></center>
+                <center><a id="title_logo" href="./"><img src="./theme/images/icons/atom_big.png" /></a></center>
  <strong>Blog d'un parti universitaire et passioné</strong>                <nav><ul>
                     <li><a href="./category/annonces.html">Annonces</a></li>
                     <li><a href="./category/auto-hebergement.html">Auto-hébergement</a></li>
@@ -25,6 +25,7 @@
                     <li><a href="./category/physique.html">Physique</a></li>
                     <li><a href="./category/reseaux.html">Réseaux</a></li>
                     <li><a href="./category/securite.html">Sécurité</a></li>
+                <li><a href="./tag/tutoriel.html">Tutoriels</a></li>
 <span id="pages">
                     <li><a href="./pages/contact.html">Contact</a></li>
                 </span>
@@ -33,7 +34,42 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="./refonte-pgcd.html">Refonte du blog du PGCD avec Pelican</a></h1>
+                    <h1 class="entry-title"><a href="./integration-piwik-visites.html">Intégration de Piwik, un suivi des visites libre</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2015-01-29T00:00:00+01:00">
+                Published: jeu. 29 janvier 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="./author/matlink.html">Matlink</a>
+        </address>
+<p>In <a href="./category/annonces.html">Annonces</a>. </p>
+<p>tags: <a href="./tag/piwik.html">Piwik</a> <a href="./tag/suivi.html">suivi</a> </p>
+</footer><!-- /.post-info -->                        <hr/>
+                        <p><span class="float-left">
+<img alt="Piwik_logo" src="./images/Piwik_2.0_logo.svg.png" /></p>
+<p></span></p>
+<p>Lorsque le blog <a href="./refonte-pgcd.html">était encore sur Wordpress</a>, nous utilisions un plugin afin d'observer le nombre de visites que nous avions environs par jour et par semaine. Sachez que les adresses IP étaient masquées et que nous connaissions seulement le navigateur utilisé lors de la visite. 
+Je viens donc d'ajouter à l'instant le suivi grâce à un petit script JavaScript du nom de <a href="http://piwik.org">Piwik</a>. C'est un bout de code intégré dans chaque page qui se connecte au blog lorsque vous le visitez. </p>
+<h2>Et ma vie privée, t'y pense ?</h2>
+<p>Évidement ! Il faut savoir qu'à l'installation, Piwik m'a demandé si je voulais respecter la vie privée des personnes visitant ce blog. Bon vous vous en doutez, j'ai dit oui. Comment ça marche ? Piwik prend en compte le paramètre "Indiquer aux sites web que je ne souhaite pas être pisté". Ainsi, si ce paramètre est actif, le script n'enverra aucune information vers le blog. Aussi, sachez que si cette option est désactivée dans votre navigateur, Piwik ne conserve pas les adresses IP entièrement, mais seulement le début (par exemple pour l'IP 137.137.1.1, il ne garde que 137.137). Plus respectueux de la vie privée en effet. </p>
+<h2>Tu voulais rendre ceci public ...</h2>
+<p>Ouais, c'est vrai ! Si vous vous connectez sur <a href="https://fr.matlink.fr/piwik">l'interface de façon anonyme </a>, vous aurez accès à la partie publique des statistiques. Beaucoup d'informations vous serons cachées, mais vous pourrez voir le principal : le nombre de visites :)</p>
+<p>Après tout ce discours, si vous ne souhaitez pas que ce blog fasse des statistiques sur vos visites, c'est tout à votre honneur. Signalez le moi à l'adresse pgcd[at]matlink[point]fr ou bien commentez dans la section ci-dessous. Et puis vous savez, ce n'est pas comme si <a href="https://www.abine.com/blog/2012/how-facebook-buttons-track-you/">y'avait un bouton "like"</a> sur la page :)</p><script data-isso="//fr.matlink.fr/comments/" src="//fr.matlink.fr/comments/js/embed.min.js"></script><p><a href="./integration-piwik-visites.html#isso-thread">Commentaires</a></p>
+                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Autres articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="./refonte-pgcd.html" rel="bookmark"
+                           title="Permalink to Refonte du blog du PGCD avec Pelican">Refonte du blog du PGCD avec Pelican</a></h1>
+                </header>
+
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2015-01-27T00:00:00+01:00">
                 Published: mar. 27 janvier 2015
@@ -44,44 +80,15 @@
         </address>
 <p>In <a href="./category/annonces.html">Annonces</a>. </p>
 <p>tags: <a href="./tag/annonces.html">annonces</a> <a href="./tag/auto-hebergement.html">auto-hébergement</a> <a href="./tag/cms.html">CMS</a> <a href="./tag/pelican.html">pelican</a> </p>
-</footer><!-- /.post-info -->                        <hr/>
-                        <p><span class="float-left">
+</footer><!-- /.post-info -->                <p><span class="float-left">
     <img alt="pelican_logo" src="./images/pelican_logo.png" />
 </span></p>
 <p>Si vous lisez cet article, vous avez probablement remarqué un gros changement au niveau du rendu du blog. En effet, je viens tout juste de terminer la migration du blog vers un nouveau <a href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_gestion_de_contenu">CMS</a> au joli nom de <a href="http://blog.getpelican.com">Pelican</a>.</p>
 <h2>Pourquoi quitter Wordpress ?</h2>
-<p>C'est une bonne question, et heureusement j'ai quelques réponses. 
-Wordpress est un CMS développé en <a href="https://en.wikipedia.org/wiki/PHP">PHP</a>. Wordpress, c'est cool car ça fonctionne bien, c'est joli et y'a pas besoin de se casser la tête pour écrire des articles. Cependant, Wordpress est connu pour être un emmental avec plein de trous. <a href="https://wpvulndb.com/">On en découvre souvent</a>. À ça rajoutons les <a href="https://wordpress.org/plugins/">plugins</a>, développés par la communauté. Ces plugins rajoutent des failles de sécurité également, et ils sont parfois codés avec les pieds (et quand on a des pieds de Hobbits, ça fait mal ! ).</p>
-<p>Aussi, le problème d'avoir du PHP pour son blog, c'est qu'à chaque visite, le serveur exécute le fichier demandé, et cela augmente forcément la charge du serveur et le temps de réponse également. Pour un petit blog comme le PGCD c'est évidement une "pain in the arse" (une douleur dans l'cul ahah) comme diraient les Anglais.
-Et puis Wordpress est lourd (on a un facteur 75 environ) : </p>
-<div class="highlight"><pre>    <span class="nv">$ </span>du -h -d0 wordpress 
-    158M    wordpress <span class="c">### Dossier d&#39;installation de Wordpress</span>
-    <span class="nv">$ </span>du -h -d0 pelican 
-    2,2M    pelican <span class="c">### Version statique du PGCD</span>
-</pre></div>
-
-
-<h2>Pourquoi utiliser Pelican ?</h2>
-<p>Tout d'abord je voulais quelque chose de static. Rien de plus sécurisé que du <a href="https://en.wikipedia.org/wiki/HTML">HTML</a> complètement statique (sans JavaScript dans l'idéal). Et niveau temps de réponse, y'a pas photo ça fuse comme un suppo dans les fesses (le serveur n'a aucun traitement à faire : simplement récupérer le fichier et l'envoyer) ! 
-Il n'y avait pas que Pelican qui se proposait à moi pour être utilisé, d'autres choses comme <a href="https://middlemanapp.com/">Middleman</a>, <a href="http://jekyllrb.com/">Jekyll</a>, ... Mais <a href="https://twitter.com/aeris22">Aeris</a> utilise Pelican depuis un moment et cela à l'air de bien fonctionner. Donc dans le cas où j'aurai un problème Aeris sera là pour m'aider :)</p>
-<p>Aussi, le fait de pouvoir écrire ses articles en local sans avoir à contacter le serveur ne fait qu'améliorer l'expérience utilisateur : pas besoin d'uploader les fichiers à chaque changement, visualisation rapide, ... De plus, Python est multi-plate-forme donc il est possible aussi de générer les articles depuis Windows (je n'ai pas essayé mais je ne vois rien qui ne puisse géner cela).</p>
-<h2>Comment ça fonctionne ?</h2>
-<p>Pelican est développé en <a href="https://en.wikipedia.org/wiki/Python_%28programming_language%29">Python</a>. D'après la <a href="http://docs.getpelican.com/en/3.5.0/">documentation en ligne</a> il supporte le langage <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>, <a href="https://en.wikipedia.org/wiki/ReStructuredText">reStructuredText</a> et <a href="http://www.methods.co.nz/asciidoc/">AsciiDoc</a>. Il prend les fichiers dans un dossier prédéfini, il les interprète et les converti au format HTML. Il est donc possible de générer les fichiers HTML depuis une machine locale et ne déposer sur le serveur que ces fichiers. Le serveur n'a donc pas besoin d'avoir des processus supplémentaires à faire tourner (donc c'est l'idéal pour les machines à faibles ressources tel un Raspberry Pi). </p>
-<p>Markdown me semble le plus simple à apprivoiser, c'est donc avec ce langage que j'écris les articles. </p>
-<h2>Mais est-ce aussi vraiment customisable ?</h2>
-<p>Oui. Voire encore plus customisable que Wordpress. Il faut juste mettre les mains dans le code des <a href="http://docs.getpelican.com/en/3.5.0/themes.html">thèmes</a> et donc d'avoir fait un peu de HTML/CSS (mais ceci est accessible à tout le monde :)). Beaucoup de thèmes sont <a href="https://github.com/getpelican/pelican-themes">disponibles</a> pour ceux qui ne souhaitent pas mettre la main dans le cambouis. </p>
-<h2>Où sont passés les commentaires ?</h2>
-<p>Je suis encore en phase d'apprivoisement avec ce nouvel outil et j'ai encore pas mal de choses à améliorer. Maintenant que j'ai réécris tous les articles un-à-un, je vais pouvoir me consacrer disons aux méta-fonctions du blog : commentaires, statistiques (qu'il pourrait être intéressant de rendre publics), publication automatique sur Facebook/Twitter, ...</p>
-<h2>EDIT</h2>
-<p>J'ai installé un système de commentaires en JavaScript, nommé <a href="http://posativ.org/isso">ISSO</a>. A priori cela à l'air de fonctionner, même si quelques fois pour une raison encore indéterminée (probablement la longueur de l'URL de la page) le bouton envoyer de fonctionne pas (rien ne se passe). Si c'est le cas, envoyez moi un mail que j'y prête attention (en mentionnant s'il vous plaît la page concernée).
-Les nouveaux commentaires seront mis en liste d'attente jusqu'à ce que je les valide. Je ne censurerai rien dans ces messages, il est juste question d'éviter les spammeurs. Si je vois que très peu de spammeurs envoient des demandes de commentaires, je lèverai cette restriction.</p>
-<p>Si vous avez des remarques, des questions, ou si vous voulez plus de précisions concernant ce dont je viens de parler, postez un commentaire (désormais disponibles), ou envoyez un mail à pgcd[at]matlink[point]fr .</p><script data-isso="//fr.matlink.fr/comments/" src="//fr.matlink.fr/comments/js/embed.min.js"></script><p><a href="./refonte-pgcd.html#isso-thread">Commentaires</a></p>
-                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Autres articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
+<p>C'est une bonne question, et heureusement j ...</p>
+                <a class="readmore" href="./refonte-pgcd.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li><hr class="hr-entre-articles" />
 
             <li><article class="hentry">
                 <header>
@@ -125,7 +132,7 @@ encore et toujours plein de surprises et de découvertes ! </strong></p>
                 By                         <a class="url fn" href="./author/matlink.html">Matlink</a>
         </address>
 <p>In <a href="./category/auto-hebergement.html">Auto-hébergement</a>. </p>
-
+<p>tags: <a href="./tag/tutoriel.html">tutoriel</a> </p>
 </footer><!-- /.post-info -->                <p><span class="float-left">
   <img alt="the_pirate_bay" src="./images/543px-The_Pirate_Bay_logo.svg.png" /> 
 </span>
@@ -158,7 +165,7 @@ Dans ce cas, il suffit de ...</p>
                 By                         <a class="url fn" href="./author/matlink.html">Matlink</a>
         </address>
 <p>In <a href="./category/auto-hebergement.html">Auto-hébergement</a>. </p>
-
+<p>tags: <a href="./tag/tutoriel.html">tutoriel</a> </p>
 </footer><!-- /.post-info -->                <p><span class="float-left">
   <img alt="thunderbird" src="./images/thunderbird-head.png" />
 </span></p>
@@ -168,39 +175,6 @@ configuriez un logiciel de messagerie comme Thunderbird, que vous deviez
 rentrer toutes les infos à la main (serveur entrant, serveur sortant,
 ports, type de connexion ...</p>
                 <a class="readmore" href="./autoconfiguration-de-thunderbird-pour-votre-serveur-mail.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li><hr class="hr-entre-articles" />
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="./fondation-bill-gates-cc-by.html" rel="bookmark"
-                           title="Permalink to La fondation Bill et Melinda Gates exige la licence CC-BY">La fondation Bill et Melinda Gates exige la licence CC-BY</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2014-11-25T22:17:00+01:00">
-                Published: mar. 25 novembre 2014
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="./author/matlink.html">Matlink</a>
-        </address>
-<p>In <a href="./category/logiciels-libres.html">Logiciels Libres</a>. </p>
-
-</footer><!-- /.post-info -->                <p><span class="float-left">
-    <img alt="ccbysa" src="./images/Cc-by_new_white.svg.png" />
-</span></p>
-<p>EDIT : étonnamment, <a href="https://www.nsa.gov/public_info/press_room/2014/nifi_announcement.shtml">la NSA s'y
-met</a>
-! Quelle surprise !</p>
-<p>En voilà un très bonne nouvelle ! D'après le <a href="http://www.gatesfoundation.org/how-we-work/general-information/open-access-policy">site officiel de la
-Fondation Bill &amp; Melinda
-Gate</a>,
-dorénavant les recherches financées par la fondation devront être sous
-licence Open Access CC-BY.</p>
-<p>Un petit rappel de ce qu'est CC-BY : Creative Commons ...</p>
-                <a class="readmore" href="./fondation-bill-gates-cc-by.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li><hr class="hr-entre-articles" />
                 </ol><!-- /#posts-list -->
@@ -233,5 +207,18 @@ licence Open Access CC-BY.</p>
                 </address><!-- /#about -->
         </footer><!-- /#contentinfo -->
 
+    <script type="text/javascript">
+        var pkBaseURL = "fr.matlink.fr/piwik";
+    var _paq = _paq || [];
+    _paq.push(["trackPageView"]);
+    _paq.push(["enableLinkTracking"]);
+    (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http")+"://"+pkBaseURL+"/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "1"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+    })();
+    </script>
 </body>
 </html>

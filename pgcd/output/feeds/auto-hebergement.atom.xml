@@ -51,7 +51,7 @@ explique :&lt;/p&gt;
 &lt;code&gt;/etc/init.d/nginx reload&lt;/code&gt; ou &lt;code&gt;/etc/init.d/apache2 reload&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;n'oubliez pas d'ajouter dans votre zone DNS le tpb.xxxx.xx CNAME xxxx.xx
 que vous avez mis dans votre fichier de config.&lt;/p&gt;
-&lt;p&gt;À vos proxies !&lt;/p&gt;</summary></entry><entry><title>Autoconfiguration de Thunderbird pour votre serveur mail</title><link href="https://fr.matlink.fr/autoconfiguration-de-thunderbird-pour-votre-serveur-mail.html" rel="alternate"></link><updated>2014-11-27T19:58:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-27:autoconfiguration-de-thunderbird-pour-votre-serveur-mail.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
+&lt;p&gt;À vos proxies !&lt;/p&gt;</summary><category term="tutoriel"></category></entry><entry><title>Autoconfiguration de Thunderbird pour votre serveur mail</title><link href="https://fr.matlink.fr/autoconfiguration-de-thunderbird-pour-votre-serveur-mail.html" rel="alternate"></link><updated>2014-11-27T19:58:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-27:autoconfiguration-de-thunderbird-pour-votre-serveur-mail.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
   &lt;img alt="thunderbird" src="https://fr.matlink.fr/images/thunderbird-head.png" /&gt;
 &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Si vous gérez un serveur mail, qu'il soit chez vous ou bien hébergé chez
@@ -125,7 +125,7 @@ automatiquement configurés pour Thunderbird (et à priori c'est le seul
 bon client mail à pouvoir faire ça, avec Outlook de
 Microsoft).&lt;/p&gt;
 &lt;p&gt;&lt;center&gt;&lt;img alt="config-found" src="https://fr.matlink.fr/images/config-found.png" /&gt;&lt;/center&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://developer.mozilla.org/en-US/docs/Mozilla/Thunderbird/Autoconfiguration"&gt;sources&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>Auto-hébergement : le retour sur mon parcours (deuxième partie)</title><link href="https://fr.matlink.fr/auto-hebergement-le-retour-sur-mon-parcours-deuxieme-partie.html" rel="alternate"></link><updated>2014-11-20T22:31:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-20:auto-hebergement-le-retour-sur-mon-parcours-deuxieme-partie.html</id><summary type="html">&lt;p&gt;De retour pour une deuxième partie concernant mon expérience sur
+&lt;p&gt;&lt;a href="https://developer.mozilla.org/en-US/docs/Mozilla/Thunderbird/Autoconfiguration"&gt;sources&lt;/a&gt;&lt;/p&gt;</summary><category term="tutoriel"></category></entry><entry><title>Auto-hébergement : le retour sur mon parcours (deuxième partie)</title><link href="https://fr.matlink.fr/auto-hebergement-le-retour-sur-mon-parcours-deuxieme-partie.html" rel="alternate"></link><updated>2014-11-20T22:31:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-20:auto-hebergement-le-retour-sur-mon-parcours-deuxieme-partie.html</id><summary type="html">&lt;p&gt;De retour pour une deuxième partie concernant mon expérience sur
 l'auto-hébergement. Pour ceux qui auraient loupé la &lt;a href="https://matlink.fr/PGCD/auto-hebergement-le-retour-sur-mon-parcours-1/"&gt;première partie, la
 voici&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Je vous ai présenté le contexte de l'époque où ça a fait tilt dans ma

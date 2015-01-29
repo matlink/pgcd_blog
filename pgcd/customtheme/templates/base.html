@@ -20,7 +20,7 @@
 {% include 'github.html' %}
         <header id="banner" class="body"  >
                 <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
-                <center><img src="{{ SITEURL }}/theme/images/icons/atom_big.png" /></center>
+                <center><a id="title_logo" href="{{ SITEURL }}/"><img src="{{ SITEURL }}/theme/images/icons/atom_big.png" /></a></center>
                 {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}
                 <nav><ul>
                 {% for title, link in MENUITEMS %}
@@ -30,6 +30,7 @@
                 {% for cat, null in categories %}
                     <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
                 {% endfor %}
+                <li><a href="{{ SITEURL }}/tag/tutoriel.html">Tutoriels</a></li>
                 {% endif %}
                 {% if DISPLAY_PAGES_ON_MENU -%}
                 <span id="pages">

@@ -3,6 +3,7 @@ Date: 2014-11-27 19:58
 Category: Auto-hébergement
 Author: Matlink
 Slug: autoconfiguration-de-thunderbird-pour-votre-serveur-mail
+Tags: tutoriel
 
 <span class="float-left">
   ![thunderbird]({filename}/images/thunderbird-head.png)
