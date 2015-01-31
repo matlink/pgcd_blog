@@ -23,8 +23,8 @@ OpenSSL utilise une extension nommée HeartBeat depuis la version 1.0.1 .
 Cependant, cette extension possède une faille qui permet de récupérer la
 clé privée du serveur auquel le client se connecte, et ce sans aucune
 trace. Avec cette clé, il est donc possible de se faire passer pour le
-propriétaire du site web, et aussi de décrypter tous les messages
-cryptés avec la clé publique associée à celle-ci. C'est potentiellement
+propriétaire du site web, et aussi de déchiffrer tous les messages
+chiffrés avec la clé publique associée à celle-ci. C'est potentiellement
 toutes les communications établies entre le serveur et ses clients
 depuis qu'OpenSSL utilise HeartBeat qui sont remises en cause, car il
 suffit qu'un seul client récupère la clé et sniffe (man-in-the-middle)
