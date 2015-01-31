@@ -14,7 +14,8 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = u'fr'
 
 THEME = "customtheme"
-HEADER_IMAGE = "/theme/images/The_Big_Bang_Theory_Cast.jpg"
+
+STATIC_PATHS = ['doc','images']
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
