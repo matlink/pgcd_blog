@@ -89,9 +89,8 @@ ol {
 li { margin-top: 0.5em;}
 
 .post-info {
-	float: right;
+	float: left;
     margin-right: 20px;
-    margin-left: 40px;
     margin-bottom: 20px;
     padding:5px;
     border: 1px solid black;
@@ -497,4 +496,8 @@ span.reverse {
 
 .hr-entre-articles{
 	background-color: black;
+}
+#logo_article{
+	float: right;
+	margin-left: 10px;
 }

@@ -16,7 +16,7 @@
         <header id="banner" class="body"  >
                 <h1><a href="../">Le Parti des Geeks Cartésiens Démocrates</a></h1>
                 <center><a id="title_logo" href="../"><img src="../theme/images/icons/atom_big.png" /></a></center>
- <strong>Blog d'un parti universitaire et passioné</strong>                <nav><ul>
+ <strong>Blog d'un ensemble universitaire et passioné</strong>                <nav><ul>
                     <li><a href="../category/annonces.html">Annonces</a></li>
                     <li><a href="../category/auto-hebergement.html">Auto-hébergement</a></li>
                     <li class="active"><a href="../category/hacking.html">Hacking</a></li>
@@ -35,17 +35,18 @@
             <aside id="featured" class="body">
                 <article>
                     <h1 class="entry-title"><a href="../rpirate-radio.html">Pirate Radio : transformez votre Raspberry Pi en émetteur radio</a></h1>
+                        <hr/>
 <footer class="post-info">
         <abbr class="published" title="2014-11-16T17:05:00+01:00">
-                Published: dim. 16 novembre 2014
+                Publié : dim. 16 novembre 2014
         </abbr>
 
         <address class="vcard author">
-                By                         <a class="url fn" href="../author/matlink.html">Matlink</a>
+                Par                         <a class="url fn" href="../author/matlink.html">Matlink</a>
         </address>
-<p>In <a href="../category/hacking.html">Hacking</a>. </p>
+<p>Dans <a href="../category/hacking.html">Hacking</a>. </p>
 <p>tags: <a href="../tag/tutoriel.html">tutoriel</a> </p>
-</footer><!-- /.post-info -->                        <hr/>
+</footer><!-- /.post-info -->                    <div style="clear:both;"></div>
                         <p>Depuis que j'ai ce joujou de <a href="https://en.wikipedia.org/wiki/Raspberry_Pi">raspberry
 pi</a>, je ne cesse de
 chercher à le bidouiller pour donner des choses marrantes.</p>
@@ -63,29 +64,61 @@ rajouter concernant l'installation de base.</p>
 <p>Tout d'abord on se connecte en SSH sur la raspberry, et une fois dessus,
 on va récupérer le script Python qui permet de lancer la radio :</p>
 <ul>
-<li>on installe git si c'est pas déjà fait : 
-   <code>sudo apt-get install git</code></li>
-<li>ensuite, ffmpeg pour lire les fichiers de musique :
-   <code>sudo apt-get install ffmpeg</code></li>
-<li>config-parser pour lire les fichiers de configuration :
-   <code>sudo apt-get install python-pip &amp;&amp; sudo pip install configparser</code></li>
-<li>on créer un dossier pour la radio :
-   <code>sudo mkdir ∕pirateradio/ &amp;&amp; cd /pirateradio/</code></li>
-<li>on récupère les scripts python de la radio :
-   <code>git clone https://github.com/Make-Magazine/PirateRadio ./</code></li>
-<li>on modifie le fichier Python pour renseigner notre dossier :
-   <code>sudo sed -i 's@/root/pifm@/pirateradio/pifm@g' /pirateradio/PirateRadio.py</code></li>
 <li>
-<p>on ouvre le fichier de configuration et on y met nos paramètres :
-   <code>sudo nano pirateradio.conf</code></p>
+<p>on installe git si c'est pas déjà fait : </p>
+<div class="highlight"><pre> sudo apt-get install git
+</pre></div>
+
+
 </li>
 <li>
-<p>frequency : la fréquence sur laquelle émettre la musique</p>
+<p>ensuite, ffmpeg pour lire les fichiers de musique :</p>
+<div class="highlight"><pre> sudo apt-get install ffmpeg
+</pre></div>
+
+
 </li>
-<li>shuffle : True pour activer la lecture aléatoire, False sinon</li>
-<li>repeat_all : True si vous voulez jouer en boucle les musiques</li>
-<li>stereo_playback : pour activer ou non le stéréo</li>
-<li>music_dir : le répertoire où se trouvent vos musiques</li>
+<li>
+<p>config-parser pour lire les fichiers de configuration :</p>
+<div class="highlight"><pre> sudo apt-get install python-pip &amp;&amp; sudo pip install configparser
+</pre></div>
+
+
+</li>
+<li>
+<p>on créer un dossier pour la radio :</p>
+<div class="highlight"><pre> sudo mkdir ∕pirateradio/ &amp;&amp; cd /pirateradio/
+</pre></div>
+
+
+</li>
+<li>
+<p>on récupère les scripts python de la radio :</p>
+<div class="highlight"><pre> git clone https://github.com/Make-Magazine/PirateRadio ./
+</pre></div>
+
+
+</li>
+<li>
+<p>on modifie le fichier Python pour renseigner notre dossier :</p>
+<div class="highlight"><pre> sudo sed -i &#39;s@/root/pifm@/pirateradio/pifm@g&#39; /pirateradio/PirateRadio.py
+</pre></div>
+
+
+</li>
+<li>
+<p>on ouvre le fichier de configuration et on y met nos paramètres :</p>
+<div class="highlight"><pre> sudo nano pirateradio.conf
+
+ -  frequency : la fréquence sur laquelle émettre la musique
+ -  shuffle : True pour activer la lecture aléatoire, False sinon
+ -  repeat\_all : True si vous voulez jouer en boucle les musiques
+ -  stereo\_playback : pour activer ou non le stéréo
+ -  music\_dir : le répertoire où se trouvent vos musiques
+</pre></div>
+
+
+</li>
 </ul>
 <p>Vous copiez ensuite vos musiques dans le répertoire que vous avez
 indiqué dans le fichier de configuration. Après ça, il vous faut trouver

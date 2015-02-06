@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = u'Matlink'
 SITENAME = u'Le Parti des Geeks Cartésiens Démocrates'
 SITEURL = ''
-SITESUBTITLE = u"Blog d'un parti universitaire et passioné"
+SITESUBTITLE = u"Blog d'un ensemble universitaire et passioné"
 
 PATH = 'content'
 

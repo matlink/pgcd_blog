@@ -1,15 +1,14 @@
 Title: Filtrage administratif actif, comment le contourner ?
 Date: 2015-02-06
 Category: Réseaux
-Tags: filtrage, censure, thepiratebay, liberté
+Tags: filtrage, censure, thepiratebay, neutralité du net, tutoriel
 Author: Matlink
+Image: 543px-The_Pirate_Bay_logo.svg.png
 
-<span class="float-left">
-  ![the_pirate_bay]({filename}/images/543px-The_Pirate_Bay_logo.svg.png) 
-</span>
+
 Je vous disais il y a quelque temps que [The Pirate Bay avait fait l'oeuvre de censure administrative]({filename}/faites-serveur-proxy-the-pirate-bay.md).
 
-Aujourd'hui, les [FAI](https://fr.wikipedia.org/wiki/Fournisseur_d'accès_à_internet) sont [passés à l'acte et appliquent la loi](http://www.numerama.com/magazine/32134-le-decret-sur-le-blocage-des-sites-sans-juge-est-publie.html). Les plus habitués d'entre vous auront constaté que [The Pirate Bay](https://thepiratebay.se) affiche une page blanche si vous tentez de vous y connecter. 
+Aujourd'hui, les [FAI](https://fr.wikipedia.org/wiki/Fournisseur_d'accès_à_internet) sont [passés à l'acte et appliquent la loi](http://www.numerama.com/magazine/32134-le-decret-sur-le-blocage-des-sites-sans-juge-est-publie.html). Les plus habitués d'entre vous auront constaté que [The Pirate Bay](https://thepiratebay.se) affiche une page blanche si vous tentez de vous y connecter (pas pour tout les FAI à priori). 
 
 Comment ce filtrage fonctionne ?
 --------------------------------
@@ -46,6 +45,6 @@ Je vous donne quelques DNS qui pour l'instant ont l'air de tenir la route :
 
 Je pense que ces DNS sont de confiance, car ils appartiennent à des associations qui défendent les libertés sur Internet (FDN entre autres) et n'ont pas de raison d'user de leurs pouvoirs. Malheureusement, tout fournisseur de DNS en France doit se soumettre à la loi Française, et peut-être que FDN devra filtrer ce qu'on lui demande.
 
-Il est toujours aussi exaspérant de voir que les [mesures prises par le gouvernement ](https://www.laquadrature.net/fr/pjl-terrorisme) pour faire appliquer la loi sur l'Internet en France, n'est ni adaptée ni efficace, du moins contre les personnes un peu renseignées. 
+Il est toujours aussi exaspérant de voir que les [mesures prises par le gouvernement ](https://www.laquadrature.net/fr/pjl-terrorisme) pour faire appliquer la loi sur l'Internet en France, ne sont ni adaptées ni efficaces, du moins contre les personnes un peu renseignées. 
 
 En gros, seules les personnes qui n'utilisent pas The Pirate Bay, se verront privées de The Pirate Bay.

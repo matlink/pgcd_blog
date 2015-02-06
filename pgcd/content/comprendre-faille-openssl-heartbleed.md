@@ -3,9 +3,7 @@ Date: 2014-04-09 19:28
 Category: Sécurité
 Author: Matlink
 Tags: openssl, heartbleed, faille
-
-<span class="float-left">
-![Heartbleed]({filename}/images/Heartbleed.svg_-250x300.png)</span>
+Image: Heartbleed.svg_-250x300.png
 
 Pour ceux qui ne le savent pas encore, une faille de sécurité
 viens d'être dévoilée au grand public, remettant en cause beaucoup de

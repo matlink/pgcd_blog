@@ -1,17 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Le Parti des Geeks Cartésiens Démocrates</title><link href="https://fr.matlink.fr/" rel="alternate"></link><link href="https://fr.matlink.fr/feeds/all.atom.xml" rel="self"></link><id>https://fr.matlink.fr/</id><updated>2015-01-29T00:00:00+01:00</updated><entry><title>Intégration de Piwik, un suivi des visites libre</title><link href="https://fr.matlink.fr/integration-piwik-visites.html" rel="alternate"></link><updated>2015-01-29T00:00:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2015-01-29:integration-piwik-visites.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
-&lt;img alt="Piwik_logo" src="https://fr.matlink.fr/images/Piwik_2.0_logo.svg.png" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Lorsque le blog &lt;a href="https://fr.matlink.fr/refonte-pgcd.html"&gt;était encore sur Wordpress&lt;/a&gt;, nous utilisions un plugin afin d'observer le nombre de visites que nous avions environs par jour et par semaine. Sachez que les adresses IP étaient masquées et que nous connaissions seulement le navigateur utilisé lors de la visite. 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Le Parti des Geeks Cartésiens Démocrates</title><link href="https://fr.matlink.fr/" rel="alternate"></link><link href="https://fr.matlink.fr/feeds/all.atom.xml" rel="self"></link><id>https://fr.matlink.fr/</id><updated>2015-02-06T00:00:00+01:00</updated><entry><title>Filtrage administratif actif, comment le contourner ?</title><link href="https://fr.matlink.fr/filtrage-administratif-actif-comment-le-contourner.html" rel="alternate"></link><updated>2015-02-06T00:00:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2015-02-06:filtrage-administratif-actif-comment-le-contourner.html</id><summary type="html">&lt;p&gt;Je vous disais il y a quelque temps que &lt;a href="https://fr.matlink.fr/faites-de-votre-serveur-un-proxy-pour-the-pirate-bay.html"&gt;The Pirate Bay avait fait l'oeuvre de censure administrative&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Aujourd'hui, les &lt;a href="https://fr.wikipedia.org/wiki/Fournisseur_d'accès_à_internet"&gt;FAI&lt;/a&gt; sont &lt;a href="http://www.numerama.com/magazine/32134-le-decret-sur-le-blocage-des-sites-sans-juge-est-publie.html"&gt;passés à l'acte et appliquent la loi&lt;/a&gt;. Les plus habitués d'entre vous auront constaté que &lt;a href="https://thepiratebay.se"&gt;The Pirate Bay&lt;/a&gt; affiche une page blanche si vous tentez de vous y connecter (pas pour tout les FAI à priori). &lt;/p&gt;
+&lt;h2&gt;Comment ce filtrage fonctionne ?&lt;/h2&gt;
+&lt;p&gt;De façon étonnante et tout à fait utile, ce filtrage est un filtrage au niveau des &lt;a href="https://fr.wikipedia.org/wiki/Domain_Name_System"&gt;DNS&lt;/a&gt;. Lorsque vous demandez le nom de domaine thepiratebay.se, on vous retourne un truc bidon (du genre 127.0.0.1 qui en fait est une adresse IP qui désigne votre machine).&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;    &lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;dig&lt;/span&gt; &lt;span class="mf"&gt;@212.27.40.240&lt;/span&gt; &lt;span class="n"&gt;thepiratebay&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;se&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="kt"&gt;short&lt;/span&gt;
+    &lt;span class="mf"&gt;127.0.0.1&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Ici, je demande via DIG l'adresse de la machine désignée par thepiratebay.se au DNS d'IP 212.27.40.240. Ce DNS est celui donné par ma freebox lorsque je lui demande un DNS. On constate que ce DNS ment, car 127.0.0.1 n'est pas l'adresse de thepirate.se (ou sinon je m'appelle The Pirate Bay).&lt;/p&gt;
+&lt;h2&gt;Que se passe-t-il si je demande à quelqu'un d'autre ?&lt;/h2&gt;
+&lt;p&gt;Prenons au hasard, un DNS fournit par &lt;a href="http://blog.fdn.fr/?post/2014/12/07/Filtrer-The-Pirate-Bay-Ubu-roi-des-Internets"&gt;FDN&lt;/a&gt; : &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;    &lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;dig&lt;/span&gt; &lt;span class="mf"&gt;@80.67.169.12&lt;/span&gt; &lt;span class="n"&gt;thepiratebay&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;se&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="kt"&gt;short&lt;/span&gt;
+    &lt;span class="mf"&gt;104.28.4.42&lt;/span&gt;
+    &lt;span class="mf"&gt;104.28.5.42&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Ce DNS n'a pas l'air de me mentir. Pour vérifier il faudrait entrer l'une des IP manuellement dans le navigateur. Malheureusement, le protection DDoS de Cloudflare empêche la connexion directe via l'IP. 
+Je vous invite à tester en changeant les DNS utilisés par votre système d'exploitation, il y a des tonnes de tutos là dessus sur le web.
+Je vous donne quelques DNS qui pour l'instant ont l'air de tenir la route : &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;    #######FDN nameservers###############
+    nameserver 80.67.169.12
+    nameserver 2001:910:800::12
+    nameserver 80.67.169.40
+    nameserver 2001:910:800::40
+    #######LDN###########################
+    nameserver 80.67.188.188
+    nameserver 2001:913::8
+    #######ARN###########################
+    nameserver 89.234.141.66
+    nameserver 2a00:5881:8100:1000::3
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Je pense que ces DNS sont de confiance, car ils appartiennent à des associations qui défendent les libertés sur Internet (FDN entre autres) et n'ont pas de raison d'user de leurs pouvoirs. Malheureusement, tout fournisseur de DNS en France doit se soumettre à la loi Française, et peut-être que FDN devra filtrer ce qu'on lui demande.&lt;/p&gt;
+&lt;p&gt;Il est toujours aussi exaspérant de voir que les &lt;a href="https://www.laquadrature.net/fr/pjl-terrorisme"&gt;mesures prises par le gouvernement &lt;/a&gt; pour faire appliquer la loi sur l'Internet en France, ne sont ni adaptées ni efficaces, du moins contre les personnes un peu renseignées. &lt;/p&gt;
+&lt;p&gt;En gros, seules les personnes qui n'utilisent pas The Pirate Bay, se verront privées de The Pirate Bay.&lt;/p&gt;</summary><category term="filtrage"></category><category term="censure"></category><category term="thepiratebay"></category><category term="neutralité du net"></category><category term="tutoriel"></category></entry><entry><title>Intégration de Piwik, un suivi des visites libre</title><link href="https://fr.matlink.fr/integration-piwik-visites.html" rel="alternate"></link><updated>2015-01-29T00:00:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2015-01-29:integration-piwik-visites.html</id><summary type="html">&lt;p&gt;Lorsque le blog &lt;a href="https://fr.matlink.fr/refonte-pgcd.html"&gt;était encore sur Wordpress&lt;/a&gt;, nous utilisions un plugin afin d'observer le nombre de visites que nous avions environs par jour et par semaine. Sachez que les adresses IP étaient masquées et que nous connaissions seulement le navigateur utilisé lors de la visite. 
 Je viens donc d'ajouter à l'instant le suivi grâce à un petit script JavaScript du nom de &lt;a href="http://piwik.org"&gt;Piwik&lt;/a&gt;. C'est un bout de code intégré dans chaque page qui se connecte au blog lorsque vous le visitez. &lt;/p&gt;
 &lt;h2&gt;Et ma vie privée, t'y pense ?&lt;/h2&gt;
 &lt;p&gt;Évidement ! Il faut savoir qu'à l'installation, Piwik m'a demandé si je voulais respecter la vie privée des personnes visitant ce blog. Bon vous vous en doutez, j'ai dit oui. Comment ça marche ? Piwik prend en compte le paramètre "Indiquer aux sites web que je ne souhaite pas être pisté". Ainsi, si ce paramètre est actif, le script n'enverra aucune information vers le blog. Aussi, sachez que si cette option est désactivée dans votre navigateur, Piwik ne conserve pas les adresses IP entièrement, mais seulement le début (par exemple pour l'IP 137.137.1.1, il ne garde que 137.137). Plus respectueux de la vie privée en effet. &lt;/p&gt;
 &lt;h2&gt;Tu voulais rendre ceci public ...&lt;/h2&gt;
 &lt;p&gt;Ouais, c'est vrai ! Si vous vous connectez sur &lt;a href="https://fr.matlink.fr/piwik"&gt;l'interface de façon anonyme &lt;/a&gt;, vous aurez accès à la partie publique des statistiques. Beaucoup d'informations vous serons cachées, mais vous pourrez voir le principal : le nombre de visites :)&lt;/p&gt;
-&lt;p&gt;Après tout ce discours, si vous ne souhaitez pas que ce blog fasse des statistiques sur vos visites, c'est tout à votre honneur. Signalez le moi à l'adresse pgcd[at]matlink[point]fr ou bien commentez dans la section ci-dessous. Et puis vous savez, ce n'est pas comme si &lt;a href="https://www.abine.com/blog/2012/how-facebook-buttons-track-you/"&gt;y'avait un bouton "like"&lt;/a&gt; sur la page :)&lt;/p&gt;</summary><category term="Piwik"></category><category term="suivi"></category></entry><entry><title>Refonte du blog du PGCD avec Pelican</title><link href="https://fr.matlink.fr/refonte-pgcd.html" rel="alternate"></link><updated>2015-01-27T00:00:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2015-01-27:refonte-pgcd.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
-    &lt;img alt="pelican_logo" src="https://fr.matlink.fr/images/pelican_logo.png" /&gt;
-&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Si vous lisez cet article, vous avez probablement remarqué un gros changement au niveau du rendu du blog. En effet, je viens tout juste de terminer la migration du blog vers un nouveau &lt;a href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_gestion_de_contenu"&gt;CMS&lt;/a&gt; au joli nom de &lt;a href="http://blog.getpelican.com"&gt;Pelican&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Après tout ce discours, si vous ne souhaitez pas que ce blog fasse des statistiques sur vos visites, c'est tout à votre honneur. Signalez le moi à l'adresse pgcd[at]matlink[point]fr ou bien commentez dans la section ci-dessous. Et puis vous savez, ce n'est pas comme si &lt;a href="https://www.abine.com/blog/2012/how-facebook-buttons-track-you/"&gt;y'avait un bouton "like"&lt;/a&gt; sur la page :)&lt;/p&gt;</summary><category term="Piwik"></category><category term="suivi"></category></entry><entry><title>Refonte du blog du PGCD avec Pelican</title><link href="https://fr.matlink.fr/refonte-pgcd.html" rel="alternate"></link><updated>2015-01-27T00:00:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2015-01-27:refonte-pgcd.html</id><summary type="html">&lt;p&gt;Si vous lisez cet article, vous avez probablement remarqué un gros changement au niveau du rendu du blog. En effet, je viens tout juste de terminer la migration du blog vers un nouveau &lt;a href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_gestion_de_contenu"&gt;CMS&lt;/a&gt; au joli nom de &lt;a href="http://blog.getpelican.com"&gt;Pelican&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;Pourquoi quitter Wordpress ?&lt;/h2&gt;
 &lt;p&gt;C'est une bonne question, et heureusement j'ai quelques réponses. 
 Wordpress est un CMS développé en &lt;a href="https://en.wikipedia.org/wiki/PHP"&gt;PHP&lt;/a&gt;. Wordpress, c'est cool car ça fonctionne bien, c'est joli et y'a pas besoin de se casser la tête pour écrire des articles. Cependant, Wordpress est connu pour être un emmental avec plein de trous. &lt;a href="https://wpvulndb.com/"&gt;On en découvre souvent&lt;/a&gt;. À ça rajoutons les &lt;a href="https://wordpress.org/plugins/"&gt;plugins&lt;/a&gt;, développés par la communauté. Ces plugins rajoutent des failles de sécurité également, et ils sont parfois codés avec les pieds (et quand on a des pieds de Hobbits, ça fait mal ! ).&lt;/p&gt;
@@ -190,10 +221,7 @@ Dieu?&lt;/em&gt;&lt;/p&gt;
 prend pas, mais il donne. Il donne la force inépuisable du Simple. Par
 l'appel, en une lointaine Origine, une terre natale nous est rendue."&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://fr.matlink.fr/images/chemin_heidegger.jpg"&gt;&lt;center&gt;&lt;img alt="chemin" src="https://fr.matlink.fr/images/chemin_heidegger_small.jpg" /&gt;&lt;/center&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Poulos&lt;/p&gt;</summary></entry><entry><title>Faites de votre serveur un proxy pour The Pirate Bay</title><link href="https://fr.matlink.fr/faites-de-votre-serveur-un-proxy-pour-the-pirate-bay.html" rel="alternate"></link><updated>2014-12-06T13:22:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-12-06:faites-de-votre-serveur-un-proxy-pour-the-pirate-bay.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
-  &lt;img alt="the_pirate_bay" src="https://fr.matlink.fr/images/543px-The_Pirate_Bay_logo.svg.png" /&gt; 
-&lt;/span&gt;
-Après la &lt;a href="http://www.numerama.com/magazine/31495-the-pirate-bay-sera-bloque-en-france-avec-ses-miroirs.html"&gt;magnifique nouvelle que nous annonce la
+&lt;p&gt;Poulos&lt;/p&gt;</summary></entry><entry><title>Faites de votre serveur un proxy pour The Pirate Bay</title><link href="https://fr.matlink.fr/faites-de-votre-serveur-un-proxy-pour-the-pirate-bay.html" rel="alternate"></link><updated>2014-12-06T13:22:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-12-06:faites-de-votre-serveur-un-proxy-pour-the-pirate-bay.html</id><summary type="html">&lt;p&gt;Après la &lt;a href="http://www.numerama.com/magazine/31495-the-pirate-bay-sera-bloque-en-france-avec-ses-miroirs.html"&gt;magnifique nouvelle que nous annonce la
 SCPP&lt;/a&gt;,
 c'est &lt;a href="https://fr.wikipedia.org/wiki/Effet_Streisand"&gt;l'effet
 Streisand&lt;/a&gt;. On peut
@@ -242,10 +270,7 @@ explique :&lt;/p&gt;
 &lt;code&gt;/etc/init.d/nginx reload&lt;/code&gt; ou &lt;code&gt;/etc/init.d/apache2 reload&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;n'oubliez pas d'ajouter dans votre zone DNS le tpb.xxxx.xx CNAME xxxx.xx
 que vous avez mis dans votre fichier de config.&lt;/p&gt;
-&lt;p&gt;À vos proxies !&lt;/p&gt;</summary><category term="tutoriel"></category></entry><entry><title>Autoconfiguration de Thunderbird pour votre serveur mail</title><link href="https://fr.matlink.fr/autoconfiguration-de-thunderbird-pour-votre-serveur-mail.html" rel="alternate"></link><updated>2014-11-27T19:58:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-27:autoconfiguration-de-thunderbird-pour-votre-serveur-mail.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
-  &lt;img alt="thunderbird" src="https://fr.matlink.fr/images/thunderbird-head.png" /&gt;
-&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Si vous gérez un serveur mail, qu'il soit chez vous ou bien hébergé chez
+&lt;p&gt;À vos proxies !&lt;/p&gt;</summary><category term="tutoriel"></category><category term="neutralité du net"></category><category term="censure"></category><category term="liberté"></category></entry><entry><title>Autoconfiguration de Thunderbird pour votre serveur mail</title><link href="https://fr.matlink.fr/autoconfiguration-de-thunderbird-pour-votre-serveur-mail.html" rel="alternate"></link><updated>2014-11-27T19:58:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-27:autoconfiguration-de-thunderbird-pour-votre-serveur-mail.html</id><summary type="html">&lt;p&gt;Si vous gérez un serveur mail, qu'il soit chez vous ou bien hébergé chez
 un fournisseur, vous vous êtes sûrement rendus compte quand vous
 configuriez un logiciel de messagerie comme Thunderbird, que vous deviez
 rentrer toutes les infos à la main (serveur entrant, serveur sortant,
@@ -316,10 +341,7 @@ automatiquement configurés pour Thunderbird (et à priori c'est le seul
 bon client mail à pouvoir faire ça, avec Outlook de
 Microsoft).&lt;/p&gt;
 &lt;p&gt;&lt;center&gt;&lt;img alt="config-found" src="https://fr.matlink.fr/images/config-found.png" /&gt;&lt;/center&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://developer.mozilla.org/en-US/docs/Mozilla/Thunderbird/Autoconfiguration"&gt;sources&lt;/a&gt;&lt;/p&gt;</summary><category term="tutoriel"></category></entry><entry><title>La fondation Bill et Melinda Gates exige la licence CC-BY</title><link href="https://fr.matlink.fr/fondation-bill-gates-cc-by.html" rel="alternate"></link><updated>2014-11-25T22:17:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-25:fondation-bill-gates-cc-by.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
-    &lt;img alt="ccbysa" src="https://fr.matlink.fr/images/Cc-by_new_white.svg.png" /&gt;
-&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;EDIT : étonnamment, &lt;a href="https://www.nsa.gov/public_info/press_room/2014/nifi_announcement.shtml"&gt;la NSA s'y
+&lt;p&gt;&lt;a href="https://developer.mozilla.org/en-US/docs/Mozilla/Thunderbird/Autoconfiguration"&gt;sources&lt;/a&gt;&lt;/p&gt;</summary><category term="tutoriel"></category></entry><entry><title>La fondation Bill et Melinda Gates exige la licence CC-BY</title><link href="https://fr.matlink.fr/fondation-bill-gates-cc-by.html" rel="alternate"></link><updated>2014-11-25T22:17:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-25:fondation-bill-gates-cc-by.html</id><summary type="html">&lt;p&gt;EDIT : étonnamment, &lt;a href="https://www.nsa.gov/public_info/press_room/2014/nifi_announcement.shtml"&gt;la NSA s'y
 met&lt;/a&gt;
 ! Quelle surprise !&lt;/p&gt;
 &lt;p&gt;En voilà un très bonne nouvelle ! D'après le &lt;a href="http://www.gatesfoundation.org/how-we-work/general-information/open-access-policy"&gt;site officiel de la
@@ -428,29 +450,61 @@ rajouter concernant l'installation de base.&lt;/p&gt;
 &lt;p&gt;Tout d'abord on se connecte en SSH sur la raspberry, et une fois dessus,
 on va récupérer le script Python qui permet de lancer la radio :&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;on installe git si c'est pas déjà fait : 
-   &lt;code&gt;sudo apt-get install git&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;ensuite, ffmpeg pour lire les fichiers de musique :
-   &lt;code&gt;sudo apt-get install ffmpeg&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;config-parser pour lire les fichiers de configuration :
-   &lt;code&gt;sudo apt-get install python-pip &amp;amp;&amp;amp; sudo pip install configparser&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;on créer un dossier pour la radio :
-   &lt;code&gt;sudo mkdir ∕pirateradio/ &amp;amp;&amp;amp; cd /pirateradio/&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;on récupère les scripts python de la radio :
-   &lt;code&gt;git clone https://github.com/Make-Magazine/PirateRadio ./&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;on modifie le fichier Python pour renseigner notre dossier :
-   &lt;code&gt;sudo sed -i 's@/root/pifm@/pirateradio/pifm@g' /pirateradio/PirateRadio.py&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;on ouvre le fichier de configuration et on y met nos paramètres :
-   &lt;code&gt;sudo nano pirateradio.conf&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;on installe git si c'est pas déjà fait : &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt; sudo apt-get install git
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;frequency : la fréquence sur laquelle émettre la musique&lt;/p&gt;
+&lt;p&gt;ensuite, ffmpeg pour lire les fichiers de musique :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt; sudo apt-get install ffmpeg
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;/li&gt;
-&lt;li&gt;shuffle : True pour activer la lecture aléatoire, False sinon&lt;/li&gt;
-&lt;li&gt;repeat_all : True si vous voulez jouer en boucle les musiques&lt;/li&gt;
-&lt;li&gt;stereo_playback : pour activer ou non le stéréo&lt;/li&gt;
-&lt;li&gt;music_dir : le répertoire où se trouvent vos musiques&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;config-parser pour lire les fichiers de configuration :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt; sudo apt-get install python-pip &amp;amp;&amp;amp; sudo pip install configparser
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;on créer un dossier pour la radio :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt; sudo mkdir ∕pirateradio/ &amp;amp;&amp;amp; cd /pirateradio/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;on récupère les scripts python de la radio :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt; git clone https://github.com/Make-Magazine/PirateRadio ./
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;on modifie le fichier Python pour renseigner notre dossier :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt; sudo sed -i &amp;#39;s@/root/pifm@/pirateradio/pifm@g&amp;#39; /pirateradio/PirateRadio.py
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;on ouvre le fichier de configuration et on y met nos paramètres :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt; sudo nano pirateradio.conf
+
+ -  frequency : la fréquence sur laquelle émettre la musique
+ -  shuffle : True pour activer la lecture aléatoire, False sinon
+ -  repeat\_all : True si vous voulez jouer en boucle les musiques
+ -  stereo\_playback : pour activer ou non le stéréo
+ -  music\_dir : le répertoire où se trouvent vos musiques
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Vous copiez ensuite vos musiques dans le répertoire que vous avez
 indiqué dans le fichier de configuration. Après ça, il vous faut trouver
@@ -462,9 +516,7 @@ votre RPI sur le GPIO 4 (le pin 7) comme sur la photo ci dessus :&lt;/p&gt;
 &lt;code&gt;python /pirateradio/PirateRadio.py&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;J'ai créé un script shell pour installer tout ça automatiquement,
 disponible ici : &lt;a href="https://github.com/matlink/rpi-radio"&gt;https://github.com/matlink/rpi-radio&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://makezine.com/projects/make-38-cameras-and-av/raspberry-pirate-radio/"&gt;source&lt;/a&gt;&lt;/p&gt;</summary><category term="tutoriel"></category></entry><entry><title>Auto-hébergement : le retour sur mon parcours ( première partie)</title><link href="https://fr.matlink.fr/auto-hebergement-le-retour-sur-mon-parcours-1.html" rel="alternate"></link><updated>2014-11-15T13:49:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-15:auto-hebergement-le-retour-sur-mon-parcours-1.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
-&lt;img alt="Big_Google" src="https://fr.matlink.fr/images/1984-Big-google.jpg" /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Cela fait déjà quasiment un an que je m'auto-héberge et c'est à cette
+&lt;p&gt;&lt;a href="http://makezine.com/projects/make-38-cameras-and-av/raspberry-pirate-radio/"&gt;source&lt;/a&gt;&lt;/p&gt;</summary><category term="tutoriel"></category></entry><entry><title>Auto-hébergement : le retour sur mon parcours ( première partie)</title><link href="https://fr.matlink.fr/auto-hebergement-le-retour-sur-mon-parcours-1.html" rel="alternate"></link><updated>2014-11-15T13:49:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-15:auto-hebergement-le-retour-sur-mon-parcours-1.html</id><summary type="html">&lt;p&gt;Cela fait déjà quasiment un an que je m'auto-héberge et c'est à cette
 occasion que j'aimerai partager l'expérience que j'ai acquis au cours de
 cette progressive migration.&lt;/p&gt;
 &lt;p&gt;Un bref rappel du contexte de l'époque : j'avais une adresse mail en
@@ -650,9 +702,7 @@ chaque service que Google propose, d'en avoir un qui fait la même chose,
 avec des logiciels libres. Je vous invite à faire un don, c'est
 important d'avoir des alternatives à Google.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://degooglisons-internet.org/img/carte-full.jpg"&gt;&lt;center&gt;&lt;img alt="chemin" src="https://fr.matlink.fr/images/carte-full_small.jpg" /&gt;&lt;/center&gt;&lt;/a&gt;
-&lt;center&gt;Degooglisons Internet !&lt;/center&gt;&lt;/p&gt;</summary></entry><entry><title>Passage à IPv6</title><link href="https://fr.matlink.fr/passage-a-ipv6.html" rel="alternate"></link><updated>2014-07-03T13:09:00+02:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-07-03:passage-a-ipv6.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
-&lt;img alt="IPv6" src="https://fr.matlink.fr/images/512px-World_IPv6_launch_logo.svg_-300x300.png" /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Vous n'êtes probablement pas sans savoir que le nombre d'IPv4
+&lt;center&gt;Degooglisons Internet !&lt;/center&gt;&lt;/p&gt;</summary></entry><entry><title>Passage à IPv6</title><link href="https://fr.matlink.fr/passage-a-ipv6.html" rel="alternate"></link><updated>2014-07-03T13:09:00+02:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-07-03:passage-a-ipv6.html</id><summary type="html">&lt;p&gt;Vous n'êtes probablement pas sans savoir que le nombre d'IPv4
 est en pénurie depuis 2011. Mais bon, c'est pas comme si &lt;a href="https://fr.wikipedia.org/wiki/%C3%89puisement_des_adresses_IPv4"&gt;on l'avait
 prévu depuis
 1990&lt;/a&gt;.
@@ -702,9 +752,7 @@ l'IP est verte c'est de l'IPv6, sinon elle est rouge et c'est de l'IPv4.
 Une bonne pratique serait de signaler aux admins que leur serveur
 n'accepte pas l'IPv6.&lt;/p&gt;
 &lt;p&gt;Passons à IPv6, car c'est l'Internet de demain qui est en jeu.&lt;/p&gt;
-&lt;p&gt;Matlink&lt;/p&gt;</summary><category term="ipv6"></category><category term="neutralité du net"></category></entry><entry><title>Comprendre la faille OpenSSL HeartBleed</title><link href="https://fr.matlink.fr/comprendre-la-faille-openssl-heartbleed.html" rel="alternate"></link><updated>2014-04-09T19:28:00+02:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-04-09:comprendre-la-faille-openssl-heartbleed.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
-&lt;img alt="Heartbleed" src="https://fr.matlink.fr/images/Heartbleed.svg_-250x300.png" /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Pour ceux qui ne le savent pas encore, une faille de sécurité
+&lt;p&gt;Matlink&lt;/p&gt;</summary><category term="ipv6"></category><category term="neutralité du net"></category></entry><entry><title>Comprendre la faille OpenSSL HeartBleed</title><link href="https://fr.matlink.fr/comprendre-la-faille-openssl-heartbleed.html" rel="alternate"></link><updated>2014-04-09T19:28:00+02:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-04-09:comprendre-la-faille-openssl-heartbleed.html</id><summary type="html">&lt;p&gt;Pour ceux qui ne le savent pas encore, une faille de sécurité
 viens d'être dévoilée au grand public, remettant en cause beaucoup de
 serveurs web utilisant le paquet OpenSSL.&lt;/p&gt;
 &lt;p&gt;OpenSSL est un paquet de sécurité qui permet de créer des clés privées

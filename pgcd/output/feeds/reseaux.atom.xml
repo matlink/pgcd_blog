@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Le Parti des Geeks Cartésiens Démocrates</title><link href="https://fr.matlink.fr/" rel="alternate"></link><link href="https://fr.matlink.fr/feeds/reseaux.atom.xml" rel="self"></link><id>https://fr.matlink.fr/</id><updated>2014-07-03T13:09:00+02:00</updated><entry><title>Passage à IPv6</title><link href="https://fr.matlink.fr/passage-a-ipv6.html" rel="alternate"></link><updated>2014-07-03T13:09:00+02:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-07-03:passage-a-ipv6.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
-&lt;img alt="IPv6" src="https://fr.matlink.fr/images/512px-World_IPv6_launch_logo.svg_-300x300.png" /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Vous n'êtes probablement pas sans savoir que le nombre d'IPv4
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Le Parti des Geeks Cartésiens Démocrates</title><link href="https://fr.matlink.fr/" rel="alternate"></link><link href="https://fr.matlink.fr/feeds/reseaux.atom.xml" rel="self"></link><id>https://fr.matlink.fr/</id><updated>2015-02-06T00:00:00+01:00</updated><entry><title>Filtrage administratif actif, comment le contourner ?</title><link href="https://fr.matlink.fr/filtrage-administratif-actif-comment-le-contourner.html" rel="alternate"></link><updated>2015-02-06T00:00:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2015-02-06:filtrage-administratif-actif-comment-le-contourner.html</id><summary type="html">&lt;p&gt;Je vous disais il y a quelque temps que &lt;a href="https://fr.matlink.fr/faites-de-votre-serveur-un-proxy-pour-the-pirate-bay.html"&gt;The Pirate Bay avait fait l'oeuvre de censure administrative&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Aujourd'hui, les &lt;a href="https://fr.wikipedia.org/wiki/Fournisseur_d'accès_à_internet"&gt;FAI&lt;/a&gt; sont &lt;a href="http://www.numerama.com/magazine/32134-le-decret-sur-le-blocage-des-sites-sans-juge-est-publie.html"&gt;passés à l'acte et appliquent la loi&lt;/a&gt;. Les plus habitués d'entre vous auront constaté que &lt;a href="https://thepiratebay.se"&gt;The Pirate Bay&lt;/a&gt; affiche une page blanche si vous tentez de vous y connecter (pas pour tout les FAI à priori). &lt;/p&gt;
+&lt;h2&gt;Comment ce filtrage fonctionne ?&lt;/h2&gt;
+&lt;p&gt;De façon étonnante et tout à fait utile, ce filtrage est un filtrage au niveau des &lt;a href="https://fr.wikipedia.org/wiki/Domain_Name_System"&gt;DNS&lt;/a&gt;. Lorsque vous demandez le nom de domaine thepiratebay.se, on vous retourne un truc bidon (du genre 127.0.0.1 qui en fait est une adresse IP qui désigne votre machine).&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;    &lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;dig&lt;/span&gt; &lt;span class="mf"&gt;@212.27.40.240&lt;/span&gt; &lt;span class="n"&gt;thepiratebay&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;se&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="kt"&gt;short&lt;/span&gt;
+    &lt;span class="mf"&gt;127.0.0.1&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Ici, je demande via DIG l'adresse de la machine désignée par thepiratebay.se au DNS d'IP 212.27.40.240. Ce DNS est celui donné par ma freebox lorsque je lui demande un DNS. On constate que ce DNS ment, car 127.0.0.1 n'est pas l'adresse de thepirate.se (ou sinon je m'appelle The Pirate Bay).&lt;/p&gt;
+&lt;h2&gt;Que se passe-t-il si je demande à quelqu'un d'autre ?&lt;/h2&gt;
+&lt;p&gt;Prenons au hasard, un DNS fournit par &lt;a href="http://blog.fdn.fr/?post/2014/12/07/Filtrer-The-Pirate-Bay-Ubu-roi-des-Internets"&gt;FDN&lt;/a&gt; : &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;    &lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;dig&lt;/span&gt; &lt;span class="mf"&gt;@80.67.169.12&lt;/span&gt; &lt;span class="n"&gt;thepiratebay&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;se&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="kt"&gt;short&lt;/span&gt;
+    &lt;span class="mf"&gt;104.28.4.42&lt;/span&gt;
+    &lt;span class="mf"&gt;104.28.5.42&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Ce DNS n'a pas l'air de me mentir. Pour vérifier il faudrait entrer l'une des IP manuellement dans le navigateur. Malheureusement, le protection DDoS de Cloudflare empêche la connexion directe via l'IP. 
+Je vous invite à tester en changeant les DNS utilisés par votre système d'exploitation, il y a des tonnes de tutos là dessus sur le web.
+Je vous donne quelques DNS qui pour l'instant ont l'air de tenir la route : &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;    #######FDN nameservers###############
+    nameserver 80.67.169.12
+    nameserver 2001:910:800::12
+    nameserver 80.67.169.40
+    nameserver 2001:910:800::40
+    #######LDN###########################
+    nameserver 80.67.188.188
+    nameserver 2001:913::8
+    #######ARN###########################
+    nameserver 89.234.141.66
+    nameserver 2a00:5881:8100:1000::3
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Je pense que ces DNS sont de confiance, car ils appartiennent à des associations qui défendent les libertés sur Internet (FDN entre autres) et n'ont pas de raison d'user de leurs pouvoirs. Malheureusement, tout fournisseur de DNS en France doit se soumettre à la loi Française, et peut-être que FDN devra filtrer ce qu'on lui demande.&lt;/p&gt;
+&lt;p&gt;Il est toujours aussi exaspérant de voir que les &lt;a href="https://www.laquadrature.net/fr/pjl-terrorisme"&gt;mesures prises par le gouvernement &lt;/a&gt; pour faire appliquer la loi sur l'Internet en France, ne sont ni adaptées ni efficaces, du moins contre les personnes un peu renseignées. &lt;/p&gt;
+&lt;p&gt;En gros, seules les personnes qui n'utilisent pas The Pirate Bay, se verront privées de The Pirate Bay.&lt;/p&gt;</summary><category term="filtrage"></category><category term="censure"></category><category term="thepiratebay"></category><category term="neutralité du net"></category><category term="tutoriel"></category></entry><entry><title>Passage à IPv6</title><link href="https://fr.matlink.fr/passage-a-ipv6.html" rel="alternate"></link><updated>2014-07-03T13:09:00+02:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-07-03:passage-a-ipv6.html</id><summary type="html">&lt;p&gt;Vous n'êtes probablement pas sans savoir que le nombre d'IPv4
 est en pénurie depuis 2011. Mais bon, c'est pas comme si &lt;a href="https://fr.wikipedia.org/wiki/%C3%89puisement_des_adresses_IPv4"&gt;on l'avait
 prévu depuis
 1990&lt;/a&gt;.

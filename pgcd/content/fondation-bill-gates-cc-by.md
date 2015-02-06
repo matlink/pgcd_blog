@@ -3,10 +3,7 @@ Date: 2014-11-25 22:17
 Category: Logiciels Libres
 Author: Matlink
 Slug: fondation-bill-gates-cc-by
-
-<span class="float-left">
-	![ccbysa]({filename}/images/Cc-by_new_white.svg.png)
-</span>
+Image: Cc-by_new_white.svg.png
 
 EDIT : étonnamment, [la NSA s'y
 met](https://www.nsa.gov/public_info/press_room/2014/nifi_announcement.shtml)

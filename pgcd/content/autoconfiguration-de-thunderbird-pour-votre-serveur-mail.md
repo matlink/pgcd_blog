@@ -4,11 +4,7 @@ Category: Auto-hébergement
 Author: Matlink
 Slug: autoconfiguration-de-thunderbird-pour-votre-serveur-mail
 Tags: tutoriel
-
-<span class="float-left">
-  ![thunderbird]({filename}/images/thunderbird-head.png)
-</span>
-
+Image: thunderbird-head.png
 
 Si vous gérez un serveur mail, qu'il soit chez vous ou bien hébergé chez
 un fournisseur, vous vous êtes sûrement rendus compte quand vous

@@ -16,29 +16,61 @@ rajouter concernant l'installation de base.&lt;/p&gt;
 &lt;p&gt;Tout d'abord on se connecte en SSH sur la raspberry, et une fois dessus,
 on va récupérer le script Python qui permet de lancer la radio :&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;on installe git si c'est pas déjà fait : 
-   &lt;code&gt;sudo apt-get install git&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;ensuite, ffmpeg pour lire les fichiers de musique :
-   &lt;code&gt;sudo apt-get install ffmpeg&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;config-parser pour lire les fichiers de configuration :
-   &lt;code&gt;sudo apt-get install python-pip &amp;amp;&amp;amp; sudo pip install configparser&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;on créer un dossier pour la radio :
-   &lt;code&gt;sudo mkdir ∕pirateradio/ &amp;amp;&amp;amp; cd /pirateradio/&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;on récupère les scripts python de la radio :
-   &lt;code&gt;git clone https://github.com/Make-Magazine/PirateRadio ./&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;on modifie le fichier Python pour renseigner notre dossier :
-   &lt;code&gt;sudo sed -i 's@/root/pifm@/pirateradio/pifm@g' /pirateradio/PirateRadio.py&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;on ouvre le fichier de configuration et on y met nos paramètres :
-   &lt;code&gt;sudo nano pirateradio.conf&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;on installe git si c'est pas déjà fait : &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt; sudo apt-get install git
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;frequency : la fréquence sur laquelle émettre la musique&lt;/p&gt;
+&lt;p&gt;ensuite, ffmpeg pour lire les fichiers de musique :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt; sudo apt-get install ffmpeg
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;/li&gt;
-&lt;li&gt;shuffle : True pour activer la lecture aléatoire, False sinon&lt;/li&gt;
-&lt;li&gt;repeat_all : True si vous voulez jouer en boucle les musiques&lt;/li&gt;
-&lt;li&gt;stereo_playback : pour activer ou non le stéréo&lt;/li&gt;
-&lt;li&gt;music_dir : le répertoire où se trouvent vos musiques&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;config-parser pour lire les fichiers de configuration :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt; sudo apt-get install python-pip &amp;amp;&amp;amp; sudo pip install configparser
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;on créer un dossier pour la radio :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt; sudo mkdir ∕pirateradio/ &amp;amp;&amp;amp; cd /pirateradio/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;on récupère les scripts python de la radio :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt; git clone https://github.com/Make-Magazine/PirateRadio ./
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;on modifie le fichier Python pour renseigner notre dossier :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt; sudo sed -i &amp;#39;s@/root/pifm@/pirateradio/pifm@g&amp;#39; /pirateradio/PirateRadio.py
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;on ouvre le fichier de configuration et on y met nos paramètres :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt; sudo nano pirateradio.conf
+
+ -  frequency : la fréquence sur laquelle émettre la musique
+ -  shuffle : True pour activer la lecture aléatoire, False sinon
+ -  repeat\_all : True si vous voulez jouer en boucle les musiques
+ -  stereo\_playback : pour activer ou non le stéréo
+ -  music\_dir : le répertoire où se trouvent vos musiques
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Vous copiez ensuite vos musiques dans le répertoire que vous avez
 indiqué dans le fichier de configuration. Après ça, il vous faut trouver

@@ -4,9 +4,7 @@ Category: Auto-hébergement
 Author: Matlink
 Tags: auto hébergement, expérience
 Slug: auto-hebergement-le-retour-sur-mon-parcours-1
-
-<span class="float-left">
-![Big_Google]({filename}/images/1984-Big-google.jpg)</span>
+Image: 1984-Big-google.jpg
 
 Cela fait déjà quasiment un an que je m'auto-héberge et c'est à cette
 occasion que j'aimerai partager l'expérience que j'ai acquis au cours de

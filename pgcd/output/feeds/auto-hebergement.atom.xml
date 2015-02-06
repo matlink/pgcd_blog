@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Le Parti des Geeks Cartésiens Démocrates</title><link href="https://fr.matlink.fr/" rel="alternate"></link><link href="https://fr.matlink.fr/feeds/auto-hebergement.atom.xml" rel="self"></link><id>https://fr.matlink.fr/</id><updated>2014-12-06T13:22:00+01:00</updated><entry><title>Faites de votre serveur un proxy pour The Pirate Bay</title><link href="https://fr.matlink.fr/faites-de-votre-serveur-un-proxy-pour-the-pirate-bay.html" rel="alternate"></link><updated>2014-12-06T13:22:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-12-06:faites-de-votre-serveur-un-proxy-pour-the-pirate-bay.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
-  &lt;img alt="the_pirate_bay" src="https://fr.matlink.fr/images/543px-The_Pirate_Bay_logo.svg.png" /&gt; 
-&lt;/span&gt;
-Après la &lt;a href="http://www.numerama.com/magazine/31495-the-pirate-bay-sera-bloque-en-france-avec-ses-miroirs.html"&gt;magnifique nouvelle que nous annonce la
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Le Parti des Geeks Cartésiens Démocrates</title><link href="https://fr.matlink.fr/" rel="alternate"></link><link href="https://fr.matlink.fr/feeds/auto-hebergement.atom.xml" rel="self"></link><id>https://fr.matlink.fr/</id><updated>2014-12-06T13:22:00+01:00</updated><entry><title>Faites de votre serveur un proxy pour The Pirate Bay</title><link href="https://fr.matlink.fr/faites-de-votre-serveur-un-proxy-pour-the-pirate-bay.html" rel="alternate"></link><updated>2014-12-06T13:22:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-12-06:faites-de-votre-serveur-un-proxy-pour-the-pirate-bay.html</id><summary type="html">&lt;p&gt;Après la &lt;a href="http://www.numerama.com/magazine/31495-the-pirate-bay-sera-bloque-en-france-avec-ses-miroirs.html"&gt;magnifique nouvelle que nous annonce la
 SCPP&lt;/a&gt;,
 c'est &lt;a href="https://fr.wikipedia.org/wiki/Effet_Streisand"&gt;l'effet
 Streisand&lt;/a&gt;. On peut
@@ -51,10 +48,7 @@ explique :&lt;/p&gt;
 &lt;code&gt;/etc/init.d/nginx reload&lt;/code&gt; ou &lt;code&gt;/etc/init.d/apache2 reload&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;n'oubliez pas d'ajouter dans votre zone DNS le tpb.xxxx.xx CNAME xxxx.xx
 que vous avez mis dans votre fichier de config.&lt;/p&gt;
-&lt;p&gt;À vos proxies !&lt;/p&gt;</summary><category term="tutoriel"></category></entry><entry><title>Autoconfiguration de Thunderbird pour votre serveur mail</title><link href="https://fr.matlink.fr/autoconfiguration-de-thunderbird-pour-votre-serveur-mail.html" rel="alternate"></link><updated>2014-11-27T19:58:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-27:autoconfiguration-de-thunderbird-pour-votre-serveur-mail.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
-  &lt;img alt="thunderbird" src="https://fr.matlink.fr/images/thunderbird-head.png" /&gt;
-&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Si vous gérez un serveur mail, qu'il soit chez vous ou bien hébergé chez
+&lt;p&gt;À vos proxies !&lt;/p&gt;</summary><category term="tutoriel"></category><category term="neutralité du net"></category><category term="censure"></category><category term="liberté"></category></entry><entry><title>Autoconfiguration de Thunderbird pour votre serveur mail</title><link href="https://fr.matlink.fr/autoconfiguration-de-thunderbird-pour-votre-serveur-mail.html" rel="alternate"></link><updated>2014-11-27T19:58:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-27:autoconfiguration-de-thunderbird-pour-votre-serveur-mail.html</id><summary type="html">&lt;p&gt;Si vous gérez un serveur mail, qu'il soit chez vous ou bien hébergé chez
 un fournisseur, vous vous êtes sûrement rendus compte quand vous
 configuriez un logiciel de messagerie comme Thunderbird, que vous deviez
 rentrer toutes les infos à la main (serveur entrant, serveur sortant,
@@ -187,9 +181,7 @@ l'auto-hébergement nuit à la planète et à l'écologie dans ce cas !&lt;/p&gt
 &lt;p&gt;Je vous parlerai dans le prochain billet de comment
 s'auto-héberger dans le cas où si nous n'y connaissons pas grand chose
 en administration système avec un projet :
-&lt;a href="https://yunohost.org"&gt;Yunohost&lt;/a&gt;.&lt;/p&gt;</summary><category term="auto hébergement"></category><category term="expérience"></category></entry><entry><title>Auto-hébergement : le retour sur mon parcours ( première partie)</title><link href="https://fr.matlink.fr/auto-hebergement-le-retour-sur-mon-parcours-1.html" rel="alternate"></link><updated>2014-11-15T13:49:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-15:auto-hebergement-le-retour-sur-mon-parcours-1.html</id><summary type="html">&lt;p&gt;&lt;span class="float-left"&gt;
-&lt;img alt="Big_Google" src="https://fr.matlink.fr/images/1984-Big-google.jpg" /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Cela fait déjà quasiment un an que je m'auto-héberge et c'est à cette
+&lt;a href="https://yunohost.org"&gt;Yunohost&lt;/a&gt;.&lt;/p&gt;</summary><category term="auto hébergement"></category><category term="expérience"></category></entry><entry><title>Auto-hébergement : le retour sur mon parcours ( première partie)</title><link href="https://fr.matlink.fr/auto-hebergement-le-retour-sur-mon-parcours-1.html" rel="alternate"></link><updated>2014-11-15T13:49:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-15:auto-hebergement-le-retour-sur-mon-parcours-1.html</id><summary type="html">&lt;p&gt;Cela fait déjà quasiment un an que je m'auto-héberge et c'est à cette
 occasion que j'aimerai partager l'expérience que j'ai acquis au cours de
 cette progressive migration.&lt;/p&gt;
 &lt;p&gt;Un bref rappel du contexte de l'époque : j'avais une adresse mail en
