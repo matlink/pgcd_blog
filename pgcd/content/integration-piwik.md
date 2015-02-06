@@ -7,7 +7,6 @@ Author: Matlink
 
 <span class="float-left">
 ![Piwik_logo]({filename}/images/Piwik_2.0_logo.svg.png)
-
 </span>
 
 Lorsque le blog [était encore sur Wordpress]({filename}refonte-pgcd.md), nous utilisions un plugin afin d'observer le nombre de visites que nous avions environs par jour et par semaine. Sachez que les adresses IP étaient masquées et que nous connaissions seulement le navigateur utilisé lors de la visite. 
