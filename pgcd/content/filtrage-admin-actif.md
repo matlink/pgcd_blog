@@ -3,7 +3,7 @@ Date: 2015-02-06
 Category: Réseaux
 Tags: filtrage, censure, thepiratebay, neutralité du net, tutoriel
 Author: Matlink
-Image: 543px-The_Pirate_Bay_logo.svg.png
+Image: 20150206/543px-The_Pirate_Bay_logo.svg.png
 
 
 Je vous disais il y a quelque temps que [The Pirate Bay avait fait l'oeuvre de censure administrative]({filename}/faites-serveur-proxy-the-pirate-bay.md).
@@ -28,7 +28,7 @@ Prenons au hasard, un DNS fournit par [FDN](http://blog.fdn.fr/?post/2014/12/07/
 		104.28.5.42
 
 Ce DNS n'a pas l'air de me mentir. Pour vérifier il faudrait entrer l'une des IP manuellement dans le navigateur. Malheureusement, le protection DDoS de Cloudflare empêche la connexion directe via l'IP. 
-Je vous invite à tester en changeant les DNS utilisés par votre système d'exploitation, il y a des tonnes de tutos là dessus sur le web.
+Je vous invite à tester en changeant les DNS utilisés par votre système d'exploitation, il y a des tonnes de tutos ([ici](http://www.zdnet.fr/actualites/pour-contourner-le-blocage-des-sites-web-il-suffit-de-changer-de-resolveur-dns-39810881.htm) et [là](https://www.bortzmeyer.org/changer-dns.html) par exemple) là dessus sur le web.
 Je vous donne quelques DNS qui pour l'instant ont l'air de tenir la route : 
 
 		#######FDN nameservers###############

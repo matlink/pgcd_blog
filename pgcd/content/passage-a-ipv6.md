@@ -4,7 +4,7 @@ Category: Réseaux
 Author: Matlink
 Tags: ipv6, neutralité du net
 Slug: passage-a-ipv6
-Image: 512px-World_IPv6_launch_logo.svg_-300x300.png
+Image: 2014/512px-World_IPv6_launch_logo.svg_-300x300.png
 
 Vous n'êtes probablement pas sans savoir que le nombre d'IPv4
 est en pénurie depuis 2011. Mais bon, c'est pas comme si [on l'avait

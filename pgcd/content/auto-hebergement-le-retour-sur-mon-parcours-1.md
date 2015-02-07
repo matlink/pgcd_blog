@@ -4,7 +4,7 @@ Category: Auto-hébergement
 Author: Matlink
 Tags: auto hébergement, expérience
 Slug: auto-hebergement-le-retour-sur-mon-parcours-1
-Image: 1984-Big-google.jpg
+Image: 2014/1984-Big-google.jpg
 
 Cela fait déjà quasiment un an que je m'auto-héberge et c'est à cette
 occasion que j'aimerai partager l'expérience que j'ai acquis au cours de
@@ -64,7 +64,7 @@ l'utiliser. Je l'ai d'ailleurs complètement supprimé quand j'ai appris
 que des comptes avaient fuité récemment.
 
 <span class="float-right">
-![Owncloud](images/595px-OwnCloud2-Logo.svg.png =20x20)</span>
+![Owncloud](images/2014/595px-OwnCloud2-Logo.svg.png =20x20)</span>
 
 Ce qui est bien avec ownCloud, c'est qu'il grandit tous les jours et
 corrige des failles de sécurité sans cesse. Ce logiciel est prometteur

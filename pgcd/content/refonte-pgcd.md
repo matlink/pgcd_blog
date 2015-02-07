@@ -3,7 +3,7 @@ Date: 2015-01-27
 Category: Annonces
 Tags: annonces, auto-hébergement, CMS, pelican
 Slug: refonte-pgcd
-Image: pelican_logo.png
+Image: 20150127/pelican_logo.png
 
 Si vous lisez cet article, vous avez probablement remarqué un gros changement au niveau du rendu du blog. En effet, je viens tout juste de terminer la migration du blog vers un nouveau [CMS](https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_gestion_de_contenu) au joli nom de [Pelican](http://blog.getpelican.com).
 

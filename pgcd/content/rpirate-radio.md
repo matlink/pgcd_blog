@@ -66,7 +66,7 @@ un fil métallique afin de faire antenne. Pour ma part, j'ai récupéré le
 câble d'un appareil qui ne fonctionnait plus. Vous devez le brancher sur
 votre RPI sur le GPIO 4 (le pin 7) comme sur la photo ci dessus :
 
-<center>![antenne_gpio]({filename}/images/antenne_gpio_pin7_400-300x224.jpg)</center>
+<center>![antenne_gpio]({filename}/images/2014/antenne_gpio_pin7_400-300x224.jpg)</center>
 
 Il vous reste ensuite plus qu'à lancer la radio avec la commande 
 ``python /pirateradio/PirateRadio.py``

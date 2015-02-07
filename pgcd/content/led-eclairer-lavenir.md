@@ -15,7 +15,7 @@ ce qui manifeste à nous le monde qui nous entoure et c'est bien pour
 cela que nous devons en prendre soin et l'adapter au mieux avec les
 besoins de nos sociétés en évolution. 
 
-<span class="float-left">![lampe_led]({filename}/images/lampe_led-300x160.jpg)</span>
+<span class="float-left">![lampe_led]({filename}/images/2014/lampe_led-300x160.jpg)</span>
 
 
 Je décide donc de vous parler des LED (Light Emitting
@@ -41,7 +41,7 @@ c'est-à-dire adapter l'éclairage à l'utilisateur pourrait bien être d'un
 grand secours pour l'économie mondiale et le problème de l'effet de
 serre.
 
-<span class="float-right">![graphe_led]({filename}/images/graph_led-300x130.jpg)</span>
+<span class="float-right">![graphe_led]({filename}/images/2014/graph_led-300x130.jpg)</span>
 
 Le programme des Nations-Unis *en.lighten* a pour objectif
 de remplacer les lampes à incandescence par des LED partout dans le
@@ -52,7 +52,7 @@ pourrait mener à de véritables économies d'énergie. Cela impliquerait
 par exemple des limitations de construction de centrales électriques
 diminuant ainsi le risque de *blackout.*
 
-<span class="float-left">![appareil_led]({filename}/images/appareil_led-300x300.jpg)</span>
+<span class="float-left">![appareil_led]({filename}/images/2014/appareil_led-300x300.jpg)</span>
 
 Cependant, aujourd'hui un quart de la population
 mondiale n'a pas accès à un réseau public d'électricité. De fait,
@@ -84,7 +84,7 @@ nettoyages. Le seul bémol sera de modifier la climatisation afin de
 dissiper la chaleur produite par les LED. Mais la flexibilité et la
 discrétion d'un éclairage LED fait l'unanimité.
 
-<span class="float-right">![chappelle_led]({filename}/images/chappelle_led-300x196.jpg)</span>
+<span class="float-right">![chappelle_led]({filename}/images/2014/chappelle_led-300x196.jpg)</span>
 
 Au final, l'éclairage LED même s'il est peu coûteux et
 possède de nombreux atouts pour améliorer le quotidien des personnes
@@ -96,6 +96,6 @@ parfaitement dans le débat de la transition énergétique et il en va du
 bon sens de le prendre en considération afin d'amorcer un virage
 économique et écologique.
 
-<span class="float-left">![led_verte]({filename}/images/led_verte-150x148.png)</span>
+<span class="float-left">![led_verte]({filename}/images/2014/led_verte-150x148.png)</span>
 
 Poulos

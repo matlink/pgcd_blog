@@ -18,7 +18,7 @@
 
 
 &lt;p&gt;Ce DNS n'a pas l'air de me mentir. Pour vérifier il faudrait entrer l'une des IP manuellement dans le navigateur. Malheureusement, le protection DDoS de Cloudflare empêche la connexion directe via l'IP. 
-Je vous invite à tester en changeant les DNS utilisés par votre système d'exploitation, il y a des tonnes de tutos là dessus sur le web.
+Je vous invite à tester en changeant les DNS utilisés par votre système d'exploitation, il y a des tonnes de tutos (&lt;a href="http://www.zdnet.fr/actualites/pour-contourner-le-blocage-des-sites-web-il-suffit-de-changer-de-resolveur-dns-39810881.htm"&gt;ici&lt;/a&gt; et &lt;a href="https://www.bortzmeyer.org/changer-dns.html"&gt;là&lt;/a&gt; par exemple) là dessus sur le web.
 Je vous donne quelques DNS qui pour l'instant ont l'air de tenir la route : &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;    #######FDN nameservers###############
     nameserver 80.67.169.12
@@ -98,7 +98,7 @@ son chemin en campagne Souabe dans son village natal de Meßkirch
 en Bade-Wurtemberg : "*Quand les énigmes se pressaient et qu'aucune
 issue ne s'offrait, le chemin de campagne était d'un bon secours.".&lt;/strong&gt;*&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Bonne lecture !&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;img alt="feldweg" src="https://fr.matlink.fr/images/feldweg.jpg" /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;center&gt;&lt;img alt="feldweg" src="https://fr.matlink.fr/images/2014/feldweg.jpg" /&gt;&lt;/center&gt;
 &lt;center&gt;Le chemin de campagne, Messkirch&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Der Feldweg (Le chemin de Campagne), par Martin Heidegger&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;"Il quitte à sa porte le Jardin du Château et court vers les terres
@@ -220,7 +220,7 @@ Dieu?&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Tout dit le renoncement qui conduit vers le Même. Le renoncement ne
 prend pas, mais il donne. Il donne la force inépuisable du Simple. Par
 l'appel, en une lointaine Origine, une terre natale nous est rendue."&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://fr.matlink.fr/images/chemin_heidegger.jpg"&gt;&lt;center&gt;&lt;img alt="chemin" src="https://fr.matlink.fr/images/chemin_heidegger_small.jpg" /&gt;&lt;/center&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://fr.matlink.fr/images/2014/chemin_heidegger.jpg"&gt;&lt;center&gt;&lt;img alt="chemin" src="https://fr.matlink.fr/images/2014/chemin_heidegger_small.jpg" /&gt;&lt;/center&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Poulos&lt;/p&gt;</summary></entry><entry><title>Faites de votre serveur un proxy pour The Pirate Bay</title><link href="https://fr.matlink.fr/faites-de-votre-serveur-un-proxy-pour-the-pirate-bay.html" rel="alternate"></link><updated>2014-12-06T13:22:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-12-06:faites-de-votre-serveur-un-proxy-pour-the-pirate-bay.html</id><summary type="html">&lt;p&gt;Après la &lt;a href="http://www.numerama.com/magazine/31495-the-pirate-bay-sera-bloque-en-france-avec-ses-miroirs.html"&gt;magnifique nouvelle que nous annonce la
 SCPP&lt;/a&gt;,
 c'est &lt;a href="https://fr.wikipedia.org/wiki/Effet_Streisand"&gt;l'effet
@@ -340,7 +340,7 @@ Et voilà, les nouveaux comptes pour ce nom de domaine seront
 automatiquement configurés pour Thunderbird (et à priori c'est le seul
 bon client mail à pouvoir faire ça, avec Outlook de
 Microsoft).&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;img alt="config-found" src="https://fr.matlink.fr/images/config-found.png" /&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;img alt="config-found" src="https://fr.matlink.fr/images/2014/config-found.png" /&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://developer.mozilla.org/en-US/docs/Mozilla/Thunderbird/Autoconfiguration"&gt;sources&lt;/a&gt;&lt;/p&gt;</summary><category term="tutoriel"></category></entry><entry><title>La fondation Bill et Melinda Gates exige la licence CC-BY</title><link href="https://fr.matlink.fr/fondation-bill-gates-cc-by.html" rel="alternate"></link><updated>2014-11-25T22:17:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-25:fondation-bill-gates-cc-by.html</id><summary type="html">&lt;p&gt;EDIT : étonnamment, &lt;a href="https://www.nsa.gov/public_info/press_room/2014/nifi_announcement.shtml"&gt;la NSA s'y
 met&lt;/a&gt;
 ! Quelle surprise !&lt;/p&gt;
@@ -365,7 +365,7 @@ con l'en empêche.&lt;/p&gt;
 leur vient l'idée de faire cet exploit (si quelqu'un a des infos), mais
 j'en suis fier. Reste à convaincre d'autres
 fondations/organismes/entreprises à le faire maintenant !&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;img alt="rms" src="https://fr.matlink.fr/images/rms.jpg" /&gt; &lt;img alt="bill" src="https://fr.matlink.fr/images/bill_gates.jpeg" /&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;img alt="rms" src="https://fr.matlink.fr/images/2014/rms.jpg" /&gt; &lt;img alt="bill" src="https://fr.matlink.fr/images/2014/bill_gates.jpeg" /&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;Et peut-être qu'un jour nous verrons
 Richard Stallman et Bill Gates faire des séminaires ensemble sur le
 logiciel libre !&lt;/p&gt;
@@ -396,7 +396,7 @@ Rpi, c'est qu'il est petit (de la taille d'une carte de crédit), est
 très simpliste ce qui donne un prix très raisonnable (compter 40/50€
 pour le rpi + alimentation + la carte SD pour y mettre le système).&lt;/p&gt;
 &lt;p&gt;&lt;span class="float-left"&gt;
-&lt;img alt="Postfix" src="https://fr.matlink.fr/images/Postfix-logo.png" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;img alt="Postfix" src="https://fr.matlink.fr/images/2014/Postfix-logo.png" /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;J'ai patienté des jours et des jours impatiemment avant de le recevoir,
 et une fois arrivé à destination, je me suis empressé de le démarrer et
 d'y installer des serveurs mail. Je vous avoue que c'est pas simple en
@@ -429,7 +429,7 @@ petite machine consomme environ 3 Watts, ce qui représente grosso modo
 3€ par an sur votre facture d'électricité. Plus de raison de dire que
 l'auto-hébergement nuit à la planète et à l'écologie dans ce cas !&lt;/p&gt;
 &lt;p&gt;&lt;span class="float-right"&gt;
-&lt;img alt="logoynh" src="https://fr.matlink.fr/images/logo_ynh.png" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;img alt="logoynh" src="https://fr.matlink.fr/images/2014/logo_ynh.png" /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Je vous parlerai dans le prochain billet de comment
 s'auto-héberger dans le cas où si nous n'y connaissons pas grand chose
 en administration système avec un projet :
@@ -511,7 +511,7 @@ indiqué dans le fichier de configuration. Après ça, il vous faut trouver
 un fil métallique afin de faire antenne. Pour ma part, j'ai récupéré le
 câble d'un appareil qui ne fonctionnait plus. Vous devez le brancher sur
 votre RPI sur le GPIO 4 (le pin 7) comme sur la photo ci dessus :&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;img alt="antenne_gpio" src="https://fr.matlink.fr/images/antenne_gpio_pin7_400-300x224.jpg" /&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;img alt="antenne_gpio" src="https://fr.matlink.fr/images/2014/antenne_gpio_pin7_400-300x224.jpg" /&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;Il vous reste ensuite plus qu'à lancer la radio avec la commande 
 &lt;code&gt;python /pirateradio/PirateRadio.py&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;J'ai créé un script shell pour installer tout ça automatiquement,
@@ -567,7 +567,7 @@ aucune raison d'utiliser Dropbox, alors j'ai arrêter de vraiment
 l'utiliser. Je l'ai d'ailleurs complètement supprimé quand j'ai appris
 que des comptes avaient fuité récemment.&lt;/p&gt;
 &lt;p&gt;&lt;span class="float-right"&gt;
-&lt;img alt="Owncloud" src="images/595px-OwnCloud2-Logo.svg.png" title="=20x20" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;img alt="Owncloud" src="images/2014/595px-OwnCloud2-Logo.svg.png" title="=20x20" /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Ce qui est bien avec ownCloud, c'est qu'il grandit tous les jours et
 corrige des failles de sécurité sans cesse. Ce logiciel est prometteur
 et est une alternative libre de taille au logiciel privateur Dropbox.
@@ -600,7 +600,7 @@ historique de nuit, une œuvre d'art dans un musée. Oui l'éclairage c'est
 ce qui manifeste à nous le monde qui nous entoure et c'est bien pour
 cela que nous devons en prendre soin et l'adapter au mieux avec les
 besoins de nos sociétés en évolution. &lt;/p&gt;
-&lt;p&gt;&lt;span class="float-left"&gt;&lt;img alt="lampe_led" src="https://fr.matlink.fr/images/lampe_led-300x160.jpg" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="float-left"&gt;&lt;img alt="lampe_led" src="https://fr.matlink.fr/images/2014/lampe_led-300x160.jpg" /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Je décide donc de vous parler des LED (Light Emitting
 Diode) ou DEL, en français les fameuses diodes électroluminescentes que
 vous avez sûrement vues en cours de physique au collège. Ce petit
@@ -622,7 +622,7 @@ variateurs commandés par la lumière du jour, des meilleurs optiques etc)
 c'est-à-dire adapter l'éclairage à l'utilisateur pourrait bien être d'un
 grand secours pour l'économie mondiale et le problème de l'effet de
 serre.&lt;/p&gt;
-&lt;p&gt;&lt;span class="float-right"&gt;&lt;img alt="graphe_led" src="https://fr.matlink.fr/images/graph_led-300x130.jpg" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="float-right"&gt;&lt;img alt="graphe_led" src="https://fr.matlink.fr/images/2014/graph_led-300x130.jpg" /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Le programme des Nations-Unis &lt;em&gt;en.lighten&lt;/em&gt; a pour objectif
 de remplacer les lampes à incandescence par des LED partout dans le
 monde pour 2015 avec en priorité les pays en voie de développement pour
@@ -631,7 +631,7 @@ et une gestion de la transition respectueuse pour l'environnement
 pourrait mener à de véritables économies d'énergie. Cela impliquerait
 par exemple des limitations de construction de centrales électriques
 diminuant ainsi le risque de &lt;em&gt;blackout.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="float-left"&gt;&lt;img alt="appareil_led" src="https://fr.matlink.fr/images/appareil_led-300x300.jpg" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="float-left"&gt;&lt;img alt="appareil_led" src="https://fr.matlink.fr/images/2014/appareil_led-300x300.jpg" /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Cependant, aujourd'hui un quart de la population
 mondiale n'a pas accès à un réseau public d'électricité. De fait,
 l’association GOGLA tend à promouvoir le « off-grid », l'éclairage
@@ -660,7 +660,7 @@ est relativement peu évident de procéder à des remplacement ou des
 nettoyages. Le seul bémol sera de modifier la climatisation afin de
 dissiper la chaleur produite par les LED. Mais la flexibilité et la
 discrétion d'un éclairage LED fait l'unanimité.&lt;/p&gt;
-&lt;p&gt;&lt;span class="float-right"&gt;&lt;img alt="chappelle_led" src="https://fr.matlink.fr/images/chappelle_led-300x196.jpg" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="float-right"&gt;&lt;img alt="chappelle_led" src="https://fr.matlink.fr/images/2014/chappelle_led-300x196.jpg" /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Au final, l'éclairage LED même s'il est peu coûteux et
 possède de nombreux atouts pour améliorer le quotidien des personnes
 n'en est encore qu'à ses débuts et a du chemin à parcourir en terme de
@@ -670,7 +670,7 @@ Mais pour sur, le développement de l'éclairage LED s'inscrit
 parfaitement dans le débat de la transition énergétique et il en va du
 bon sens de le prendre en considération afin d'amorcer un virage
 économique et écologique.&lt;/p&gt;
-&lt;p&gt;&lt;span class="float-left"&gt;&lt;img alt="led_verte" src="https://fr.matlink.fr/images/led_verte-150x148.png" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="float-left"&gt;&lt;img alt="led_verte" src="https://fr.matlink.fr/images/2014/led_verte-150x148.png" /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Poulos&lt;/p&gt;</summary></entry><entry><title>Migration du serveur</title><link href="https://fr.matlink.fr/migration-du-serveur.html" rel="alternate"></link><updated>2014-11-08T18:56:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-08:migration-du-serveur.html</id><summary type="html">&lt;p&gt;Cela faisait un moment qu'on avait rien posté ici, c'est vrai ! Mais
 bon, on va dire que c'est la faute des vacances !&lt;/p&gt;
 &lt;p&gt;Juste un court article pour vous dire que j'ai migré l'ensemble des
@@ -688,7 +688,7 @@ e-mails jetables avec
 &lt;a href="https://korben.info/creez-votre-propre-serveur-demails-jetables.html"&gt;EmailPoubelle&lt;/a&gt;,
 un service de chat (XMPP) avec Metronome, un serveur mumble et plus
 encore. Si certaines choses vous intéressent, ou que vous voudriez que
-j'ajoute des services, envoyez moi un mail à matlink[at]matlink.fr.
+j'ajoute des services, envoyez moi un mail à pgcd[at]matlink.fr.
 Sachez quand même que je n'ai pas une connexion d'entreprise, alors
 n'espérez pas avoir un débit de malade depuis mon serveur. Mais bon,
 entre choisir d'héberger ses mails chez Google, Orange, Yahoo et tout
@@ -701,7 +701,7 @@ Internet.&lt;/a&gt;Le but est de, pour
 chaque service que Google propose, d'en avoir un qui fait la même chose,
 avec des logiciels libres. Je vous invite à faire un don, c'est
 important d'avoir des alternatives à Google.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://degooglisons-internet.org/img/carte-full.jpg"&gt;&lt;center&gt;&lt;img alt="chemin" src="https://fr.matlink.fr/images/carte-full_small.jpg" /&gt;&lt;/center&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a href="http://degooglisons-internet.org/img/carte-full.jpg"&gt;&lt;center&gt;&lt;img alt="chemin" src="https://fr.matlink.fr/images/2014/carte-full_small.jpg" /&gt;&lt;/center&gt;&lt;/a&gt;
 &lt;center&gt;Degooglisons Internet !&lt;/center&gt;&lt;/p&gt;</summary></entry><entry><title>Passage à IPv6</title><link href="https://fr.matlink.fr/passage-a-ipv6.html" rel="alternate"></link><updated>2014-07-03T13:09:00+02:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-07-03:passage-a-ipv6.html</id><summary type="html">&lt;p&gt;Vous n'êtes probablement pas sans savoir que le nombre d'IPv4
 est en pénurie depuis 2011. Mais bon, c'est pas comme si &lt;a href="https://fr.wikipedia.org/wiki/%C3%89puisement_des_adresses_IPv4"&gt;on l'avait
 prévu depuis
@@ -848,8 +848,8 @@ révolution.
 &lt;center&gt;
  &lt;table&gt;
     &lt;tr&gt;
-        &lt;td&gt;&lt;center&gt;&lt;img alt="Paul_Celan" src="https://fr.matlink.fr/images/Celan_sens_dialogue.jpg" /&gt;&lt;/center&gt;&lt;/td&gt;
-        &lt;td&gt;&lt;center&gt; &lt;img alt="Heidegger" src="https://fr.matlink.fr/images/heidegger_sens_dialogue.jpg" /&gt;&lt;/center&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;td&gt;&lt;center&gt;&lt;img alt="Paul_Celan" src="https://fr.matlink.fr/images/2014/Celan_sens_dialogue.jpg" /&gt;&lt;/center&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;center&gt; &lt;img alt="Heidegger" src="https://fr.matlink.fr/images/2014/heidegger_sens_dialogue.jpg" /&gt;&lt;/center&gt;&lt;/td&gt;&lt;/tr&gt;
     &lt;tr&gt;
         &lt;td&gt;&lt;center&gt;Paul Celan&lt;/center&gt;&lt;/td&gt;
         &lt;td&gt;&lt;center&gt; Heidegger&lt;/center&gt;&lt;/td&gt;

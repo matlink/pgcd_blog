@@ -118,7 +118,7 @@ Et voilà, les nouveaux comptes pour ce nom de domaine seront
 automatiquement configurés pour Thunderbird (et à priori c'est le seul
 bon client mail à pouvoir faire ça, avec Outlook de
 Microsoft).&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;img alt="config-found" src="https://fr.matlink.fr/images/config-found.png" /&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;img alt="config-found" src="https://fr.matlink.fr/images/2014/config-found.png" /&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://developer.mozilla.org/en-US/docs/Mozilla/Thunderbird/Autoconfiguration"&gt;sources&lt;/a&gt;&lt;/p&gt;</summary><category term="tutoriel"></category></entry><entry><title>Auto-hébergement : le retour sur mon parcours (deuxième partie)</title><link href="https://fr.matlink.fr/auto-hebergement-le-retour-sur-mon-parcours-deuxieme-partie.html" rel="alternate"></link><updated>2014-11-20T22:31:00+01:00</updated><author><name>Matlink</name></author><id>tag:fr.matlink.fr,2014-11-20:auto-hebergement-le-retour-sur-mon-parcours-deuxieme-partie.html</id><summary type="html">&lt;p&gt;De retour pour une deuxième partie concernant mon expérience sur
 l'auto-hébergement. Pour ceux qui auraient loupé la &lt;a href="https://matlink.fr/PGCD/auto-hebergement-le-retour-sur-mon-parcours-1/"&gt;première partie, la
 voici&lt;/a&gt;.&lt;/p&gt;
@@ -144,7 +144,7 @@ Rpi, c'est qu'il est petit (de la taille d'une carte de crédit), est
 très simpliste ce qui donne un prix très raisonnable (compter 40/50€
 pour le rpi + alimentation + la carte SD pour y mettre le système).&lt;/p&gt;
 &lt;p&gt;&lt;span class="float-left"&gt;
-&lt;img alt="Postfix" src="https://fr.matlink.fr/images/Postfix-logo.png" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;img alt="Postfix" src="https://fr.matlink.fr/images/2014/Postfix-logo.png" /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;J'ai patienté des jours et des jours impatiemment avant de le recevoir,
 et une fois arrivé à destination, je me suis empressé de le démarrer et
 d'y installer des serveurs mail. Je vous avoue que c'est pas simple en
@@ -177,7 +177,7 @@ petite machine consomme environ 3 Watts, ce qui représente grosso modo
 3€ par an sur votre facture d'électricité. Plus de raison de dire que
 l'auto-hébergement nuit à la planète et à l'écologie dans ce cas !&lt;/p&gt;
 &lt;p&gt;&lt;span class="float-right"&gt;
-&lt;img alt="logoynh" src="https://fr.matlink.fr/images/logo_ynh.png" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;img alt="logoynh" src="https://fr.matlink.fr/images/2014/logo_ynh.png" /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Je vous parlerai dans le prochain billet de comment
 s'auto-héberger dans le cas où si nous n'y connaissons pas grand chose
 en administration système avec un projet :
@@ -232,7 +232,7 @@ aucune raison d'utiliser Dropbox, alors j'ai arrêter de vraiment
 l'utiliser. Je l'ai d'ailleurs complètement supprimé quand j'ai appris
 que des comptes avaient fuité récemment.&lt;/p&gt;
 &lt;p&gt;&lt;span class="float-right"&gt;
-&lt;img alt="Owncloud" src="images/595px-OwnCloud2-Logo.svg.png" title="=20x20" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;img alt="Owncloud" src="images/2014/595px-OwnCloud2-Logo.svg.png" title="=20x20" /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Ce qui est bien avec ownCloud, c'est qu'il grandit tous les jours et
 corrige des failles de sécurité sans cesse. Ce logiciel est prometteur
 et est une alternative libre de taille au logiciel privateur Dropbox.

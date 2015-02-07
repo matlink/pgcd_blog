@@ -23,7 +23,7 @@ e-mails jetables avec
 [EmailPoubelle](https://korben.info/creez-votre-propre-serveur-demails-jetables.html),
 un service de chat (XMPP) avec Metronome, un serveur mumble et plus
 encore. Si certaines choses vous intéressent, ou que vous voudriez que
-j'ajoute des services, envoyez moi un mail à matlink[at]matlink.fr.
+j'ajoute des services, envoyez moi un mail à pgcd[at]matlink.fr.
 Sachez quand même que je n'ai pas une connexion d'entreprise, alors
 n'espérez pas avoir un débit de malade depuis mon serveur. Mais bon,
 entre choisir d'héberger ses mails chez Google, Orange, Yahoo et tout
@@ -38,5 +38,5 @@ chaque service que Google propose, d'en avoir un qui fait la même chose,
 avec des logiciels libres. Je vous invite à faire un don, c'est
 important d'avoir des alternatives à Google.
 
-[<center>![chemin]({filename}/images/carte-full_small.jpg)</center>](http://degooglisons-internet.org/img/carte-full.jpg)
+[<center>![chemin]({filename}/images/2014/carte-full_small.jpg)</center>](http://degooglisons-internet.org/img/carte-full.jpg)
 <center>Degooglisons Internet !</center>

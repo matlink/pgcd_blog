@@ -3,7 +3,7 @@ Date: 2014-12-06 13:22
 Category: Auto-hébergement
 Author: Matlink
 Tags: tutoriel, neutralité du net, censure, liberté
-Image: 543px-The_Pirate_Bay_logo.svg.png
+Image: 20150206/543px-The_Pirate_Bay_logo.svg.png
 
 
 Après la [magnifique nouvelle que nous annonce la

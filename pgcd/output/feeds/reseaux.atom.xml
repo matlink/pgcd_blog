@@ -18,7 +18,7 @@
 
 
 &lt;p&gt;Ce DNS n'a pas l'air de me mentir. Pour vérifier il faudrait entrer l'une des IP manuellement dans le navigateur. Malheureusement, le protection DDoS de Cloudflare empêche la connexion directe via l'IP. 
-Je vous invite à tester en changeant les DNS utilisés par votre système d'exploitation, il y a des tonnes de tutos là dessus sur le web.
+Je vous invite à tester en changeant les DNS utilisés par votre système d'exploitation, il y a des tonnes de tutos (&lt;a href="http://www.zdnet.fr/actualites/pour-contourner-le-blocage-des-sites-web-il-suffit-de-changer-de-resolveur-dns-39810881.htm"&gt;ici&lt;/a&gt; et &lt;a href="https://www.bortzmeyer.org/changer-dns.html"&gt;là&lt;/a&gt; par exemple) là dessus sur le web.
 Je vous donne quelques DNS qui pour l'instant ont l'air de tenir la route : &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;    #######FDN nameservers###############
     nameserver 80.67.169.12

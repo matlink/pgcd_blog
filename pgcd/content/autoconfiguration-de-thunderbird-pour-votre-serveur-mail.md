@@ -4,7 +4,7 @@ Category: Auto-hébergement
 Author: Matlink
 Slug: autoconfiguration-de-thunderbird-pour-votre-serveur-mail
 Tags: tutoriel
-Image: thunderbird-head.png
+Image: 2014/thunderbird-head.png
 
 Si vous gérez un serveur mail, qu'il soit chez vous ou bien hébergé chez
 un fournisseur, vous vous êtes sûrement rendus compte quand vous
@@ -82,7 +82,7 @@ automatiquement configurés pour Thunderbird (et à priori c'est le seul
 bon client mail à pouvoir faire ça, avec Outlook de
 Microsoft).
 
-<center>![config-found]({filename}/images/config-found.png)</center>
+<center>![config-found]({filename}/images/2014/config-found.png)</center>
 
 [sources](https://developer.mozilla.org/en-US/docs/Mozilla/Thunderbird/Autoconfiguration)
 

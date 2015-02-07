@@ -3,7 +3,7 @@ Date: 2014-11-25 22:17
 Category: Logiciels Libres
 Author: Matlink
 Slug: fondation-bill-gates-cc-by
-Image: Cc-by_new_white.svg.png
+Image: 2014/Cc-by_new_white.svg.png
 
 EDIT : étonnamment, [la NSA s'y
 met](https://www.nsa.gov/public_info/press_room/2014/nifi_announcement.shtml)
@@ -35,7 +35,7 @@ leur vient l'idée de faire cet exploit (si quelqu'un a des infos), mais
 j'en suis fier. Reste à convaincre d'autres
 fondations/organismes/entreprises à le faire maintenant !
 
-<center>![rms]({filename}/images/rms.jpg) ![bill]({filename}/images/bill_gates.jpeg)</center>
+<center>![rms]({filename}/images/2014/rms.jpg) ![bill]({filename}/images/2014/bill_gates.jpeg)</center>
 
 Et peut-être qu'un jour nous verrons
 Richard Stallman et Bill Gates faire des séminaires ensemble sur le

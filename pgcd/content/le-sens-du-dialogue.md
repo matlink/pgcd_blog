@@ -29,8 +29,8 @@ révolution.
 <center>
  <table>
 	<tr>
-		<td><center>![Paul_Celan]({filename}/images/Celan_sens_dialogue.jpg)</center></td>
-		<td><center> ![Heidegger]({filename}/images/heidegger_sens_dialogue.jpg)</center></td></tr>
+		<td><center>![Paul_Celan]({filename}/images/2014/Celan_sens_dialogue.jpg)</center></td>
+		<td><center> ![Heidegger]({filename}/images/2014/heidegger_sens_dialogue.jpg)</center></td></tr>
 	<tr>
 		<td><center>Paul Celan</center></td>
 		<td><center> Heidegger</center></td>

@@ -39,7 +39,7 @@ issue ne s'offrait, le chemin de campagne était d'un bon secours.".***
 
  
 
-<center>![feldweg]({filename}/images/feldweg.jpg)</center>
+<center>![feldweg]({filename}/images/2014/feldweg.jpg)</center>
 <center>Le chemin de campagne, Messkirch</center>
 
 ***Der Feldweg (Le chemin de Campagne), par Martin Heidegger***
@@ -177,6 +177,6 @@ prend pas, mais il donne. Il donne la force inépuisable du Simple. Par
 l'appel, en une lointaine Origine, une terre natale nous est rendue."*
 
 
-[<center>![chemin]({filename}/images/chemin_heidegger_small.jpg)</center>]({filename}/images/chemin_heidegger.jpg)
+[<center>![chemin]({filename}/images/2014/chemin_heidegger_small.jpg)</center>]({filename}/images/2014/chemin_heidegger.jpg)
 
 Poulos

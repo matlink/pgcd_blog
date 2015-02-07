@@ -4,6 +4,7 @@ Category: Annonces
 Tags: Piwik, suivi
 Slug: integration-piwik-visites
 Author: Matlink
+Image: Piwik_2.0_logo.svg.png
 
 <span class="float-left">
 ![Piwik_logo]({filename}/images/Piwik_2.0_logo.svg.png)

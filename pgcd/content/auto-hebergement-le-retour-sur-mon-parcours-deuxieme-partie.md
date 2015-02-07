@@ -34,7 +34,7 @@ très simpliste ce qui donne un prix très raisonnable (compter 40/50€
 pour le rpi + alimentation + la carte SD pour y mettre le système).
 
 <span class="float-left">
-![Postfix]({filename}/images/Postfix-logo.png)</span>
+![Postfix]({filename}/images/2014/Postfix-logo.png)</span>
 
 J'ai patienté des jours et des jours impatiemment avant de le recevoir,
 et une fois arrivé à destination, je me suis empressé de le démarrer et
@@ -72,7 +72,7 @@ petite machine consomme environ 3 Watts, ce qui représente grosso modo
 l'auto-hébergement nuit à la planète et à l'écologie dans ce cas !
 
 <span class="float-right">
-![logoynh]({filename}/images/logo_ynh.png)</span>
+![logoynh]({filename}/images/2014/logo_ynh.png)</span>
 
 Je vous parlerai dans le prochain billet de comment
 s'auto-héberger dans le cas où si nous n'y connaissons pas grand chose

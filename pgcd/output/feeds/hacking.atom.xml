@@ -77,7 +77,7 @@ indiqué dans le fichier de configuration. Après ça, il vous faut trouver
 un fil métallique afin de faire antenne. Pour ma part, j'ai récupéré le
 câble d'un appareil qui ne fonctionnait plus. Vous devez le brancher sur
 votre RPI sur le GPIO 4 (le pin 7) comme sur la photo ci dessus :&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;img alt="antenne_gpio" src="https://fr.matlink.fr/images/antenne_gpio_pin7_400-300x224.jpg" /&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;img alt="antenne_gpio" src="https://fr.matlink.fr/images/2014/antenne_gpio_pin7_400-300x224.jpg" /&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;Il vous reste ensuite plus qu'à lancer la radio avec la commande 
 &lt;code&gt;python /pirateradio/PirateRadio.py&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;J'ai créé un script shell pour installer tout ça automatiquement,
