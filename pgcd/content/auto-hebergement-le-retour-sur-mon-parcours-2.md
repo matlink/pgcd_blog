@@ -3,7 +3,7 @@ Date: 2014-11-20 22:31
 Category: Auto-hébergement
 Author: Matlink
 Tags: auto hébergement, expérience
-Slug: auto-hebergement-le-retour-sur-mon-parcours-deuxieme-partie
+Slug: auto-hebergement-le-retour-sur-mon-parcours-2
 
 De retour pour une deuxième partie concernant mon expérience sur
 l'auto-hébergement. Pour ceux qui auraient loupé la [première partie, la
@@ -75,7 +75,7 @@ l'auto-hébergement nuit à la planète et à l'écologie dans ce cas !
 ![logoynh]({filename}/images/2014/logo_ynh.png)</span>
 
 Je vous parlerai dans le prochain billet de comment
-s'auto-héberger dans le cas où si nous n'y connaissons pas grand chose
+s'auto-héberger dans le cas où nous n'y connaissons pas grand chose
 en administration système avec un projet :
 [Yunohost](https://yunohost.org).
 
