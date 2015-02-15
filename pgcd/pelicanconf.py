@@ -36,7 +36,11 @@ ISSO_SERVER="fr.matlink.fr/comments"
 
 # Blogroll
 
-LINKS = (('Pelican', 'http://getpelican.com/', '/theme/images/icons/pelican_logo.png'),)
+LINKS = (	('Pelican', 'http://getpelican.com/', '/theme/images/icons/pelican_logo.png'),
+			('OpenMailBox', 'https://openmailbox.org', '/theme/images/icons/openmailbox_logo.png'),
+			('NullPointerException','https://blog.imirhil.fr','/theme/images/icons/aeris.png'),
+			('Le Blog de Genma','http://genma.free.fr','/theme/images/icons/genma.png')
+		)
 
 # Social widget
 SOCIAL = (
