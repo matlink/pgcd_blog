@@ -6,7 +6,7 @@ Tags: auto hébergement, expérience, yunohost
 Slug: auto-hebergement-le-retour-sur-mon-parcours-3
 Image: 2014/logo_ynh.png
 
-Avant tout, voici [la première partie]({filename}/auto-hebergement-le-retour-sur-mon-parcours-1.md) ainsi que [la deuxième partie]({filename}/auto-hebergement-le-retour-sur-mon-parcours-2.md) pour ceux qui n'en auraient pas encore pris connaissance.
+Avant tout, voici [la première partie]({filename}/2014/1115-auto-hebergement-le-retour-sur-mon-parcours-1.md) ainsi que [la deuxième partie]({filename}/2014/1120-auto-hebergement-le-retour-sur-mon-parcours-2.md) pour ceux qui n'en auraient pas encore pris connaissance.
 
 Je voudrais d'abord m'excuser auprès de ceux qui attendaient cette troisième partie que je vous avais promis dans la partie 2. Les choses ont faites qu'elle a due être retardée. 
 
