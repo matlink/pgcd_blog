@@ -20,7 +20,7 @@
 {% include 'github.html' %}
         <header id="banner" class="body"  >
                 <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
-                <center><a id="title_logo" href="{{ SITEURL }}/"><img src="{{ SITEURL }}/theme/images/icons/atom_big.png" /></a></center>
+                <div style="text-align:center"><a id="title_logo" href="{{ SITEURL }}/"><img src="{{ SITEURL }}/theme/images/icons/atom_big.png" alt="" /></a></div>
                 {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}
                 <nav><ul>
                 {% for title, link in MENUITEMS %}
@@ -33,11 +33,11 @@
                 <li><a href="{{ SITEURL }}/tag/tutoriel.html">Tutoriels</a></li>
                 {% endif %}
                 {% if DISPLAY_PAGES_ON_MENU -%}
-                <span id="pages">
+                <!--span id="pages"-->
                 {% for pg in PAGES %}
                     <li{% if pg == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a></li>
                 {% endfor %}
-                </span>
+                <!--/span-->
                 {% endif %}
                 </ul></nav>
         </header><!-- /#banner -->
@@ -49,7 +49,7 @@
                         <h2>blogroll</h2>
                         <ul>
                         {% for name, link, ico in LINKS %}
-                            <li><a href="{{ link }}"><img src="{{SITEURL}}{{ ico }}" />  {{ name }}</a></li>
+                            <li><a href="{{ link }}"><img src="{{SITEURL}}{{ ico }}" alt="{{ name }}"/>  {{ name }}</a></li>
                         {% endfor %}
                         </ul>
                 </div><!-- /.blogroll -->
@@ -75,7 +75,7 @@
 
         <footer id="contentinfo" class="body">
                 <address id="about" class="vcard body">
-                <center>Tous les articles sont publiés sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="{{ SITEURL }}/theme/images/icons/cc-by-nc-sa.png" alt="CC-BY-NC-SA"></a></center>
+                <div style="text-align:center">Tous les articles sont publiés sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="{{ SITEURL }}/theme/images/icons/cc-by-nc-sa.png" alt="CC-BY-NC-SA"></a></div>
                 </address><!-- /#about -->
         </footer><!-- /#contentinfo -->
 

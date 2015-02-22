@@ -5,11 +5,11 @@
   <article>
     <header>
       {% if article.image %}
-                    <img src="{{SITEURL}}/images/{{article.image}}" id="logo_article"/>
+                    <img src="{{SITEURL}}/images/{{article.image}}" id="logo_article" alt="" />
       {% endif %}
-      <h1 class="entry-title">
+      <h2 class="entry-title">
         <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
-           title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
+           title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
       {% include 'twitter.html' %}
     </header>
     <div class="entry-content">
