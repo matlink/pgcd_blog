@@ -28,8 +28,6 @@ PIWIK_URL = "fr.matlink.fr/piwik"
 PIWIK_SSL_URL = "fr.matlink.fr/piwik"
 PIWIK_SITE_ID = 1
 
-PLUGIN_PATHS = ['./plugins/']
-
 #Comments plugin
 ISSO_SERVER="fr.matlink.fr/comments"
 
