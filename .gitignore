@@ -1,2 +1,5 @@
-output
-cache
+output/
+cache/
+fabfile.py
+plugins/
+cache/

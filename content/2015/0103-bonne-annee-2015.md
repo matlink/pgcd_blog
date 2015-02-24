@@ -9,7 +9,7 @@ qui ont osé s'aventurer par ici ;) Comme d'habitude, on souhaite à tout
 le monde une bonne santé et aussi que cette année 2015 vous révèle
 encore et toujours plein de surprises et de découvertes ! **
 
-**    En ce début de nouvelle année généralement on se propose de
+    En ce début de nouvelle année généralement on se propose de
 prendre  "des bonnes résolutions" comme on dit. Je vous propose ici de
 découvrir pour certains et de redécouvrir pour d'autres un magnifique
 texte pas très long, pour lequel j'espère que vous prendrez le temps d'y
@@ -24,16 +24,16 @@ aussi d'apprécier un regard et une écriture poétique sur des choses qui
 ne nous sont pas étrangères et dont on fait régulièrement l'expérience :
 tout le monde s'est déjà évidemment promené en chemin que ce soit
 en famille ou non, à la campagne, à la mer, en foret, à la montagne,
-proche de la nature en somme.**
+proche de la nature en somme.
 
-**   Evidemment je n'ai pas choisi ce texte au hasard. Ce texte Intitulé
+   Evidemment je n'ai pas choisi ce texte au hasard. Ce texte Intitulé
 *Der Feldweg (le chemin de campagne)* a été écrit à l'Automne 1948 par
 celui que beaucoup considère comme le plus grand penseur du 20ème
 siècle : Martin Heidegger. L'histoire raconte que lorsqu'il se trouvait
 dans une impasse, Heidegger s'en remettait à une promenade le long de
 son chemin en campagne Souabe dans son village natal de Meßkirch
 en Bade-Wurtemberg : "*Quand les énigmes se pressaient et qu'aucune
-issue ne s'offrait, le chemin de campagne était d'un bon secours.".***
+issue ne s'offrait, le chemin de campagne était d'un bon secours.".*
 
 **Bonne lecture !**
 
