@@ -504,3 +504,6 @@ span.reverse {
 ul ul{
 	list-style-type: circle;
 }
+.centre-moi {
+	text-align: center;
+}
