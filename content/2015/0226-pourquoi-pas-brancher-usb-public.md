@@ -14,7 +14,7 @@ Pour certain cela paraît être une bonne idée :
 <script async src="/theme/js/twitter_widgets.js" charset="utf-8"></script>
 </center>
 
-En réalité, cela pose un gros problème de sécurité : et si ces bornes copiaient les données présentes sur les appareils que l'on y connecte ? Car il est facile d'écrire un script qui détecte la connexion sur un port USB et qui copie l'intégralité des données qui s'y trouvent. Ces données VOUS appartiennent et vous êtes seuls juges de ce qu'elles doivent devenir. Soyez donc conscient que cela est possible, et que si vous branchez votre téléphone sur ces bornes, alors vous prenez le risque de vous les faire copier !
+En réalité, cela pose un gros problème de sécurité : et si ces bornes copiaient les données présentes sur les appareils que l'on y connecte ? Car il est facile d'écrire un script qui détecte la connexion sur un port USB et qui copie l'intégralité des données qui s'y trouvent. Ces données VOUS appartiennent et vous êtes seuls juges de ce qu'elles doivent devenir. Soyez donc conscients que cela est possible, et que si vous branchez votre téléphone sur ces bornes, alors vous prenez le risque de vous les faire copier !
 On peut aussi spéculer en disant que ces données totalement personnelles pourraient être revendues etc.
 
 C'est moins cool, d'un coup !
