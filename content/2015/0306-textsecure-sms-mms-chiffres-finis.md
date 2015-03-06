@@ -30,6 +30,8 @@ Il est vrai que la façon dont sont conçus les SMS/MMS ne permet pas de conserv
 Du coup, que puis-je faire ? Je trouvais ça cool, TextSecure !
 --------------------------------------------------------------
 Oui, moi aussi. Mais il est vrai que vouloir sécuriser (et conserver sa vie privée avec) les SMS/MMS est peine perdue. 
-Cependant, TextSecure permet l'envoi de messages via le transport TextSecure, qui lui protège les métadonnées. Bon, c'est pas aussi pratique que les SMS/MMS car il faut avoir une connexion internet active (Wifi ou bien Data), mais ce n'est pas ce qui manque des nos jours ([enfin dans certains pays c'est plus compliqué](https://twitter.com/TAbugharsa/status/573945270699950080)).
+Cependant, TextSecure permet l'envoi de messages via le transport TextSecure, qui lui protège les métadonnées. Bon, c'est pas aussi pratique que les SMS/MMS car il faut avoir une connexion internet active (Wifi ou bien Data), mais ce n'est pas ce qui manque de nos jours ([enfin dans certains pays c'est plus compliqué](https://twitter.com/TAbugharsa/status/573945270699950080)).
 
 En espérant que TextSecure continuera de fournir les SMS/MMS chiffrés sans accorder de support, ou qu'un fork naisse. En tous cas, merci aux devs d'avoir donné de leur temps, en cette ère [post-Snowden](https://en.wikipedia.org/wiki/Edward_Snowden) !
+
+[source](https://whispersystems.org/blog/goodbye-encrypted-sms/)
