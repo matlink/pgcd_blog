@@ -1,12 +1,12 @@
-Title: Dit Matlink, c'est quoi le deep web ?
+Title: Dis Matlink, c'est quoi le deep web ?
 Date: 2015-03-11
 Category: Réseaux
 Author: Matlink
 Tags: web, tor, deep-web, dark-web
-Slug: dit-matlink-cest-quoi-le-depp-web
+Slug: dis-matlink-cest-quoi-le-depp-web
 Image: 20150311/Tor-logo-2011-flat.png
 
-J'ai reçu hier une question de Poulos, le pote avec lequel on gère le blog du PGCD, que je reprends mot pour mot sans les fautes d'orthographe : 
+J'ai reçu hier une question de Poulos, le pote avec lequel on gère le blog du PGCD, que je reprends mot pour mot (sans les fautes d'orthographe) : 
 <blockquote>
 Yo Maths ! Il faut que tu m'explique ce qu'est le deep web.
 </blockquote>
