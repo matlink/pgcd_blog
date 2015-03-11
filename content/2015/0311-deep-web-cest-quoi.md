@@ -6,9 +6,9 @@ Tags: web, tor, deep-web, dark-web
 Slug: dis-matlink-cest-quoi-le-depp-web
 Image: 20150311/Tor-logo-2011-flat.png
 
-J'ai reçu hier une question de Poulos, le pote avec lequel on gère le blog du PGCD, que je reprends mot pour mot (sans les fautes d'orthographe) : 
+J'ai reçu hier une question de Poulos, le pote avec lequel on gère le blog du PGCD, que je reprends mot pour mot : 
 <blockquote>
-Yo Maths ! Il faut que tu m'explique ce qu'est le deep web.
+Yo Maths ! Il faut que tu m'expliques ce qu'est le deep web.
 </blockquote>
 
 Voici ce que je lui ai répondu (j'ai apporté des améliorations après-coup): 
