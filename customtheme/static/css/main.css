@@ -549,3 +549,7 @@ article .figure img{
 	text-decoration: underline;
 	display:inline;
 }
+
+#blog_title .acronyme{
+	color: #C74350;
+}

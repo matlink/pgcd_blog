@@ -3,7 +3,8 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Matlink'
-SITENAME = u'Le Parti des Geeks Cartésiens Démocrates'
+SITENAME = u'Le PGCD'
+COOLSITENAME = u'Le <span class="acronyme">P</span>arti des <span class="acronyme">G</span>eeks <span class="acronyme">C</span>artésiens <span class="acronyme">D</span>émocrates'
 SITEURL = ''
 SITESUBTITLE = u"Blog universitaire d'un groupe de potes passionnés"
 
