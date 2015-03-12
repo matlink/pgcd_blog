@@ -23,9 +23,10 @@ Les [raisons évoquées](https://whispersystems.org/blog/goodbye-encrypted-sms/)
 - SMS et MMS sont un désastre concernant la sécurité : aucune métadonnée ne peut passer autrement qu'en clair sur le réseau mobile. Ainsi, tous les réseaux télécoms sont capables d'intercepter les SMS et d'en examiner les métadonnées, révélant beaucoup trop d'informations même si le contenu est indéchiffrable. Les développeurs ne veulent pas avoir mauvaise conscience en sachant que des gouvernements peuvent oppresser des dissidents qui utilisent ce genre de solution.
 - paranoïa sécuritaire : en voulant se focaliser sur la sécurité des SMS et MMS, les développeurs n'ont plus de temps à accorder au développement de TextSecure afin de la rendre meilleure.
 
-<scan class="float-left">
+<span class="figure float-left">
 [![Open WhisperSystems]({filename}/images/20150306/whisper.png)](https://whispersystems.org)
-</scan>
+<span class="caption">Logo de <br/>[Open WhisperSystems](https://whispersystems.org/)</span>
+</span>
 
 
 C'est l'ensemble de ces su-citées raisons qui poussent [Open WhisperSystems](https://whispersystems.org) à abandonner le support des SMS/MMS chiffrés (via le réseau mobile). 

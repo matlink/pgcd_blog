@@ -8,9 +8,11 @@ Image: 20150311/Watercolours.jpg
 
 Allant toujours à l’encontre des idées reçues, forte et immuable tant dans l’exercice scolaire que dans l’application artistique de haut vol, la classique peinture à l’eau est, je le sais, notre préférée de tous, et je l’affirme haut et fort sans la moindre ironie. Adulée des foules, elle est cependant trop souvent comparée à ses dérivées, à savoir majoritairement la peinture à l’huile, grasse et nocive, se vantant d’avoir pour principal exemple de progéniture la fameuse Joconde, dont la qualité est largement exagérée si vous voulez mon avis, et même si vous n’en voulez pas. Elle est cependant au-dessus du reste pour cette simple présomption pseudo-artistique qu’elle nous adresse un regard pervers et perturbant. En vérité, cette pauvre femme avait la jaunisse et ça crève les yeux, il suffit de voir son teint livide, elle demande qu’on l’abatte.
 
-<span class="float-right">
+<span class="figure float-left">
 ![La Joconde]({filename}/images/20150311/mona_lisa.jpg)
+<span class="caption">La Joconde dans son <br/>plus bel état</span>
 </span>
+
 La peinture à l’huile se vantant de ses capacités hydrophobes, a souvent exprimé sa xénophobie avec hargne à l’égard de notre bien aimée peinture à l’eau.  Mais cette haine cache une faiblesse, car elle sait pertinemment que de toute son existence elle ne pourra jamais fusionner, se mélanger avec une molécule d’eau, à l’inverse de notre favorite. Elle est fixée à son support, statique, livrée à son sort inévitable, à une éternité de solitude anhydre et déplorable.
 
 Mais songez à ce que ses propriétés adipeuses incluent. Vous peignez depuis une dizaine de minutes et déjà vous sentez le pinceau rouler sous vos doigts, que vous avez envie irrépressiblement de les laver.  Ils sont luisants, comme après vous être gavé de frites non égouttées à mains nues. Oui, la peinture à l’huile vous fait vous sentir sale, écœurant.

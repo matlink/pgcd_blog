@@ -509,12 +509,13 @@ span.reverse {
 #logo_article{
 	float: right;
 	margin-left: 10px;
+	border: 1px solid #bbb;
+    border-radius: 3px;
+    box-shadow: 4px 4px 4px 0px rgba(128, 128, 128, 0.5);
+
 }
 ul ul{
 	list-style-type: circle;
-}
-.centre-moi {
-	text-align: center;
 }
 
 article img{
@@ -523,4 +524,28 @@ article img{
     padding: 4px;
     margin: 0 1em 1em 0;
     box-shadow: 4px 4px 4px 0px rgba(128, 128, 128, 0.5);
+}
+article .figure{
+	border: 1px solid #bbb;
+    border-radius: 3px;
+    padding: 4px;
+    margin: 0 1em 1em 0;
+    box-shadow: 4px 4px 4px 0px rgba(128, 128, 128, 0.5);
+    display: inline-block;
+    text-align: center;
+    height: auto; 
+    max-width: 100%;
+}
+
+article .figure img{
+	display:block;
+	border: none;
+	padding: 0;
+	margin: 0;
+	box-shadow: none;
+}
+
+.caption{
+	text-decoration: underline;
+	display:inline;
 }
