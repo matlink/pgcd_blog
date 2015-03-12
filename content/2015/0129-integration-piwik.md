@@ -4,7 +4,7 @@ Category: Annonces
 Tags: Piwik, suivi
 Slug: integration-piwik-visites
 Author: Matlink
-Image: 20150129/Piwik_2.0_logo.svg.png
+Image: 20150129/Pwk_2.0_logo.svg.png
 
 Lorsque le blog [était encore sur Wordpress]({filename}/2015/0127-refonte-pgcd.md), nous utilisions un plugin afin d'observer le nombre de visites que nous avions environs par jour et par semaine. Sachez que les adresses IP étaient masquées et que nous connaissions seulement le navigateur utilisé lors de la visite. 
 Je viens donc d'ajouter à l'instant le suivi grâce à un petit script JavaScript du nom de [Piwik](http://piwik.org). C'est un bout de code intégré dans chaque page qui se connecte au blog lorsque vous le visitez. 
