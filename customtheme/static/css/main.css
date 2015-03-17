@@ -246,7 +246,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 	overflow: hidden;
 	padding: 20px;
 	width: 760px;
-	
+	box-shadow: 4px 4px 4px 4px rgba(128, 128, 128, 0.5);
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
@@ -275,7 +275,7 @@ h2 {color: #C74451; font-size: 1.714em; margin-bottom: 0.333em;}
 	overflow: hidden;
 	padding: 20px 20px;
 	width: 760px;
-	
+	box-shadow: 4px 4px 4px 4px rgba(128, 128, 128, 0.5);
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
@@ -549,7 +549,6 @@ article .figure img{
 	text-decoration: underline;
 	display:inline;
 }
-
 #blog_title .acronyme{
 	color: #C74350;
 }
