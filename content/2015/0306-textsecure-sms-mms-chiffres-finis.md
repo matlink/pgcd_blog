@@ -9,7 +9,9 @@ Image: 20150306/TextSecure_Blue_Icon.png
 C'est une mauvaise nouvelle qui vient à nous ce soir concernant [TextSecure](https://whispersystems.org/#encrypted_texts), l'application Android permettant d'échanger des SMS et MMS de façon chiffrée. Il faut savoir que TextSecure permet trois choses : envoyer des SMS/MMS non chiffrés comme le ferait une autre application classique, envoyer des SMS/MMS chiffrés en passant par le réseau mobile et envoyer des messages chiffrés en passant par le réseau Internet. 
 
 <center>
+<span class="figure">
 ![text_secure]({filename}/images/20150306/TextSecure_conversation_list.png)
+<span class="caption">Interface</span>
 </center>
 
 Aujourd'hui, les développeurs annoncent qu'ils arrêtent le support de la partie SMS/MMS chiffrés à partir de la prochaine version (2.7.0) .
