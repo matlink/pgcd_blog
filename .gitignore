@@ -3,3 +3,6 @@ cache/
 fabfile.py
 plugins/
 cache/
+Makefile
+publishconf.pyc
+pelicanconf.pyc
