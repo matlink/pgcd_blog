@@ -552,3 +552,8 @@ article .figure img{
 #blog_title .acronyme{
 	color: #C74350;
 }
+.sup {
+  position: relative;
+  bottom: 1ex; 
+  font-size: 80%;
+}
