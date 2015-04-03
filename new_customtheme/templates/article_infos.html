@@ -1,0 +1,30 @@
+<div class="article_informations">
+        <abbr class="published" title="{{ article.date.isoformat() }}">
+                Publié le <i>{{ article.locale_date }}</i>
+        </abbr>
+        
+        {% if article.modified %}
+                <abbr class="modified" title="{{ article.modified.isoformat() }}">
+                        mis à jour le <i>{{ article.locale_modified }}</i>
+                </abbr>
+        {% endif %}
+        
+        {% if article.authors %}
+                <address class="vcard author">
+                        par {% for author in article.authors %}
+                                <a class="url fn" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
+                        {% endfor %}
+                </address>
+        {% endif %}
+
+        <p>
+                dans <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+                {% if PDF_PROCESSOR %}
+                        <a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">PDF</a>
+                {% endif %}
+        </p>
+
+        {% include 'taglist.html' %}
+        {% import 'translations.html' as translations with context %}
+        {{ translations.translations_for(article) }}
+</div>

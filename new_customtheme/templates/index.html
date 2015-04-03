@@ -1,0 +1,99 @@
+
+{% extends "base.html" %}
+{% block content_title %}{% endblock %}
+{% block content %}
+{% if articles %}
+    {% for article in articles_page.object_list %}
+
+        {# First item #}
+        {% if loop.first and not articles_page.has_previous() %}
+            <aside id="featured">
+                <article>
+                    <header>
+                        <h1 class="title_article">
+                            <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+                        </h1>
+                
+                        <div id="preview_article">
+                            {% include 'article_infos.html' %}
+
+                            {% if article.image %}
+                                <img src="{{SITEURL}}/images/{{article.image}}" id="logo_article" alt=""/>
+                            {% endif %}
+                        </div>
+
+                        <span class="clear"></span>
+                    </header>
+
+                    <hr id="article_titletocontent"/>
+
+                    <div id="article">
+                        {{ article.content }}
+                    </div>
+                    
+                    {% include 'comments.html' %}
+                </article>
+                
+                <div class="pagination">
+                    {% if loop.length == 1 %}
+                        {% include 'pagination.html' %}
+                    {% endif %}
+                </div>
+            </aside><!-- /#featured -->
+
+            <span class="clear"></span>
+            {% if loop.length > 1 %}
+                <section id="content">
+                    <h1>Autres articles</h1>
+                    <hr />
+                    <ol id="content_list">
+            {% endif %}
+        {# other items #}
+        {% else %}
+            {% if loop.first and articles_page.has_previous %}
+                <section id="content">
+                    <ol id="content_list" start="{{ articles_paginator.per_page -1 }}">
+            {% endif %}
+                        <li>
+                            <article class="content_entree">
+                                <header>
+                                    <h1 class="content_list_article_title">
+                                        <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+                                           title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
+                                    </h1>
+                                </header>
+
+                                <div class="content_list_article_content">
+                                    {% include 'article_infos.html' %}
+
+                                    <div class="content_list_article_content_summary">
+                                        {{ article.summary }}
+                                         <a class="readmore" href="{{ SITEURL }}/{{ article.url }}">- Lire la suite -</a>
+                                    </div>
+
+                                    <span class="clear"></span>
+                                </div><!-- /.entry-content -->
+                            </article>
+                        </li>
+        {% endif %}
+        {% if loop.last %}
+            {% if loop.length > 1 %}
+                </ol><!-- /#posts-list -->
+            {% endif %}
+            {% if articles_page.has_previous() or loop.length > 1 %}
+                {% include 'pagination.html' %}
+            {% endif %}
+            {% if loop.length > 1 %}
+                </section><!-- /#content -->
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+{% else %}
+<section id="content">
+<h2>Pages</h2>
+    {% for page in PAGES %}
+        <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+    {% endfor %}
+</section>
+{% endif %}
+{% endblock content %}

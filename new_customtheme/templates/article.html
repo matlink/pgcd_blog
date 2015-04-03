@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %}
+  {{ article.title|striptags }}
+{% endblock %}
+
+{% block content %}
+<aside id="featured">
+    <article>
+      <header>
+        <h2 class="title_article">
+          <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+             title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
+        </h2>
+
+        <div id="preview_article">
+            {% include 'article_infos.html' %}
+
+            {% if article.image %}
+                <img src="{{SITEURL}}/images/{{article.image}}" id="logo_article" alt=""/>
+            {% endif %}
+        </div>
+
+        <span class="clear"></span>
+        
+        {% include 'twitter.html' %}
+
+      </header>
+      
+      <div class="content_article">
+        <hr/>
+        
+        <span class="clear"></span>
+
+        {{ article.content }}
+      </div>
+      
+      <span class="clear"></span>
+
+      {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
+        <div class="comments">
+          <h2>Comments !</h2>
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+            var disqus_shortname = '{{ DISQUS_SITENAME }}';
+            var disqus_identifier = '{{ article.url }}';
+            var disqus_url = '{{ SITEURL }}/{{ article.url }}';
+            (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//{{ DISQUS_SITENAME }}.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the comments.</noscript>
+        </div>
+      {% endif %}
+      
+      {% include 'isso-form.html' %}
+
+    </article>
+</aside>
+{% endblock %}

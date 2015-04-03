@@ -14,7 +14,7 @@ TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = u'fr'
 
-THEME = "customtheme"
+THEME = "new_customtheme"
 
 STATIC_PATHS = ['doc','images']
 
