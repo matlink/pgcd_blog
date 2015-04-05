@@ -6,6 +6,9 @@ Tags: android,google,tuto
 Slug: comment-je-mevade-google-store-android
 Image: 20150405/antrollid.jpeg
 
+
+S'évader, c'est le bon mot selon moi car Google est une prison.
+
 Je vous parlais dans un [récent billet]({filename}/2015/0326-recherche-dev-android.md) d'une application pour télécharger les Apks du Play Store depuis un PC. Sauf que bien évidement c'est galère pour les mises à jour, les installation de nouvelles apps, ...
 
 <span class="figure float-left">
