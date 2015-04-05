@@ -1,4 +1,4 @@
-Title: Comment je m'évade de Google Play Store sur Android
+Title: Comment je m'évade du Google Play Store sur Android
 Date: 2015-04-05
 Category: Auto-hébergement
 Author: Matlink
