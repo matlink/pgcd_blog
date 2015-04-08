@@ -311,9 +311,6 @@ tfoot td {}
 	text-indent: 0;
 	margin:20px auto;
 }
-#article img, #article figure {
-	
-}
 #article pre {
 	text-align: left;
 	padding:10px 0;
@@ -339,6 +336,7 @@ tfoot td {}
 }
 .figure > img, .float-left > img, .float-right > img, #article img, .content_article img {
 	box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7), -1px 2px 20px rgba(255, 255, 255, 0.6) inset;
+	max-width:80%;
 }
 .caption {
 	display: block;
