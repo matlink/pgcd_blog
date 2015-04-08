@@ -65,6 +65,6 @@ On reporte cette mesure sur la [méta capsule](https://www.youtube.com/watch?v=U
 	</span>
 </center>
 
-Et voilà, plus qu'à placer cette méta capsule sous les capsules classiques courtes afin de donner un café long. Si vous avez tout suivi, je vous félicite car même moi je m'embrouille.
+Et voilà, plus qu'à placer cette méta capsule sous les capsules classiques courtes afin de donner un café long. Si vous avez tout suivi, je vous félicite car même moi je m'embrouille. J'ai oublié : ne le dites pas à Manuel Valls, il risquerait de [commencer à me surveiller](https://sous-surveillance.fr/#/) car je pirate des [pare-feus OpenOffice](https://www.youtube.com/watch?v=F011hLZHZrM) !
 
 En tout cas, bon café !
