@@ -25,9 +25,9 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# PIWIK_URL = "fr.matlink.fr/piwik"
-# PIWIK_SSL_URL = "fr.matlink.fr/piwik"
-# PIWIK_SITE_ID = 1
+PIWIK_URL = "fr.matlink.fr/piwik"
+PIWIK_SSL_URL = "fr.matlink.fr/piwik"
+PIWIK_SITE_ID = 1
 
 #Comments plugin
 ISSO_SERVER="fr.matlink.fr/comments"

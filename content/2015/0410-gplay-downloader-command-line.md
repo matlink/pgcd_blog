@@ -1,5 +1,5 @@
 Title: Mon script Python pour récupérer des Apks du Play Store
-Date: 2015-04-10
+Date: 2015-04-10 17:00
 Category: Logiciels Libres
 Author: Matlink
 Tags: android,tuto,google play store
