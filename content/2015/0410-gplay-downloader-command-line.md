@@ -24,23 +24,27 @@ Le script utilise quelques librairies, qu'il vous faudra installer avec `pip` :
 ----------
 Premièrement pour avoir de l'aide, tapez `./gplay-cli.py -h` : 
 
-	usage: gplay-cli.py [-h] [-y] [-s SEARCH] [-d AppID [AppID ...]] [-u FOLDER]
-					[-f FOLDER] [-v]
+		usage: gplay-cli.py [-h] [-y] [-s SEARCH] [-n NUMBER] [-d AppID [AppID ...]]
+		                    [-u FOLDER] [-f FOLDER] [-v]
 
-	A Google Play Store Apk downloader and manager for command line
+		A Google Play Store Apk downloader and manager for command line
 
-	optional arguments:
-		-h, --help            show this help message and exit
-		-y, --yes             Say yes to all prompted questions
-		-s SEARCH, --search SEARCH
-		                Search the given string into the Google Play Store
-		-d AppID [AppID ...], --download AppID [AppID ...]
-		                Download the Apps that map given AppIDs
-		-u FOLDER, --update FOLDER
-		                Update all the APKs in the given folder
-		-f FOLDER, --folder FOLDER
-		                Where to put the downloaded Apks
-		-v, --verbose         Be verbose
+		optional arguments:
+		  -h, --help            show this help message and exit
+		  -y, --yes             Say yes to all prompted questions
+		  -s SEARCH, --search SEARCH
+		                        Search the given string into the Google Play Store
+		  -n NUMBER, --number NUMBER
+		                        For the search option, returns the given number of
+		                        matching applications
+		  -d AppID [AppID ...], --download AppID [AppID ...]
+		                        Download the Apps that map given AppIDs
+		  -u FOLDER, --update FOLDER
+		                        Update all the APKs in the given folder
+		  -f FOLDER, --folder FOLDER
+		                        Where to put the downloaded Apks, only for -d command
+		  -v, --verbose         Be verbose
+
 
 On va détailler chaque option une à une. La première, `--yes` qui permet de répondre oui à toutes les questions posées par le script. Pour le moment, la seule question qui est posée est "Do you agree? y/n ?" lors des mises à jour des applications, quand elles sont disponibles.
 
@@ -61,7 +65,7 @@ La deuxième est `--search` suivie d'une chaîne à rechercher. Elle permet de l
 	UC Browser pour Android        UCWeb Inc.          15.2MB   100 000 000+  18 mars 2015   com.UCMobile.intl                171         4.51
 
 Le tableau n'est pas bien arrangé ici, j'ai simplement copié-collé la sortie de la commande et la taille des espaces n'est pas la même sur navigateur. On peut y voir, pour chaque application, son titre, son créateur, sa taille, son nombre de téléchargements, la date de sa dernière mise à jour, son `AppID` qui va nous intéresser par la suite, son numéro de version qui permet au script de vérifier des mises à jour, et enfin son score sur 5 selon les utilisateurs.
-Pour l'instant, il ne récupère que les 10 premiers résultats. Je vais le mettre à jour sous peu afin de pouvoir demander un nombre précis de résultats, même si après les 10 premiers ils ne deviennent plus très pertinents.
+Par défaut, il ne récupère que les 10 premiers résultats. Si l'option `--number` est spécifiée, le nombre qui suit définira le nombre de résultats à afficher.
 
 Téléchargement
 --------------
@@ -106,6 +110,7 @@ Car taper `--download` est trop long, voici la liste des raccourcis pour les opt
 - `--help` -> `-h`
 - `--yes` -> `-y`
 - `--search` -> `-s`
+- `--number` -> `-n`
 - `--download` -> `-d`
 - `--update` -> `-u`
 - `--folder` -> `-f`
@@ -123,8 +128,8 @@ Ce qu'il reste à faire
 ----------------------
 C'est pas fini, et je compte ajouter les fonctionnalités suivantes : 
 
-- gérer les erreurs quand l'`AppID` ne correspond à aucune application existante sur le Play Store
-- spécifier le nombre de résultats pour la recherche 
+- <strike> gérer les erreurs quand l'`AppID` ne correspond à aucune application existante sur le Play Store </strike> : l'erreur "this package does not exist, try to search it via `--search` before" est affichée au cas où le nom donné n'existe pas
+- <strike> spécifier le nombre de résultats pour la recherche </strike> :  c'est fait, avec l'option `--number` suivie du nombre de résultats à conserver
 - pouvoir gérer la conf du compte Google et de l'`android_ID` dans un fichier extérieur au script
 - avoir une barre de progression, ou un taux d'avancement pour les téléchargements des applications
 
