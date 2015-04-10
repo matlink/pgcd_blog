@@ -5,7 +5,7 @@
 */
 
 /* imports */
-@import url("reset.css");
+/*@import url("reset.css");*/
 @import url("pygment.css");
 @import url("typogrify.css");
 
@@ -34,8 +34,9 @@
 .highlight {
 	background: rgba(180,180,180,.4);
 	margin:20px 0;
-	padding:5px 0;
+	padding-left:5px;
 	border-radius: 5px;
+	overflow-x:auto;
 }
 
 /* body */
@@ -313,9 +314,9 @@ tfoot td {}
 }
 #article pre {
 	text-align: left;
-	padding:10px 0;
 	font-family: "Courrier New";
 	background:rgba();
+	padding-left: 5px;
 }
 .readmore {
 	margin-top: 10px;
@@ -379,6 +380,7 @@ tfoot td {}
 }	
 #content_list {
 	padding: 20px 20px;
+	list-style: none;
 }
 #content > h1 {
 	font-size: 1.6em;
@@ -550,3 +552,13 @@ tfoot td {}
 #about .url:link, #about .url:visited {text-decoration: none;}
 
 #about .bio {float: right; width: 500px;}
+
+.content_article h2{
+	color: #C74350; 
+	text-decoration: underline;
+}
+
+code {
+	font-size: 13px;
+	font-weight: bold;
+}
