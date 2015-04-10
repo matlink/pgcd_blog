@@ -7,7 +7,7 @@ Slug: comment-hacker-machine-cafe-capsule
 Image: 20150408/need_more_coffee.jpg
 
 Comme tout bon geek qui se respecte, je [bois du café](https://www.youtube.com/watch?v=UGtKGX8B9hU). Si vous buvez du café (intensément ou non), vous êtes quelqu'un de bien. Sinon vous devriez sérieusement songer à vous y mettre (intensément ou non). Qui dit café, dit cafetière. Qui dit cafetière, dit dose de café. 
-
+ 
 Au début, j'avais une cafetière classique (à filtre), mais c'était chiant car il fallait faire le café. Et comme tout bon geek qui se respecte, je suis assez fainéant. Du coup, j'ai opté pour une machine à capsule qu'on m'a offert (pour combler mon addiction au café). Lesdites capsules sont ainsi : 
 
 <center>
