@@ -553,7 +553,7 @@ tfoot td {}
 
 #about .bio {float: right; width: 500px;}
 
-#article h2{
+.content_article h2, #article h2{
 	color: #C74350; 
 	text-decoration: underline;
 }
