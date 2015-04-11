@@ -25,7 +25,7 @@ Le script utilise quelques librairies, qu'il vous faudra installer avec `pip` :
 Premièrement pour avoir de l'aide, tapez `./gplay-cli.py -h` : 
 
 		usage: gplay-cli.py [-h] [-y] [-s SEARCH] [-n NUMBER] [-d AppID [AppID ...]]
-		                    [-u FOLDER] [-f FOLDER] [-v]
+                    [-u FOLDER] [-f FOLDER] [-v] [-c CONF_FILE] [-p]
 
 		A Google Play Store Apk downloader and manager for command line
 
@@ -33,17 +33,20 @@ Premièrement pour avoir de l'aide, tapez `./gplay-cli.py -h` :
 		  -h, --help            show this help message and exit
 		  -y, --yes             Say yes to all prompted questions
 		  -s SEARCH, --search SEARCH
-		                        Search the given string into the Google Play Store
+		                        Search the given string in Google Play Store
 		  -n NUMBER, --number NUMBER
 		                        For the search option, returns the given number of
 		                        matching applications
 		  -d AppID [AppID ...], --download AppID [AppID ...]
 		                        Download the Apps that map given AppIDs
 		  -u FOLDER, --update FOLDER
-		                        Update all the APKs in the given folder
+		                        Update all APKs in a given folder
 		  -f FOLDER, --folder FOLDER
 		                        Where to put the downloaded Apks, only for -d command
 		  -v, --verbose         Be verbose
+		  -c CONF_FILE, --config CONF_FILE
+		                        Use a different config file than credentials.conf
+		  -p, --progress        Prompt a progress bar while downloading packages
 
 
 On va détailler chaque option une à une. La première, `--yes` qui permet de répondre oui à toutes les questions posées par le script. Pour le moment, la seule question qui est posée est "Do you agree? y/n ?" lors des mises à jour des applications, quand elles sont disponibles.
@@ -103,6 +106,10 @@ Parle, petit script !
 ---------------------
 Vous l'aurez compris, l'option `--verbose` permet de rendre le script plus verbeux
 
+Progression
+-----------
+L'option `--progress` affichera une barre de progression pendant le téléchargements des applications.
+
 Des raccourcis pour les options
 -------------------------------
 Car taper `--download` est trop long, voici la liste des raccourcis pour les options : 
@@ -115,6 +122,7 @@ Car taper `--download` est trop long, voici la liste des raccourcis pour les opt
 - `--update` -> `-u`
 - `--folder` -> `-f`
 - `--verbose` -> `-v`
+- `--progress` -> `-p`
 
 Ainsi, taper `-d` revient à écrire `--download`.
 
@@ -130,7 +138,7 @@ C'est pas fini, et je compte ajouter les fonctionnalités suivantes :
 
 - <strike> gérer les erreurs quand l'`AppID` ne correspond à aucune application existante sur le Play Store </strike> : l'erreur "this package does not exist, try to search it via `--search` before" est affichée au cas où le nom donné n'existe pas
 - <strike> spécifier le nombre de résultats pour la recherche </strike> :  c'est fait, avec l'option `--number` suivie du nombre de résultats à conserver
-- pouvoir gérer la conf du compte Google et de l'`android_ID` dans un fichier extérieur au script
-- avoir une barre de progression, ou un taux d'avancement pour les téléchargements des applications
+- <strike> pouvoir gérer la conf du compte Google et de l'`android_ID` dans un fichier extérieur au script </strike> : les identifiants sont à mettre dans `credentials.conf` désormais
+- <strike>avoir une barre de progression, ou un taux d'avancement pour les téléchargements des applications</strike>: disponible avec l'option `--progress`
 
 Si vous y trouvez des bugs, avez de quelconques remarques concernant ce script, voulez m'aider, ou pas, je serai ravi d'en parler dans les commentaires ou par mail !
