@@ -82,6 +82,13 @@ On ajuste sa configuration ainsi, en remplaçant <NOM_DU_RESEAU\> et <MOT_DE_PAS
 	wpa_pairwise=TKIP  
 	rsn_pairwise=CCMP  
 
+Enfin : 
+
+	::bash
+	sudo nano /etc/default/hostapd
+	
+	DAEMON_CONF="/etc/hostapd/hostapd.conf"  
+
 Installons le serveur DHCP, `isc-dhcp-server` : 
 
 	::bash
