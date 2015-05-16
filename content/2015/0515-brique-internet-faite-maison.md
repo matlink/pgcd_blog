@@ -34,12 +34,12 @@ La partie réseau
 
 Premièrement, on va mettre à jour le bouzin : 
 	
-	#!bash
+	::bash
 	sudo apt-get update && sudo apt-get upgrade -y
 
 On s'assure que les interfaces réseau sont au point : 
-
-	#!bash
+	
+	::bash
 	# ifconfig
 	eth0      Link encap:Ethernet  HWaddr b8:27:eb:df:af:23  
 	          inet addr:192.168.1.113  Bcast:192.168.0.255  Mask:255.255.255.0 # eth0 a une IP sur le réseau de la box
@@ -60,12 +60,12 @@ On s'assure que les interfaces réseau sont au point :
 
 On installe `hostapd` pour créer un point d'accès WIFI : 
 
-	#!bash
+	::bash
 	sudo apt-get install hostapd
 
 On ajuste sa configuration ainsi, en remplaçant <NOM_DU_RESEAU\> et <MOT_DE_PASS_DU_RESEAU\> : 
 
-	#!bash
+	::bash
 	sudo nano /etc/hostapd
 
 	interface=wlan0  
@@ -84,28 +84,28 @@ On ajuste sa configuration ainsi, en remplaçant <NOM_DU_RESEAU\> et <MOT_DE_PAS
 
 Installons le serveur DHCP, `isc-dhcp-server` : 
 
-	#!bash
+	::bash
 	sudo apt-get install isc-dhcp-server
 
 Configurons-le :
 
-	#!bash
+	::bash
 	sudo nano /etc/dhcp/dhcp.conf
 
 Commentez les lignes :
 	
-	#!bash
+	::bash
 	#option domain-name "example.org";
 	#option domain-name-servers ns1.example.org, ns2.example.org;
 
 Décommentez :
 	
-	#!bash
+	::bash
 	authoritative;
 
 Puis ajoutez à la fin : 
 
-	#!bash
+	::bash
 	subnet 192.168.2.0 netmask 255.255.255.0 {  
 	    range 192.168.2.10 192.168.2.254;
 	    option broadcast-address 192.168.2.255;
@@ -118,14 +118,14 @@ Puis ajoutez à la fin :
 
 Aussi, indiquez le fichier de configuration DHCP : 
 
-	#!bash
+	::bash
 	sudo nano /etc/default/isc-dhcp-server
 
 	INTERFACES="wlan0" # à adapter si votre carte wifi s'appelle autrement
 
 On va configurer la carte wifi maintenant. Dans le fichier `/etc/network/interfaces`, ajoutez : 
 
-	#!bash
+	::bash
 	allow-hotplug wlan0  
 	iface wlan0 inet static  
 		address 192.168.2.1
@@ -133,14 +133,14 @@ On va configurer la carte wifi maintenant. Dans le fichier `/etc/network/interfa
 
 Et commentez les autres lignes concernant wlan0 : 
 
-	#!bash
+	::bash
 	#iface wlan0 inet manual
 	#wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
 	#iface default inet dhcp
 
 On définit l'IP de wlan0 manuellement pour éviter de relancer le service :
 	
-	#!bash
+	::bash
 	sudo ifconfig wlan0 192.168.2.1
 
 Configuration d'OpenVPN
@@ -148,12 +148,12 @@ Configuration d'OpenVPN
 
 On installe OpenVPN : 
 
-	#!bash
+	::bash
 	sudo apt-get install openvpn unzip
 
 On va créer un dossier spécifique pour accueillir la configuration du service VPN que l'on va utiliser, pour moi pour tester c'est Freevpn : 
 
-	#!bash
+	::bash
 	sudo mkdir -p /etc/openvpn/freevpn
 	cd /etc/openvpn/freevpn
 	wget https://freevpn.me/OpenVPN-Certificate-Bundle-Server1.zip
@@ -161,35 +161,35 @@ On va créer un dossier spécifique pour accueillir la configuration du service 
 
 On va renommer les fichiers `*.ovpn` en `.conf` :
 
-	#!bash
+	::bash
 	sudo rename 's/ovpn/conf/' *.ovpn 
 	sudo rename 's/ /_/g' *.conf
 
 Ajoutons un fichier avec les identifiants dedans : 
 
-	#!bash
+	::bash
 	sudo echo "<NOM_UTILISATEUR>" >> auth.txt # à remplacer par votre nom d'utilisateur, freevpnme pour freevpn.me
 	sudo echo "<MOT_DE_PASSE>" >> auth.txt # le mot de passe, sg7JncTs pour freevpn.me
 
 On indique le fichier `auth.txt` dans chacun des fichiers de conf : 
 
-	#!bash
+	::bash
 	sed -i 's/auth-user-pass/auth-user-pass \/etc\/openvpn\/freevpn\/auth.txt/g' *.conf
 
 Ensuite, dans le fichier `/etc/default/openvpn`, on va écrire : 
 
-	#!bash
+	::bash
 	AUTOSTART="FreeVPN.me-TCP443"
 
 Cela va utiliser le fichier de conf `FreeVPN.me-TCP443".conf` lors du démarrage du service d'OpenVPN.
 On démarre OpenVPN : 
 
-	#!bash
+	::bash
 	sudo service openvpn start
 
 On regarde quel interface de tunneling a été créé : 
 
-	#!bash
+	::bash
 	#ifconfig
 	tun1      Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  
           inet addr:10.13.0.114  P-t-P:10.13.0.113  Mask:255.255.255.255
@@ -206,17 +206,17 @@ Le NAT pour rediriger tout dans le tunnel, et seulement ça
 
 On active l'IP forwarding : 
 
-	#!bash
+	::bash
 	sudo echo 1 > /proc/sys/net/ipv4/ip_forward 
 
 Ouvrez le fichier `/etc/sysctl.conf` et décommentez la ligne : 
 	
-	#!bash
+	::bash
 	net.ipv4.ip_forward = 1  
 
 Ajoutez ensuite ces règles pour iptables : 
 
-	#!bash
+	::bash
 	sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -m comment --comment "Use VPN IP for eth0"  
 	sudo iptables -t nat -A POSTROUTING -o tun1 -j MASQUERADE -m comment --comment "Use VPN IP for tun1"  
 	sudo iptables -A FORWARD -s 192.168.2.0/24 -i wlan0 -o eth0 -m conntrack --ctstate NEW -j REJECT -m comment --comment "Block traffic from clients to eth0"  
@@ -225,12 +225,12 @@ Ajoutez ensuite ces règles pour iptables :
 
 Sauvegardez les pour le prochain redémarrage : 
 
-	#!bash
+	::bash
 	sudo iptables-save > /etc/iptables.ipv4.nat
 
 Pour les charger à chaque reboot : 
 
-	#!bash
+	::bash
 	sudo echo "up iptables-restore < /etc/iptables.ipv4.nat" >> /etc/network/interfaces
 
 
@@ -241,7 +241,7 @@ En toute logique, vous êtes capables de voir un nouveau réseau wi-fi portant l
 
 Si vous êtes en filaire plutôt qu'en sans fil, il faut alors forcer le système à utiliser comme passerelle par défaut votre brique, en lui donnant son IP. Voici deux alias permettant d'activer/désactiver le routage par la brique : 
 
-	#!bash
+	::bash
 	$ alias | grep vpn
 	# Pour activer le passage par la brique
 	alias vpne='sudo route del -n default gw 192.168.1.1; sudo route add -n default gw 192.168.1.113;'
