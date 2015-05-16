@@ -35,12 +35,12 @@ La partie réseau
 Premièrement, on va mettre à jour le bouzin : 
 	
 	::bash
-	sudo apt-get update && sudo apt-get upgrade -y
+	# apt-get update &&  apt-get upgrade
 
 On s'assure que les interfaces réseau sont au point : 
 	
 	::bash
-	# ifconfig
+	$ ifconfig
 	eth0      Link encap:Ethernet  HWaddr b8:27:eb:df:af:23  
 	          inet addr:192.168.1.113  Bcast:192.168.0.255  Mask:255.255.255.0 # eth0 a une IP sur le réseau de la box
 	          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
@@ -61,12 +61,12 @@ On s'assure que les interfaces réseau sont au point :
 On installe `hostapd` pour créer un point d'accès WIFI : 
 
 	::bash
-	sudo apt-get install hostapd
+	# apt-get install hostapd
 
 On ajuste sa configuration ainsi, en remplaçant <NOM_DU_RESEAU\> et <MOT_DE_PASS_DU_RESEAU\> : 
 
 	::bash
-	sudo nano /etc/hostapd
+	# nano /etc/hostapd/hostapd.conf
 
 	interface=wlan0  
 	driver=nl80211 # A remplacer par le nom du driver de votre carte wifi, je vous laisse chercher  
@@ -85,19 +85,19 @@ On ajuste sa configuration ainsi, en remplaçant <NOM_DU_RESEAU\> et <MOT_DE_PAS
 Enfin : 
 
 	::bash
-	sudo nano /etc/default/hostapd
+	# nano /etc/default/hostapd
 
 	DAEMON_CONF="/etc/hostapd/hostapd.conf"  
 
 Installons le serveur DHCP, `isc-dhcp-server` : 
 
 	::bash
-	sudo apt-get install isc-dhcp-server
+	# apt-get install isc-dhcp-server
 
 Configurons-le :
 
 	::bash
-	sudo nano /etc/dhcp/dhcp.conf
+	# nano /etc/dhcp/dhcp.conf
 
 Commentez les lignes :
 	
@@ -126,7 +126,7 @@ Puis ajoutez à la fin :
 Aussi, indiquez le fichier de configuration DHCP : 
 
 	::bash
-	sudo nano /etc/default/isc-dhcp-server
+	# nano /etc/default/isc-dhcp-server
 
 	INTERFACES="wlan0" # à adapter si votre carte wifi s'appelle autrement
 
@@ -148,7 +148,7 @@ Et commentez les autres lignes concernant wlan0 :
 On définit l'IP de wlan0 manuellement pour éviter de relancer le service :
 	
 	::bash
-	sudo ifconfig wlan0 192.168.2.1
+	# ifconfig wlan0 192.168.2.1
 
 Configuration d'OpenVPN
 -----------------------
@@ -156,32 +156,32 @@ Configuration d'OpenVPN
 On installe OpenVPN : 
 
 	::bash
-	sudo apt-get install openvpn unzip
+	# apt-get install openvpn unzip
 
 On va créer un dossier spécifique pour accueillir la configuration du service VPN que l'on va utiliser, pour moi pour tester c'est Freevpn : 
 
 	::bash
-	sudo mkdir -p /etc/openvpn/freevpn
-	cd /etc/openvpn/freevpn
-	wget https://freevpn.me/OpenVPN-Certificate-Bundle-Server1.zip
-	unzip OpenVPN-Certificate-Bundle-Server1.zip
+	# mkdir -p /etc/openvpn/freevpn
+	$ cd /etc/openvpn/freevpn
+	$ wget https://freevpn.me/OpenVPN-Certificate-Bundle-Server1.zip
+	$ unzip OpenVPN-Certificate-Bundle-Server1.zip
 
 On va renommer les fichiers `*.ovpn` en `.conf` :
 
 	::bash
-	sudo rename 's/ovpn/conf/' *.ovpn 
-	sudo rename 's/ /_/g' *.conf
+	$ rename 's/ovpn/conf/' *.ovpn 
+	$ rename 's/ /_/g' *.conf
 
 Ajoutons un fichier avec les identifiants dedans : 
 
 	::bash
-	sudo echo "<NOM_UTILISATEUR>" >> auth.txt # à remplacer par votre nom d'utilisateur, freevpnme pour freevpn.me
-	sudo echo "<MOT_DE_PASSE>" >> auth.txt # le mot de passe, sg7JncTs pour freevpn.me
+	# echo "<NOM_UTILISATEUR>" >> auth.txt # à remplacer par votre nom d'utilisateur, freevpnme pour freevpn.me
+	# echo "<MOT_DE_PASSE>" >> auth.txt # le mot de passe, sg7JncTs pour freevpn.me
 
 On indique le fichier `auth.txt` dans chacun des fichiers de conf : 
 
 	::bash
-	sed -i 's/auth-user-pass/auth-user-pass \/etc\/openvpn\/freevpn\/auth.txt/g' *.conf
+	$ sed -i 's/auth-user-pass/auth-user-pass \/etc\/openvpn\/freevpn\/auth.txt/g' *.conf
 
 Ensuite, dans le fichier `/etc/default/openvpn`, on va écrire : 
 
@@ -192,12 +192,12 @@ Cela va utiliser le fichier de conf `FreeVPN.me-TCP443.conf` lors du démarrage 
 On démarre OpenVPN : 
 
 	::bash
-	sudo service openvpn start
+	# service openvpn start
 
 On regarde quel interface de tunneling a été créé : 
 
 	::bash
-	#ifconfig
+	$ ifconfig
 	tun1      Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  
           inet addr:10.13.0.114  P-t-P:10.13.0.113  Mask:255.255.255.255
           UP POINTOPOINT RUNNING NOARP MULTICAST  MTU:1500  Metric:1
@@ -214,7 +214,7 @@ Le NAT pour rediriger tout dans le tunnel, et seulement ça
 On active l'IP forwarding : 
 
 	::bash
-	sudo echo 1 > /proc/sys/net/ipv4/ip_forward 
+	# echo 1 > /proc/sys/net/ipv4/ip_forward 
 
 Ouvrez le fichier `/etc/sysctl.conf` et décommentez la ligne : 
 	
@@ -224,42 +224,48 @@ Ouvrez le fichier `/etc/sysctl.conf` et décommentez la ligne :
 Ajoutez ensuite ces règles pour iptables : 
 
 	::bash
-	sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -m comment --comment "Use VPN IP for eth0"  
-	sudo iptables -t nat -A POSTROUTING -o tun1 -j MASQUERADE -m comment --comment "Use VPN IP for tun1"  
-	sudo iptables -A FORWARD -s 192.168.2.0/24 -i wlan0 -o eth0 -m conntrack --ctstate NEW -j REJECT -m comment --comment "Block traffic from clients to eth0"  
-	sudo iptables -A FORWARD -s 192.168.2.0/24 -i wlan0 -o tun0 -m conntrack --ctstate NEW -j ACCEPT -m comment --comment "Allow only traffic from wlan0 clients to tun1" 
-	sudo iptables -A FORWARD -s 192.168.1.0/24 -i eth0 -o tun0 -m conntrack --ctstate NEW -j ACCEPT -m comment --comment "Allow only traffic from eth0 clients to tun1"  
+	# iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -m comment --comment "Use VPN IP for eth0"  
+	# iptables -t nat -A POSTROUTING -o tun1 -j MASQUERADE -m comment --comment "Use VPN IP for tun1"  
+	# iptables -A FORWARD -s 192.168.2.0/24 -i wlan0 -o eth0 -m conntrack --ctstate NEW -j REJECT -m comment --comment "Block traffic from clients to eth0"  
+	# iptables -A FORWARD -s 192.168.2.0/24 -i wlan0 -o tun0 -m conntrack --ctstate NEW -j ACCEPT -m comment --comment "Allow only traffic from wlan0 clients to tun1" 
+	# iptables -A FORWARD -s 192.168.1.0/24 -i eth0 -o tun0 -m conntrack --ctstate NEW -j ACCEPT -m comment --comment "Allow only traffic from eth0 clients to tun1"  
 
 Sauvegardez les pour le prochain redémarrage : 
 
 	::bash
-	sudo iptables-save > /etc/iptables.ipv4.nat
+	# iptables-save > /etc/iptables.ipv4.nat
 
 Pour les charger à chaque reboot : 
 
 	::bash
-	sudo echo "up iptables-restore < /etc/iptables.ipv4.nat" >> /etc/network/interfaces
+	# echo "up iptables-restore < /etc/iptables.ipv4.nat" >> /etc/network/interfaces
 
 
 Tout est prêt
 -------------
 
-En toute logique, vous êtes capables de voir un nouveau réseau wi-fi portant le nom que vous avez donné dans la conf. En vous connectant dessus, vous devriez passer par le tunnel VPN. Pour en avoir le cœur net, il vous suffit de vous rendre sur des sites tels que [http://monip.org](http://monip.org) et de constater que votre IP à changé. 
+En toute logique, vous êtes capables de voir un nouveau réseau wi-fi portant le nom que vous avez donné dans la conf. En vous connectant dessus, vous devriez passer par le tunnel VPN. Pour en avoir le cœur net, il vous suffit de vous rendre sur des sites tels que [http://ifconfig.me](http://ifconfig.me) et de constater que votre IP à changé. 
 
 Si vous êtes en filaire plutôt qu'en sans fil, il faut alors forcer le système à utiliser comme passerelle par défaut votre brique, en lui donnant son IP. Voici deux alias permettant d'activer/désactiver le routage par la brique : 
 
 	::bash
-	$ alias | grep vpn
 	# Pour activer le passage par la brique
-	alias vpne='sudo route del -n default gw 192.168.1.1; sudo route add -n default gw 192.168.1.113;'
+	alias vpne='route del -n default gw 192.168.1.1; route add -n default gw 192.168.1.113;'
 	# Pour désactiver le passage par la brique
-	alias vpnd='sudo route del -n default gw 192.168.1.113; sudo route add -n default gw 192.168.1.1;'
+	alias vpnd='route del -n default gw 192.168.1.113; route add -n default gw 192.168.1.1;'
 
 Pour Windows, il faut aller dans les paramètres de la carte réseau et changer la passerelle par défaut. Il doit y avoir des commandes pour le faire, mais je ne les connais pas.
 
 
-Et surtout, pensez à vérifier régulièrement que le routage fonctionne toujours en consultant [http://monip.org](http://monip.org) pour vous assurer que votre IP n'est pas l'habituelle que votre FAI vous a donné.
+Et surtout, pensez à vérifier régulièrement que le routage fonctionne toujours avec : 
+
+	::bash
+	$ curl ifconfig.me
+
+ pour vous assurer que votre IP n'est pas l'habituelle que votre FAI vous a donné.
 
 IPv6 dans tout ça ?
 -------------------
 C'est pas bien plus compliqué, y'a juste à refaire la même en changeant les adresses. Je ne sais pas si DHCP pour IPv6 est pertinent cependant, à voir. Il faut aussi un VPN compatible IPv6, ce qui n'est pas mon cas pour l'instant, j'attends mon abo chez FDN.
+
+Merci à [Aeris](https://twitter.com/aeris22) pour son aide.
