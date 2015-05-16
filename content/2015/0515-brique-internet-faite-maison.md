@@ -252,3 +252,7 @@ Pour Windows, il faut aller dans les paramètres de la carte réseau et changer 
 
 
 Et surtout, pensez à vérifier régulièrement que le routage fonctionne toujours en consultant [http://monip.org](http://monip.org) pour vous assurer que votre IP n'est pas l'habituelle que votre FAI vous a donné.
+
+IPv6 dans tout ça ?
+-------------------
+C'est pas bien plus compliqué, y'a juste à refaire la même en changeant les adresses. Je ne sais pas si DHCP pour IPv6 est pertinent cependant, à voir. Il faut aussi un VPN compatible IPv6, ce qui n'est pas mon cas pour l'instant, j'attends mon abo chez FDN.
