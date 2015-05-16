@@ -86,7 +86,7 @@ Enfin :
 
 	::bash
 	sudo nano /etc/default/hostapd
-	
+
 	DAEMON_CONF="/etc/hostapd/hostapd.conf"  
 
 Installons le serveur DHCP, `isc-dhcp-server` : 
@@ -188,7 +188,7 @@ Ensuite, dans le fichier `/etc/default/openvpn`, on va écrire :
 	::bash
 	AUTOSTART="FreeVPN.me-TCP443"
 
-Cela va utiliser le fichier de conf `FreeVPN.me-TCP443".conf` lors du démarrage du service d'OpenVPN.
+Cela va utiliser le fichier de conf `FreeVPN.me-TCP443.conf` lors du démarrage du service d'OpenVPN.
 On démarre OpenVPN : 
 
 	::bash
