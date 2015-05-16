@@ -1,12 +1,15 @@
 PY?=python
 PELICAN?=pelican
 PELICANOPTS=
+PORT=1234
 
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
+
+PELICAN_AUTO_TWEET=$(HOME)/Documents/GIT/pelican_auto_tweet/pelican_auto_tweet.py
 
 FTP_HOST=localhost
 FTP_USER=anonymous
@@ -108,3 +111,15 @@ github: publish
 	git push origin $(GITHUB_PAGES_BRANCH)
 
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
+
+gitpush: 
+	git push origin master
+	git push github master
+
+social: twitter facebook
+
+twitter:
+	$(PELICAN_AUTO_TWEET) --twitter
+
+facebook:
+	$(PELICAN_AUTO_TWEET) --facebook
