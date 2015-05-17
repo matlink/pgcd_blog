@@ -227,8 +227,8 @@ Ajoutez ensuite ces règles pour iptables :
 	# iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -m comment --comment "Use VPN IP for eth0"  
 	# iptables -t nat -A POSTROUTING -o tun1 -j MASQUERADE -m comment --comment "Use VPN IP for tun1"  
 	# iptables -A FORWARD -s 192.168.2.0/24 -i wlan0 -o eth0 -m conntrack --ctstate NEW -j REJECT -m comment --comment "Block traffic from clients to eth0"  
-	# iptables -A FORWARD -s 192.168.2.0/24 -i wlan0 -o tun0 -m conntrack --ctstate NEW -j ACCEPT -m comment --comment "Allow only traffic from wlan0 clients to tun1" 
-	# iptables -A FORWARD -s 192.168.1.0/24 -i eth0 -o tun0 -m conntrack --ctstate NEW -j ACCEPT -m comment --comment "Allow only traffic from eth0 clients to tun1"  
+	# iptables -A FORWARD -s 192.168.2.0/24 -i wlan0 -o tun1 -m conntrack --ctstate NEW -j ACCEPT -m comment --comment "Allow only traffic from wlan0 clients to tun1" 
+	# iptables -A FORWARD -s 192.168.1.0/24 -i eth0 -o tun1 -m conntrack --ctstate NEW -j ACCEPT -m comment --comment "Allow only traffic from eth0 clients to tun1"  
 
 Sauvegardez les pour le prochain redémarrage : 
 
