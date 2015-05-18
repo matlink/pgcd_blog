@@ -7,7 +7,7 @@ Slug: auto-hebergement-le-retour-sur-mon-parcours-2
 
 De retour pour une deuxième partie concernant mon expérience sur
 l'auto-hébergement. Pour ceux qui auraient loupé la [première partie, la
-voici](https://matlink.fr/PGCD/auto-hebergement-le-retour-sur-mon-parcours-1/).
+voici]({filename}/2014/1120-auto-hebergement-le-retour-sur-mon-parcours-2.md).
 
 Je vous ai présenté le contexte de l'époque où ça a fait tilt dans ma
 tête, j'ai parlé de ma déconnexion du fournisseur de mail Gmail que
