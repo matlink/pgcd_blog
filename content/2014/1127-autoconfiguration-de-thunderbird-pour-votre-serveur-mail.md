@@ -48,7 +48,7 @@ Il nous reste que la quatrième solution (la cinquième n'en est pas une
 car ceci est une recherche des noms courants). Il y a un moyen simple de
 proposer l'auto-configuration pour Thunderbird, c'est de placer le
 fichier de configuration du client mail à cette adresse :
-http://example.com/.well-known/autoconfig/mail/config-v1.1.xml.
+[http://example.com/.well-known/autoconfig/mail/config-v1.1.xml](https://matlink.fr/.well-known/autoconfig/mail/config-v1.1.xml).
 
 Et le fichier doit être ainsi :
 
