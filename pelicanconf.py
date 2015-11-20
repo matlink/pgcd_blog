@@ -16,7 +16,10 @@ DEFAULT_LANG = u'fr'
 
 THEME = "new_customtheme"
 
-STATIC_PATHS = ['doc','images']
+STATIC_PATHS = ['doc','images', 'extra/robots.txt']
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt' : {'path': 'robots.txt'}
+}
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
