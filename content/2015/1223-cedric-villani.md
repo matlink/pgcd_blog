@@ -15,7 +15,7 @@ Alors Cédric, c’est le genre de gars que t’aurais eu envie de croiser et de
 
 <center>
 	<span class="figure">
-		![Cédric Villani]({filename}/images/20151223/villani2.jpg)
+		![Cédric Villani]({filename}/images/20151223/villani3.jpg)
 	</span>
 </center>
 
@@ -34,7 +34,7 @@ Ce que Cédric a compris, c’est qu’il ne sert à rien de se fatiguer à fair
 
 <center>
 	<span class="figure">
-		![passion_chercheur]({filename}/images/20151223/villani3.jpg)
+		![passion_chercheur]({filename}/images/20151223/villani2.jpg)
 	</span>
 </center>
 
