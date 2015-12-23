@@ -75,7 +75,7 @@ Je ne résiste pas. Je vous fais part de cette petite anecdote que l’on rencon
 
 -Allez, on ne se moque pas !
 
--Une respiration
+Une respiration ...
 
 -J’ai développé une notion synthétique de courbure de Ricci minorée dans les espaces métriques mesurés complets et localement compacts. »
 
