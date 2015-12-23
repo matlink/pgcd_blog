@@ -12,7 +12,7 @@ La cryptographie "classique"
 ---------------------------
 RSA, AES, DES, GOST, One-Time-Pad, ... La liste est longue. Ce sont des crypto-systèmes bien connus qui servent plusieurs buts (tous n'assouvissent pas tous les besoins) : confidentialité, intégrité, non-répudiation, authenticité, ... Il existe deux types de cryptographie : symétrique et asymétrique. Dans un premier temps, les deux parties se sont accordées sur un secret commun qui sert à chiffrer et déchiffrer les messages. Dans le deuxième temps, chaque entité possède une paire de clé Publique/Privée dont l'une sert pour chiffrer (la clé publique) et l'autre pour déchiffrer (clé privée).
 
-Dans ces crypto-systèmes dits "classiques", nous en connaissons des bons et des mauvais, mais tous possèdent une propriété : un message chiffré par l'un de ces systèmes doit être préalablement déchiffré pour y effectuer des opérations. Qui dit déchiffrement dit accès à la clé symétrique ou privée, et dans certains cas cela nous embête. Nous aimerons qu'une entité dans laquelle nous avons peu confiance, puisse effectuer des opérations sur les messages chiffrés sans connaître la clé privée/symétrique. C'est ce qu'on appelle le chiffrement homomorphique.
+Dans ces crypto-systèmes dits "classiques", nous en connaissons des bons et des mauvais, mais tous possèdent une propriété : un message chiffré par l'un de ces systèmes doit être préalablement déchiffré pour y effectuer des opérations (en fait pas tous, je donne un exemple plus bas). Qui dit déchiffrement dit accès à la clé symétrique ou privée, et dans certains cas cela nous embête. Nous aimerons qu'une entité dans laquelle nous avons peu confiance, puisse effectuer des opérations sur les messages chiffrés sans connaître la clé privée/symétrique. C'est ce qu'on appelle le chiffrement homomorphique.
 
 Quelques applications possibles
 -------------------------------
@@ -53,7 +53,7 @@ L'outils mathématique utilisé par Gentry pour son crypto-système sont les ré
 
 Partiel ou total
 ----------------
-Un système de chiffrement homomorphe est dit partiel lorsqu'il permet d'effectuer des opérations sur les chiffrés pour une ou quelques opérations. Il est totallement homomorphe lorsqu'il permet de faire toutes les opérations possibles sur des messages clairs, sur les chiffrés. RSA est partiellement homomorphe pour la loi multiplication. Le crypto-système de Gentry est totallement homomorphe.
+Un système de chiffrement homomorphe est dit partiel lorsqu'il permet d'effectuer des opérations sur les chiffrés pour une ou quelques opérations. Il est totallement homomorphe lorsqu'il permet de faire toutes les opérations possibles sur des messages clairs, sur les chiffrés. RSA est partiellement homomorphe pour la loi multiplication. Le crypto-système de Gentry est totallement homomorphe. En réalité, on peut montrer que toutes les opérations sont construites à base de multiplications et d'additions, et par conséquent, si le système est homomorphe pour l'addition et la multiplication, alors il est totalement homomorphe (même si la fusion des deux peut donner des constructions plus complexes).
 
 Inconvénients
 -------------
