@@ -10,8 +10,7 @@ Ouf ! Enfin des Vacances ! Quelques jours à la campagne, posé et au calme, che
 
 Bref en parlant de lecture. J’ai fini, il y a quelque temps, un super bouquin et je voulais en discuter et exposer un peu mes impressions avec vous. Le gars qui l’a écrit est assez particulier. 20 au bac à 16 piges, ancien normalien, ancien thésard du mathématicien français Pierre-Louis Lion (médaille Fields 94) qui lui écrivait de gentilles lettres le jour de Noël en bon directeur de thèse “il faudrait se mettre au travail !”, médaillé Fields à 36 ans en 2010 (équivalant du prix Nobel pour les maths), chercheur français de renommée internationale, anciennement prof’ à l’ENS Lyon et maintenant installé à paris en tant que directeur du prestigieux IHP,  j’ai nommé...Monsieur Cédric Villani ! (Marsu’Villani pour les intimes…)
 
-Alors Cédric, c’est le genre de gars que t’aurais eu envie de croiser et de connaître autour d’une pinte, dans un concert de métal par exemple, ou des Têtes Raides (il en est fan). Cédric Villani, c’est le mathématicien Français le plus connu et reconnu du moment. Il est le plus médiatisé et il faut dire qu’il a ce talent fou pour « dire » les maths. Il sait s’adresser facilement aux autres et avec toujours une extrême humilité, les gens aiment ça et écoutent. C’est vrai qu’on ne peut pas passer à côté de lui sans se poser de questions. Habillé en costume de magicien façon début 20<sup>ème</sup>, cheveux longs à la Descartes, broche araignée faite sur mesure accrochée en haut de son torse, foulard rouge brillant noué papillon autour du cou, il doit passer inaperçu dans le RER ! Sans doute l’avez-vous déjà rencontré à la télé probablement. A l’occasion de sa récompense, il a été très demandé par les chaînes d’information particulièrement mais aussi par Laurent Ruquier dans son émission “on n’est pas couché” où il y expose de manière brillante ses travaux en tentant de vulgariser un max. Je vous invite à regarder sa prestation sur Youtube : 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-_-64VQ_cf8" frameborder="0" allowfullscreen></iframe>
+Alors Cédric, c’est le genre de gars que t’aurais eu envie de croiser et de connaître autour d’une pinte, dans un concert de métal par exemple, ou des Têtes Raides (il en est fan). Cédric Villani, c’est le mathématicien Français le plus connu et reconnu du moment. Il est le plus médiatisé et il faut dire qu’il a ce talent fou pour « dire » les maths. Il sait s’adresser facilement aux autres et avec toujours une extrême humilité, les gens aiment ça et écoutent. C’est vrai qu’on ne peut pas passer à côté de lui sans se poser de questions. Habillé en costume de magicien façon début 20<sup>ème</sup>, cheveux longs à la Descartes, broche araignée faite sur mesure accrochée en haut de son torse, foulard rouge brillant noué papillon autour du cou, il doit passer inaperçu dans le RER ! Sans doute l’avez-vous déjà rencontré à la télé probablement. A l’occasion de sa récompense, il a été très demandé par les chaînes d’information particulièrement mais aussi par Laurent Ruquier dans son émission “on n’est pas couché” où il y expose de manière brillante ses travaux en tentant de vulgariser un max (je vous invite à regarder sa [prestation sur Youtube](https://www.youtube.com/embed/-_-64VQ_cf8))
 
 <center>
 	<span class="figure">
@@ -51,22 +50,34 @@ A un moment du livre, on peut lire : <i>« L’équation de Boltzmann, la plus
 </center>
 
 <i>« Rendre justice à l’autre dans son humanité »</i> nous enseigne Hegel à propos du Dialogue entre deux êtres. C’est ce que manifeste à nous « <i>théorème vivant</i> ». Au travers des  dialogues qui s’instaurent entre Cédric et les maths, le lecteur et Cédric, le lecteur et les maths, Clément et Cédric, Clément et Cédric et le lecteur et les maths, Cédric Villani rend ainsi hommage à la recherche pour ce qu’elle est et pour ce qu’elle représente dans notre société. Il rend hommage à la science et rend hommage à l’ensemble de ces collègues chercheurs et enseignants-chercheurs.
+
 Je ne résiste pas. Je vous fais part de cette petite anecdote que l’on rencontre à un moment du bouquin. La nuit, alors qu’il rentre d’un concert des Têtes Raides, Cédric se fait gentiment prendre en stop par une mère et sa fille et voici un p’tit morceau du dialogue qui s’engage… j’imagine encore la tête de la mère au volant.
 
 «
 
-- Vous êtes musicien
-- Non !
-- Artiste ?
-- Mathématicien !
-- Quoi, mathématicien ?
-- Oui oui…ça existe !
-- Vous travaillez sur quoi ?
-- Hmmmm, vous voulez vraiment savoir ?
-- Oui, pourquoi pas ?
-- Allez, on ne se moque pas !
-- Une respiration
-- J’ai développé une notion synthétique de courbure de Ricci minorée dans les espaces métriques mesurés complets et localement compacts. »
+-Vous êtes musicien
+
+-Non !
+
+-Artiste ?
+
+-Mathématicien !
+
+-Quoi, mathématicien ?
+
+-Oui oui…ça existe !
+
+-Vous travaillez sur quoi ?
+
+-Hmmmm, vous voulez vraiment savoir ?
+
+-Oui, pourquoi pas ?
+
+-Allez, on ne se moque pas !
+
+-Une respiration
+
+-J’ai développé une notion synthétique de courbure de Ricci minorée dans les espaces métriques mesurés complets et localement compacts. »
 
 Halala sacré Cédric !
 
