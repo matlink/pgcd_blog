@@ -29,7 +29,7 @@ Oui, <i>Théorème vivant</i> n’est pas un essai au sens conventionnel comme o
 
 On lit et on suit tous les mails, on les écoute au téléphone, on assiste aux conversations de haute voltige au tableau : <i>« La discussion continue longuement. De fil en aiguille, on voyage à travers les questions mathématiques. On prend des notes, on argumente, on s’indigne, on apprend, on prépare un plan d’attaque »</i>. Cédric prend la peine de nous faire un petit compte-rendu de ce qui a avancé, ce qui ne va pas, ce qu’il faut reprendre, ce qu’il faut revoir. Il nous fait souvent un aparté (historique ou non) pour présenter tel mathématicien qui a montré tel résultat qui va être capital pour accéder jusqu’au précieux théorème final et qui mènera plus tard à la récompense ultime. On est là, on sait tout et pourtant on n’est pas mathématicien ! (Physicien pour ma part…je suis loin du compte !) 
 
-Ce que Cédric a compris, c’est qu’il ne sert à rien de se fatiguer à faire et refaire une explication vulgarisée de son travail, d’autres le feront tout aussi bien et il aura bien l’occasion de le faire lors de ses nombreuses conférences à venir. Non, Cédric veut nous faire vivre ce qu’il a vécu. Il veut nous emmener avec lui dans son voyage intellectuel et  profondément humain. Il veut tenter de nous faire ressentir les émotions qu’il a pu lui-même ressentir à certains moments clés et qui ont marqué un tournant dans son périple. Les émotions se couplent et s’enchevêtrent très fortement avec sa vie de chercheur. Cédric est animé par le beau, l’esthétique du monde, l’étonnement des grecs anciens de ce que les choses sont ce qu’elles sont. On peut dire qu’il est le parfait exemple de ce que Jacques Duran appelle dans son ouvrage Passion Chercheur  la pure et inévitable « vocation » du chercheur : <i>« Impossible de se réveiller un beau matin, en se disant « tiens, et si je me faisais chercheur ? » […] La vocation du chercheur au sens littéral c’est un appel. C’est un désir irrépressible, une soif inextinguible, de découvrir et de comprendre des mécanismes fondamentaux qui forcent l’admiration et qui nous remplissent d’humilité devant l’ingéniosité de la nature […] Je dirais qu’on devient chercheur…parce qu’on ne peut pas s’en empêcher ! »</i> Et tout au long de son livre, Cédric met en exergue tous les faits et gestes qu’engendre cette vocation initiale. Il exhibe de manière la plus naturelle, celle qui le caractérise, le comportement du chercheur et le montre sous son un jour qui est celui de tous les jours.
+Ce que Cédric a compris, c’est qu’il ne sert à rien de se fatiguer à faire et refaire une explication vulgarisée de son travail, d’autres le feront tout aussi bien et il aura bien l’occasion de le faire lors de ses nombreuses conférences à venir. Non, Cédric veut nous faire vivre ce qu’il a vécu. Il veut nous emmener avec lui dans son voyage intellectuel et  profondément humain. Il veut tenter de nous faire ressentir les émotions qu’il a pu lui-même ressentir à certains moments clés et qui ont marqué un tournant dans son périple. Les émotions se couplent et s’enchevêtrent très fortement avec sa vie de chercheur. Cédric est animé par le beau, l’esthétique du monde, l’étonnement des grecs anciens de ce que les choses sont ce qu’elles sont. On peut dire qu’il est le parfait exemple de ce que Jacques Duran appelle dans son ouvrage <i>Passion Chercheur</i>, la pure et inévitable « vocation » du chercheur : <i>« Impossible de se réveiller un beau matin, en se disant « tiens, et si je me faisais chercheur ? » […] La vocation du chercheur au sens littéral c’est un appel. C’est un désir irrépressible, une soif inextinguible, de découvrir et de comprendre des mécanismes fondamentaux qui forcent l’admiration et qui nous remplissent d’humilité devant l’ingéniosité de la nature […] Je dirais qu’on devient chercheur…parce qu’on ne peut pas s’en empêcher ! »</i> Et tout au long de son livre, Cédric met en exergue tous les faits et gestes qu’engendre cette vocation initiale. Il exhibe de manière la plus naturelle, celle qui le caractérise, le comportement du chercheur et le montre sous un jour qui est celui de tous les jours.
 
 <center>
 	<span class="figure">
@@ -53,9 +53,8 @@ A un moment du livre, on peut lire : <i>« L’équation de Boltzmann, la plus
 
 Je ne résiste pas. Je vous fais part de cette petite anecdote que l’on rencontre à un moment du bouquin. La nuit, alors qu’il rentre d’un concert des Têtes Raides, Cédric se fait gentiment prendre en stop par une mère et sa fille et voici un p’tit morceau du dialogue qui s’engage… j’imagine encore la tête de la mère au volant.
 
-«
-
--Vous êtes musicien
+<center>
+« -Vous êtes musicien
 
 -Non !
 
@@ -77,11 +76,15 @@ Je ne résiste pas. Je vous fais part de cette petite anecdote que l’on rencon
 
 Une respiration ...
 
+
 -J’ai développé une notion synthétique de courbure de Ricci minorée dans les espaces métriques mesurés complets et localement compacts. »
+</center>
 
 Halala sacré Cédric !
 
+<center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/crM1Z-x-o_Q" frameborder="0" allowfullscreen></iframe>
+</center>
 
 Joyeux Noël à tous !
 
