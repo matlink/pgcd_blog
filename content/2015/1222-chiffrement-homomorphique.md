@@ -39,9 +39,9 @@ Nous allons pas ré-expliquer en entière la thèse de Gentry, car cela ne serai
 
 Lorsque l'on prend le chiffrement asymétrique RSA de façon brute, telle que définie au tout début (sans padding), nous obtenons un système de chiffrement partiellement homomorphe pour la loi multiplication. Un bref rappel de RSA pour se remettre dans le contexte (Wikipédia) : 
 
-- on choisis deux nombres premiers `p` et `q` différents et très grands (de l'ordre de 2048 bits voire plus)
+- on choisit deux nombres premiers `p` et `q` différents et très grands (de l'ordre de 2048 bits voire plus)
 - on calcule `N=pq` le module et `φ(N)=(p-1)(q-1)` la fonction indicatrice d'Euler pour `N`
-- on choisis `e` premier avec `φ(N)` et `d` l'inverse de `e` dans `ℤ/φ(N)ℤ`
+- on choisit `e` premier avec `φ(N)` et `d` l'inverse de `e` dans `ℤ/φ(N)ℤ`
 - le couple `(N,e)` est la clé publique et `d` est la clé privée
 - le chiffré `C` d'un message `M` est défini tel que `C=M`<sup>`e`</sup>`  modulo N`
 
