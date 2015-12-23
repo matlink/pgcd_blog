@@ -43,9 +43,9 @@
 /* body */
 body {
     background: rgba(240,240,240,.8);
-    font-size: 87.5%; /* Base font size: 14px */
+    font-size: 100%; /* Base font size: 14px */
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1.429;
+    line-height: 1.8;
     margin: 0;
     padding: 1em 0;
     text-align: justify;
@@ -275,7 +275,7 @@ tfoot td {}
 	article
 ******************/
 .title_article {
-	font-size: 2em;
+	font-size: 4em;
 	display: block;
 }
 .title_article a, .title_article a:link {
