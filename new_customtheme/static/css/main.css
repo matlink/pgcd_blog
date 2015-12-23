@@ -43,7 +43,7 @@
 /* body */
 body {
     background: rgba(240,240,240,.8);
-    font-size: 120%; /* Base font size: 14px */
+    font-size: 100%; /* Base font size: 14px */
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.8;
     margin: 0;
