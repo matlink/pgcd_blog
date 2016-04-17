@@ -8,6 +8,12 @@ Image: 20160417/jila.jpg
 
 Hey salut à tous ! Rhaaa ouais ça faisait longtemps que je n’avais pas écrit un p’tit truc sympa sur le Blog, c’en était trop fallait que ça cesse ! En prenant le train vendredi il y a deux semaines, je commence à discuter tranquillou avec le gars qu’était à côté de ouam (hyper sympa), il me voyait gribouiller des calculs (qui m’ont d’ailleurs bouffé tout mon vendredi arghh). Et on en vient alors à parler un peu de ce que chacun fait en semaine etc je lui raconte que je suis étudiant en recherche, que je fais un stage de recherche théorique en physique (groupe d’optique atomique à l’institut d’optique) et là je ne sais pas quelle mouche l’a piqué. Il aurait dû s’en rendre compte le malheureux. Il y a des questions interdites, celles dont-on-ne-doit-pas-prononcer-me-prononcer-la-phrase. Le genre de truc auquel tu ne t’attends pas « Mais alors du coup, concrètement, ça consiste en quoi ce que vous faites ?». J’me suis arrêté, Je l’ai regardé, il m’a regardé, on s’est regardé, il a compris, j’ai souri...il n’aurait pas dû ! Le Malheureux ! Et c’était parti alors pour une discussion forte en émotion sur le pourquoi de la recherche en physique, sur la physique quantique, l’observation et la compréhension de phénomènes nouveaux, d’Aristote, Galilée à Newton en passant par Copernic puis un beau jour Einstein. Et c’est comme ça que j’en suis venu à parler de la recherche qu’est en train de se faire en physique quantique et notamment la super aventure des atomes ultra-froids...bref j’ai pas vu le temps passer, il avait l’air intéressé (je crois...) !! J’ai eu envie de raconter ça sur le PGCD en arrivant. Je précise et j’y tiens énormément, je ne suis qu’étudiant en recherche, je m’insère doucement dans cette aventure en y apprenant les rudiments et les coutumes tribales, dans ce que j’ai dit précédemment et dans ce qui va suivre je serai extrêmement vexé qu’on y voit de la prétention où du surjeu. J’aime parler de ce que j’aime, c’est tout. Alohallons y ! 
 
+<center>
+<span class="figure">
+		![Jila]({filename}/images/20160417/jila.jpg)
+		<span class="caption">Photo prise au Jila (Colorado) : un nuage d’atomes froids</span>
+</span>
+</center>
 
 Haaa les fameux atomes froids, parlons-en ! J’ai demandé un jour à ma pote thésarde
 dans le labo où je fais mon stage pourquoi diable a-t-elle choisi de passer 3 ans à trimer sous
@@ -28,12 +34,9 @@ sur un billard de dire quelle boule est quelle boule, même les étiqueter avec 
 changerait rien, ça n’a plus aucun sens, ils sont indiscernables, un nouveau monde apparait :
 le monde quantique.
 
-
-<center>
-	<span class="figure">
+<span class="figure" style="width:115%;margin-left:5px;">
 		![Dégénération quantique]({filename}/images/20160417/degen-quant.jpg)
-	</span>
-</center>
+</span>
 
 
 Il se manifeste alors de nouveaux phénomènes extraordinaires, hors de portée de notre
