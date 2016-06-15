@@ -1,14 +1,12 @@
-Title: Denver le dernier materiau
+Title: La magie quantique des matériaux
 Date: 2016-06-11 21:00
 Category: Sciences
 Author: Poulos
 Tags: 
 Slug: denver-le-dernier-materiau
-Image: 20160611/denver.jpg
+Image: 20160611/marty-mcfly-uses-mattel-hoverboard-escape-thugs-2015.jpg
 
-Quoi, vous ne comprenez pas le titre ? Et ben moi non plus.
-
-Alors salut, bonjour, oui oui, serrage de main, voilà, bisous ici, bisous par là ; Petit billet de ma part sur la matière qui nous entoure. Vous ne m'en voudrez pas, ça sera sans rentrer dans des grands délires théoriques de physique, ça je ne sais pas faire. L'idée m'est venue simplement de parler du « pourquoi s'intéresse-t-on aux matériaux, aux objets fait d'une matière en particulier et qui habillent autant notre quotidien puisqu'ils sont indispensables » ? Pourquoi essaye-t-on de les comprendre au niveau microscopique c'est-à-dire au niveau de l'atome ? A quoi ça sert qu'on mette de l'argent dans la recherche fondamentale pour ça ?
+Alors salut, bonjour, oui oui, serrage de main, voilà, bisous ici, bisous par là ; Petit billet de ma part sur la matière qui nous entoure. Vous ne m'en voudrez pas, ça sera sans rentrer dans des grands délires théoriques de physique, ça je ne sais pas faire. L'idée m'est venue simplement de parler du « pourquoi s'intéresse-t-on aux matériaux, aux objets faits d'une matière en particulier et qui habillent autant notre quotidien puisqu'ils sont indispensables » ? Pourquoi essaye-t-on de les comprendre au niveau microscopique c'est-à-dire au niveau de l'atome ? A quoi ça sert qu'on mette de l'argent dans la recherche fondamentale pour ça ?
 
 <center>
 <span class="figure">
@@ -167,7 +165,7 @@ En revanche, concernant les supraconducteurs basiques comme par exemple l'alumin
 <center>
 <span class="figure">
 		![irm.jpg]({filename}/images/20160611/irm.jpg)
-		<span class="caption">L'énorme « cylindre » dans les IRM est fait d'un matériau supraconducteur refroidi à la température de l'azote liquide et chargé en électricité une bonne fois en usine.</span>
+		<span class="caption">L'énorme « cylindre » dans les IRM est fait d'un matériau supraconducteur refroidi à la température de l'hélium liquide et chargé en électricité une bonne fois en usine.</span>
 </span>
 </center>
 
@@ -195,7 +193,7 @@ L'idée qui était avant tout de l'ordre du rêve au fondement de la physique de
 
 Je vous invite à regarder l'article [« Les atomes froids : une physique sexy »]({filename}/2016/1704-atomes-froids-physique-sexy.md) . J'y décris brièvement l'émergence de ce domaine (très d'actualité) de la physique. On y souhaite reproduire expérimentalement avec des lasers et des atomes, les édifices cristallins que j'ai décrits plus haut. On peut, grâce à ces systèmes, contrôler et faire varier tout plein de paramètres à notre guise contrôlant la position et le mouvement des atomes. L'idée fondamentale proposée par le physicien de génie Richard Feynman en 1982 est de simuler des électrons qui se baladent dans un cristal afin d'observer, directement avec « une caméra », leur mouvement individuel, leur dynamique et comment ils s'agencent collectivement !
 
-Le rêve serait par exemple d'y observer la fameuse supraconductivité à haute température des oxydes de cuivre dont j'ai parlé pourvue qu'on simule correctement avec nos lasers et nos atomes l'organisation des structures dans ces matériaux. On n'y est pas encore mais on progresse. C'est pour bientôt et ça sera encore une révolution. Pour les plus intéressés d'entre vous, il faut aller voir cette courte vidéo youtube [https://www.youtube.com/watch?v=yuhTAU35yVg](https://www.youtube.com/watch?v=yuhTAU35yVg) de Jean Dalibard, notre maitre à tous)
+Le rêve serait par exemple d'y observer la fameuse supraconductivité à haute température des oxydes de cuivre dont j'ai parlé pourvue qu'on simule correctement avec nos lasers et nos atomes l'organisation des structures dans ces matériaux. On n'y est pas encore mais on progresse. C'est pour bientôt et ça sera encore une révolution. Pour les plus intéressés d'entre vous, il faut aller voir cette courte vidéo youtube [https://www.youtube.com/watch?v=yuhTAU35yVg](https://www.youtube.com/watch?v=yuhTAU35yVg) de Jean Dalibard, notre maitre à tous
 
 <center>
 <span class="figure">
