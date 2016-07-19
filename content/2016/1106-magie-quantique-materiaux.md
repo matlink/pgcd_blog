@@ -6,7 +6,7 @@ Tags:
 Slug: magie-quantique-materiaux
 Image: 20160611/marty-mcfly-uses-mattel-hoverboard-escape-thugs-2015.jpg
 
-Alors salut, bonjour, oui oui, serrage de main, voilà, bisous ici, bisous par là ; Petit billet de ma part sur la matière qui nous entoure. Vous ne m'en voudrez pas, ça sera sans rentrer dans des grands délires théoriques de physique, ça je ne sais pas faire. L'idée m'est venue simplement de parler du « pourquoi s'intéresse-t-on aux matériaux, aux objets faits d'une matière en particulier et qui habillent autant notre quotidien puisqu'ils sont indispensables » ? Pourquoi essaye-t-on de les comprendre au niveau microscopique c'est-à-dire au niveau de l'atome ? A quoi ça sert qu'on mette de l'argent dans la recherche fondamentale pour ça ?
+Salut à tous ! Petit billet de ma part sur la matière qui nous entoure. Vous ne m'en voudrez pas, ça sera sans rentrer dans des grands délires théoriques de physique, ça je ne sais pas faire. L'idée m'est venue simplement de parler du « pourquoi s'intéresse-t-on aux matériaux, aux objets faits d'une matière en particulier et qui habillent autant notre quotidien puisqu'ils sont indispensables » ? Pourquoi essaye-t-on de les comprendre au niveau microscopique c'est-à-dire au niveau de l'atome ? A quoi ça sert qu'on mette de l'argent dans la recherche fondamentale pour ça ?
 
 <center>
 <span class="figure">
