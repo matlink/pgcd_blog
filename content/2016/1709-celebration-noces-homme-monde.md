@@ -1,4 +1,4 @@
-Title:  La célébration des noces de l’homme avec le monde
+Title:  Albert Camus, La célébration des noces de l’homme avec le monde
 Date: 2016-09-17 19:00
 Category: 
 Author: Nolan
